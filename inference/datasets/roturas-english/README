@@ -1,0 +1,75 @@
+# Datasets de Roturas en Inglés
+
+Esta carpeta contiene datasets para entrenar modelos de clasificación de jeans con y sin roturas, descritos en inglés.
+
+## Descripción General
+
+Los datasets clasifican jeans según su tipo de corte y presencia de roturas. Se enfocan en identificar si un jean tiene roturas (rips) y qué tipo de corte tiene (straight, palazzo, skinny, wide leg, etc.).
+
+A diferencia de los datasets de preferencias (que clasifican estilos de moda), estos datasets se enfocan en la clasificación de características físicas de los jeans, específicamente la presencia o ausencia de roturas.
+
+## Archivos Disponibles
+
+### `con-sin-roturas-english.csv` (334 registros)
+- **Idioma**: Inglés
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Versión base con descripciones detalladas de jeans, incluyendo información sobre cortes y roturas
+
+### `con-sin-roturas-english-v2.csv` (334 registros)
+- **Idioma**: Inglés
+- **Formato**: `image, description`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo (`processed_images_english/`)
+- **Descripción**: Versión con imágenes preprocesadas (fondo removido). Descripciones sin el prefijo "ripped" al inicio
+
+### `con-sin-roturas-english-v2.1.csv` (334 registros)
+- **Idioma**: Inglés
+- **Formato**: `image, description`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Descripción**: Similar a v2 pero con capitalización mejorada en las descripciones (ej: "High-waisted", "Tight high waist")
+
+### `con-sin-roturas-english-v3.csv` (334 registros)
+- **Idioma**: Inglés
+- **Formato**: `image, description`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Descripción**: Versión con prefijo "ripped" al inicio de las descripciones cuando hay roturas (ej: "ripped straight jeans"). Capitalización mejorada
+
+### `con-sin-roturas-english-v4.csv` (334 registros)
+- **Idioma**: Inglés
+- **Formato**: `image, description, has_rips`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Descripción**: Versión con columna adicional `has_rips` (1 si tiene roturas, 0 si no). Descripciones sin prefijo "ripped" pero con capitalización mejorada
+
+### `con-sin-roturas-english-v5.csv` (334 registros)
+- **Idioma**: Inglés
+- **Formato**: `image, description`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Descripción**: Versión con prefijo "ripped" al inicio (ej: "ripped straight jeans"). Capitalización mejorada
+
+### `con-sin-roturas-english-v6.csv` (334 registros)
+- **Idioma**: Inglés
+- **Formato**: `image, description`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Descripción**: Similar a v5 pero con orden diferente en las descripciones (ej: "straight ripped jeans" en lugar de "ripped straight jeans")
+
+## Estructura de Datos
+
+### Formato básico (sin columna adicional)
+```csv
+image,description
+url_o_ruta,descripción detallada del jean...
+```
+
+### Formato con columna has_rips
+```csv
+image,description,has_rips
+ruta_local,descripción...,1
+```
+
+## Uso
+
+Estos datasets se utilizan para entrenar modelos de clasificación de jeans con y sin roturas, permitiendo identificar si una prenda tiene roturas y qué tipo de corte tiene. Las diferentes versiones representan iteraciones del preprocesamiento con variaciones en:
+- Orden de palabras en las descripciones ("ripped" al inicio o después del tipo de corte)
+- Capitalización de las descripciones
+- Adición de columnas adicionales (como `has_rips` para etiquetado binario)
+

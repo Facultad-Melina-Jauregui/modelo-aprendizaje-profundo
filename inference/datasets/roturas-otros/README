@@ -1,0 +1,81 @@
+# Datasets de Roturas Varios
+
+Esta carpeta contiene datasets adicionales y experimentales para clasificación de jeans con y sin roturas, incluyendo datasets sintéticos y subconjuntos específicos.
+
+## Descripción General
+
+Esta carpeta agrupa datasets complementarios que incluyen:
+- Subconjuntos específicos (solo con roturas, solo sin roturas)
+- Datasets sintéticos generados mediante aumento de datos
+- Datasets experimentales de formato diferente
+
+## Archivos Disponibles
+
+### `roturas.csv` (198 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Dataset que contiene únicamente jeans **con roturas**. Descripciones detalladas que incluyen "jean de mujer" y frases adicionales como "Podría ser..." con posibles variaciones de corte
+
+### `roturas-sin-rotura.csv` (149 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Dataset que contiene únicamente jeans **sin roturas**. Descripciones enfocadas en destacar la ausencia de roturas y desgaste (ej: "jean completamente liso, sin ninguna marca de desgaste")
+
+### `roturas-vs-sin.csv` (159 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Dataset combinado que incluye tanto jeans con roturas como sin roturas. Versión balanceada o muestreo específico para comparación
+
+### `cs-roturas-synthetic.csv` (997 registros)
+- **Idioma**: Español
+- **Formato**: `image, description, synthetic`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Dataset sintético generado mediante aumento de datos. Contiene descripciones originales (`synthetic=False`) y descripciones sintéticas generadas por IA (`synthetic=True`) basadas en las originales. Las descripciones sintéticas reformulan las originales de manera más descriptiva y estilística
+- **Uso**: Aumento de datos para mejorar el entrenamiento del modelo
+
+### `cs-roturas-synthetic-v2.csv` (997 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Versión simplificada del dataset sintético sin la columna `synthetic`. Contiene tanto descripciones originales como sintéticas mezcladas, todas en formato uniforme
+- **Uso**: Dataset aumentado listo para entrenamiento sin necesidad de filtrar por tipo de descripción
+
+### `fashion_data.csv` (7 registros)
+- **Idioma**: Español
+- **Formato**: `url, image_url, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Dataset experimental con formato diferente que incluye URL de Pinterest además de la URL de imagen. Descripciones muy simples (ej: "un jean con rotura"). Dataset pequeño, posiblemente para pruebas o muestras
+
+## Estructura de Datos
+
+### Formato básico
+```csv
+image,description
+url_o_ruta,descripción detallada del jean...
+```
+
+### Formato con columna synthetic
+```csv
+image,description,synthetic
+url,descripción...,False
+url,descripción_sintética...,True
+```
+
+### Formato experimental (fashion_data.csv)
+```csv
+url,image_url,description
+url_pinterest,url_imagen,descripción...
+```
+
+## Uso
+
+Estos datasets se utilizan para:
+- **Entrenamiento específico**: Usar subconjuntos (con/sin roturas) para entrenar modelos especializados
+- **Aumento de datos**: Los datasets sintéticos permiten expandir el dataset original con variaciones de descripciones generadas por IA
+- **Experimentación**: Probar diferentes formatos y estructuras de datos antes de estandarizar
+
+Los datasets sintéticos son especialmente útiles para mejorar la generalización del modelo al exponerlo a diferentes formas de describir las mismas características de los jeans.
+

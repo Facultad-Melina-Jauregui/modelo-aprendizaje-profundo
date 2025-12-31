@@ -1,0 +1,71 @@
+# Datasets de Roturas en Español
+
+Esta carpeta contiene datasets para entrenar modelos de clasificación de jeans con y sin roturas, descritos en español.
+
+## Descripción General
+
+Los datasets clasifican jeans según su tipo de corte y presencia de roturas. Se enfocan en identificar si un jean tiene roturas y qué tipo de corte tiene (recto, palazzo, wide leg, skinny, etc.).
+
+A diferencia de los datasets de preferencias (que clasifican estilos de moda), estos datasets se enfocan en la clasificación de características físicas de los jeans, específicamente la presencia o ausencia de roturas.
+
+## Archivos Disponibles
+
+### `con-sin-roturas.csv` (249 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Versión base con descripciones detalladas que incluyen "jean de mujer" y frases adicionales como "Podría ser..." con posibles variaciones de corte
+
+### `con-sin-roturas-v2.csv` (249 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Versión limpiada sin "jean de mujer" y sin frases "Podría ser...". Descripciones más concisas y directas
+
+### `con-sin-roturas-v3.csv` (334 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Versión ampliada con más registros. Palabras clave en mayúsculas (ej: "RECTO", "ROTURAS", "PALAZZO") para facilitar el procesamiento y poner énfasis en su corte.
+
+### `con-sin-roturas-v4.csv` (334 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Similar a v3 pero normalizado a minúsculas (ej: "recto", "roturas", "palazzo"). Versión estandarizada del formato
+
+### `con-sin-roturas-v4-nbg.csv` (334 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo (`processed_images_roturas/`)
+- **Descripción**: Similar a v4 pero con imágenes preprocesadas (fondo removido) para entrenamiento
+
+### `con-sin-roturas-v5.csv` (334 registros)
+- **Idioma**: Español
+- **Formato**: `image, description, tags`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Tags**: Columna adicional con información extraída en formato `"Tipo jean: roturas, tipo_corte"` (ej: "Tipo jean: roturas, recto")
+- **Uso**: Versión más completa con tags preprocesados para entrenamiento
+
+## Estructura de Datos
+
+### Formato básico (sin tags)
+```csv
+image,description
+url_o_ruta,descripción detallada del jean...
+```
+
+### Formato con tags
+```csv
+image,description,tags
+ruta_local,descripción...,"Tipo jean: roturas, recto"
+```
+
+## Uso
+
+Estos datasets se utilizan para entrenar modelos de clasificación de jeans con y sin roturas, permitiendo identificar si una prenda tiene roturas y qué tipo de corte tiene. Las diferentes versiones representan iteraciones del preprocesamiento con variaciones en:
+- Limpieza de descripciones (eliminación de frases adicionales)
+- Normalización de texto (mayúsculas/minúsculas)
+- Preprocesamiento de imágenes (remoción de fondo)
+- Extracción de tags estructurados para facilitar el entrenamiento
+

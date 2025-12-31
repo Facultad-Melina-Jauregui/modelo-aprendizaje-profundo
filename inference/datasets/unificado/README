@@ -1,0 +1,93 @@
+# Datasets Unificados (Roturas y Preferencias)
+
+Esta carpeta contiene datasets que combinan datos de clasificación de cortes con roturas y preferencias de estilo en un único dataset unificado.
+
+## Descripción General
+
+Los datasets unificados combinan dos tareas de clasificación diferentes:
+- **Roturas**: Clasificación de jeans según tipo de corte y presencia de roturas
+- **Preferencias/Estilos**: Clasificación de prendas según estilos de moda
+
+Cada fila del dataset tiene una columna `task` que indica a qué tarea pertenece (`"roturas"` o `"estilos"`), y una columna `tags` con información estructurada específica para cada tarea.
+
+## Archivos Disponibles
+
+### `roturas-preferencias.csv` (505 registros)
+- **Idioma**: Español
+- **Formato**: `image, description, tags`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo (`processed_images_roturas/` y `processed_preferences_images/`)
+- **Tags**: 
+  - Para roturas: `"Tipo jean: roturas, tipo_corte"` (ej: "Tipo jean: roturas, recto")
+  - Para estilos: `"Estilos: estilo1, estilo2"` (ej: "Estilos: boho chic, coquette")
+- **Descripción**: Versión base del dataset unificado sin columna `task`
+
+### `roturas-preferencias-v2.csv` (505 registros)
+- **Idioma**: Español
+- **Formato**: `image, description, tags, task`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Tags**: 
+  - Para roturas: `"Tipo jean: roturas, tipo_corte"`
+  - Para estilos: `"Estilos: estilo1, estilo2"`
+- **Task**: Columna adicional que indica `"roturas"` o `"estilos"`
+- **Descripción**: Primera versión con columna `task` para distinguir entre las dos tareas
+
+### `roturas-preferencias-v3.csv` (505 registros)
+- **Idioma**: Español
+- **Formato**: `image, description, tags, task`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Tags**: 
+  - Para roturas: Formato simplificado `"roturas, tipo_corte"` (sin prefijo "Tipo jean:")
+  - Para estilos: `"Estilos: estilo1, estilo2"`
+- **Descripción**: Versión con formato simplificado de tags para roturas
+
+### `roturas-preferencias-v4.csv` (528 registros)
+- **Idioma**: Español
+- **Formato**: `image, description, tags, task`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Tags**: 
+  - Para roturas: Formato expandido `"Tipo jean: jean con roturas, jean tipo_corte"` (ej: "Tipo jean: jean con roturas, jean recto")
+  - Para estilos: `"Estilos: estilo1, estilo2"`
+- **Descripción**: Versión con formato expandido de tags para roturas, mayor cantidad de registros
+
+### `roturas-preferencias-v5.csv` (632 registros)
+- **Idioma**: Español
+- **Formato**: `image, description, tags, task`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Tags**: 
+  - Para roturas: `"Tipo jean: roturas, tipo_corte"` (vuelve al formato estándar)
+  - Para estilos: `"Estilos: estilo1, estilo2"`
+- **Descripción**: Versión ampliada con más registros. Formato estándar de tags restaurado
+
+### `roturas-preferencias-v6.csv` (707 registros)
+- **Idioma**: Español
+- **Formato**: `image, description, tags, task`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo
+- **Tags**: 
+  - Para roturas: `"Tipo jean: roturas, tipo_corte"`
+  - Para estilos: `"Estilos: estilo1, estilo2"` (algunas entradas pueden tener formato simplificado sin comillas)
+- **Descripción**: Versión más reciente y ampliada con la mayor cantidad de registros. Dataset unificado más completo
+
+## Estructura de Datos
+
+### Formato con task
+```csv
+image,description,tags,task
+ruta_imagen,descripción...,"Tipo jean: roturas, recto",roturas
+ruta_imagen,descripción...,"Estilos: boho chic, coquette",estilos
+```
+
+### Formato sin task (versión base)
+```csv
+image,description,tags
+ruta_imagen,descripción...,"Tipo jean: roturas, recto"
+ruta_imagen,descripción...,"Estilos: boho chic, coquette"
+```
+
+## Uso
+
+Estos datasets unificados permiten entrenar modelos que pueden realizar ambas tareas de clasificación:
+- **Clasificación de roturas**: Identificar tipo de corte y presencia de roturas en jeans
+- **Clasificación de estilos**: Identificar estilos de moda en prendas
+
+La columna `task` permite filtrar o balancear el entrenamiento por tipo de tarea, y los tags estructurados facilitan el procesamiento y evaluación del modelo. Las diferentes versiones representan iteraciones en el preprocesamiento y expansión del dataset unificado.
+

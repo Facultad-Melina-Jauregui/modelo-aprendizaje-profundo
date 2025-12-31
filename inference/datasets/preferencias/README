@@ -1,0 +1,83 @@
+# Datasets de Preferencias de Estilo
+
+Esta carpeta contiene datasets para entrenar modelos de clasificación de estilos de moda en prendas de vestir.
+
+## Descripción General
+
+Los datasets clasifican prendas según diferentes estilos de moda (preferencias). Los estilos incluyen:
+- **boho chic**: Estilo bohemio y desenfadado
+- **coquette**: Estilo femenino y romántico
+- **minimalista**: Estilo simple y elegante
+- **old money**: Estilo clásico y sofisticado
+- **streetwear**: Estilo urbano y casual
+- **deportivo**: Estilo deportivo y funcional
+- **salir de noche**: Estilo para ocasiones nocturnas
+
+## Archivos Disponibles
+
+### `preferences.csv` (149 registros)
+- **Idioma**: Inglés
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Contiene descripciones detalladas de prendas con información de estilos
+
+### `preferencias.csv` (149 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: URLs de Pinterest
+- **Descripción**: Versión traducida al español de `preferences.csv`
+
+### `preferencias-nobg.csv` (149 registros)
+- **Idioma**: Español
+- **Formato**: `image, description`
+- **Imágenes**: Rutas locales a imágenes procesadas sin fondo (`processed_preferences_images/`)
+- **Descripción**: Versión con imágenes preprocesadas (fondo removido) para entrenamiento
+
+### `preferencias-nobg2.csv` (152 registros)
+- **Versión intermedia** del dataset con imágenes sin fondo
+- Diferentes iteraciones del preprocesamiento
+
+### `preferencias-nobg3.csv` (152 registros)
+- **Formato**: `image, description, tags`
+- **Imágenes**: Rutas locales a imágenes sin fondo
+- **Tags**: Columna con estilos en formato simple `"estilo1, estilo2"` (sin prefijo "Estilos:")
+
+### `preferencias-nobg4.csv` (170 registros)
+- **Formato**: `image, description, tags`
+- **Imágenes**: Rutas locales a imágenes sin fondo
+- **Tags**: Columna con estilos en formato simple `"estilo1, estilo2"` (sin prefijo "Estilos:")
+- **Versión ampliada** con mayor cantidad de muestras
+
+### `preferencias-v5.csv` (170 registros)
+- **Idioma**: Español
+- **Formato**: `image, description, tags`
+- **Imágenes**: Rutas locales a imágenes sin fondo
+- **Tags**: Columna adicional con estilos extraídos en formato `"Estilos: estilo1, estilo2"`
+- **Uso**: Versión más completa con tags preprocesados para entrenamiento
+
+## Estructura de Datos
+
+### Formato básico (sin tags)
+```csv
+image,description
+url_o_ruta,descripción detallada con información de estilos...
+```
+
+### Formato con tags (variante 1: sin prefijo)
+```csv
+image,description,tags
+ruta_local,descripción...,"boho chic, coquette"
+```
+Usado en: `preferencias-nobg3.csv`, `preferencias-nobg4.csv`
+
+### Formato con tags (variante 2: con prefijo)
+```csv
+image,description,tags
+ruta_local,descripción...,"Estilos: boho chic, coquette"
+```
+Usado en: `preferencias-v5.csv`
+
+## Uso
+
+Estos datasets se utilizan para entrenar modelos de clasificación de estilos de moda, permitiendo identificar qué estilos están presentes en una prenda a partir de su imagen y descripción. A diferencia de los datasets de roturas (que clasifican tipos de jeans con/sin roturas), estos datasets se enfocan en la clasificación de estilos de moda.
+
