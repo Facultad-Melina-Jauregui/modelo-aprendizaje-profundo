@@ -1,0 +1,51 @@
+# Fashion Data Indian
+
+Dataset de moda de India obtenido de AJIO (plataforma de e-commerce india).
+
+## Descripción General
+
+Este dataset contiene aproximadamente **198,000 registros** de productos de moda de India, incluyendo prendas tradicionales como sarees, kurtas, y otras prendas típicas del mercado indio, así como productos de moda occidental disponibles en ese mercado.
+
+## Estructura del Dataset
+
+El archivo `fashion_data.csv` contiene las siguientes columnas:
+- `uuid`: Identificador único del producto
+- `url`: URL del producto en AJIO
+- `title`: Título del producto
+- `brand`: Marca del producto
+- `image`: URL de la imagen del producto
+- `selling_price`: Precio de venta
+- `product_details`: Detalles del producto (categoría y especificaciones)
+
+## Procesamiento
+
+El script `processFashionData.py` procesa el archivo original comprimido (`Fashion Data.csv.zip`) y genera el dataset procesado:
+- Extrae el CSV del archivo ZIP
+- Elimina columnas no necesarias (date_stored, star_rating, meta_data, size, mrp, product_code, competitor, set_product_price, colour)
+- Procesa las imágenes (selecciona la primera imagen si hay múltiples)
+- Combina categoría y detalles del producto en `product_details`
+- Limpia y guarda el resultado en `fashion_data.csv`
+
+## Estado y Uso
+
+**Este dataset NO se utilizó para el entrenamiento del modelo final.**
+
+### Razón de exclusión
+
+El dataset fue descartado porque la moda india es **muy diferente** a la moda de Argentina, occidente y USA. Las prendas incluyen:
+- Prendas tradicionales indias (sarees, kurtas, salwar kameez) que no son comunes en el mercado occidental
+- Estilos, cortes y detalles específicos del mercado indio
+- Contexto cultural y de uso diferente
+
+Utilizar este dataset habría introducido sesgos y características no relevantes para el modelo destinado a clasificar moda occidental/argentina.
+
+### Propósito original
+
+Este dataset se utilizó únicamente para **experimentación y aprendizaje** sobre cómo estructurar y procesar datasets de imagen-descripción de ropa. Fue útil para:
+- Entender el formato de datos de e-commerce de moda
+- Desarrollar scripts de procesamiento y limpieza de datos
+- Experimentar con la estructura de datasets imagen-descripción
+- Aprender sobre el preprocesamiento necesario antes de trabajar con los datasets finales
+
+En resumen, este dataset sirvió como referencia técnica pero no como fuente de datos para el modelo final debido a diferencias culturales y de mercado demasiado significativas.
+
