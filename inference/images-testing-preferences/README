@@ -1,0 +1,44 @@
+# Imágenes de Testing Preferencias/Estilos
+
+Carpeta con imágenes de prueba para evaluar la clasificación de preferencias y estilos de moda en modelos fine-tuneados.
+
+## Descripción General
+
+Esta carpeta contiene 72 imágenes de diferentes prendas y outfits utilizadas para probar la capacidad del modelo de clasificar y buscar prendas según estilos de moda (preferencias). Las imágenes cubren múltiples estilos y tipos de prendas, incluyendo combinaciones de estilos con tipos específicos de prendas.
+
+## Estilos y Prendas Incluidas
+
+Las imágenes incluyen las siguientes categorías:
+
+- **Boho chic**: Polleras, pantalones y outfits completos en estilo bohemio
+- **Coquette**: Outfits, polleras y remeras en estilo femenino y romántico
+- **Old money**: Pantalones y remeras en estilo clásico y sofisticado, a menudo combinado con minimalista
+- **Minimalista**: Outfits y pantalones en estilo simple y elegante, a veces combinado con old money
+- **Streetwear**: Jeans, shorts y outfits en estilo urbano y casual
+- **Night out**: Outfits y tops para ocasiones nocturnas
+- **Deportivo (sport)**: Shorts y tops en estilo deportivo
+
+## Tipos de Prendas
+
+- **Pantalones**: Varios estilos (boho chic, old money, minimalista)
+- **Polleras**: En diferentes estilos (boho chic, coquette, jean-minimalista, jean-streetwear)
+- **Shorts**: En estilos streetwear y deportivo
+- **Remeras/Tops**: En estilos coquette, old money, y deportivo
+- **Jeans**: En estilos streetwear, minimalista, boho chic y old money-minimalista
+- **Outfits completos**: Combinaciones de prendas en diferentes estilos
+
+## Uso
+
+Esta carpeta se utiliza en el script `test.py` mediante la función `run_tests_preferences()`, que ejecuta pruebas de clasificación para:
+
+- Estilos de moda (boho chic, old money, coquette, minimalista, streetwear, night out)
+- Combinaciones de estilos con tipos de prendas (ej: "pantalon boho chic", "pollera boho chic")
+- Diferentes tipos de prendas básicas (pantalón, pollera, short)
+
+El script procesa estas imágenes removiendo fondos (guardando resultados en `images-testing-preferences-nobg/`) y evalúa la capacidad del modelo para encontrar las imágenes correctas basándose en descripciones de texto en español que combinan estilos y tipos de prendas.
+
+## Nota
+
+Las imágenes se nombran descriptivamente indicando el estilo y tipo de prenda (ej: `bohochic-pantalon.jpg`, `oldmoney-minimalista-pantalon1.jpg`, `jean-streetwear.jpg`) para facilitar la identificación y evaluación manual de los resultados de clasificación.
+
+
