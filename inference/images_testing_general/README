@@ -1,0 +1,32 @@
+# Imágenes de Testing General
+
+Carpeta con imágenes de prueba para evaluar la clasificación de prendas generales en modelos fine-tuneados.
+
+## Descripción General
+
+Esta carpeta contiene 29 imágenes de diferentes tipos de prendas de vestir utilizadas para probar la capacidad del modelo de clasificar y buscar prendas generales. Las imágenes cubren múltiples categorías de ropa con variaciones en color, estilo y detalles.
+
+## Tipos de Prendas Incluidas
+
+Las imágenes incluyen las siguientes categorías de prendas:
+
+- **Camisas**: Celeste y rosa, con variaciones de manga larga y manga corta
+- **Camperas**: Beige, de cuero (negra y roja), y de jean (azul, celeste, negra)
+- **Remeras**: Azul, celeste (con variaciones) y rosa
+- **Sweaters**: Rosa (múltiples variaciones) y verde
+- **Vestidos**: Celeste, rojo y verde, en versiones lisas y estampadas
+
+## Uso
+
+Esta carpeta se utiliza en el script `test.py` mediante la función `run_tests_general()`, que ejecuta pruebas de clasificación para:
+
+- Tipos de prendas básicas (remera, sweater, vestido, campera, camisa)
+- Variaciones por color (celeste, rosa, rojo, verde, etc.)
+- Detalles específicos (manga larga/corta, estampado/liso, tipo de material)
+
+El script procesa estas imágenes removiendo fondos (guardando resultados en `images-testing-general-nobg/`) y evalúa la capacidad del modelo para encontrar las imágenes correctas basándose en descripciones de texto en español.
+
+## Nota
+
+Las imágenes se nombran descriptivamente (ej: `remera-celeste1.jpg`, `vestido-rojo-liso1.jpg`) para facilitar la identificación y evaluación manual de los resultados de clasificación.
+

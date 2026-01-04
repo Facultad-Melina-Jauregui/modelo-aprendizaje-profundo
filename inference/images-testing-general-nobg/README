@@ -1,0 +1,29 @@
+# Imágenes de Testing General (Sin Fondo)
+
+Carpeta con imágenes de prueba procesadas (fondo removido) para evaluar la clasificación de prendas generales.
+
+## Descripción General
+
+Esta carpeta contiene las versiones procesadas de las imágenes de `images_testing_general/` con el fondo removido. Todas las imágenes están en formato PNG y han sido procesadas usando la biblioteca `rembg` para eliminar los fondos, lo que mejora el enfoque del modelo en las prendas durante las pruebas.
+
+## Contenido
+
+Esta carpeta contiene las mismas 29 imágenes que `images_testing_general/`, pero:
+- **Formato**: Todas en formato PNG (procesadas)
+- **Procesamiento**: Fondo removido usando `rembg`
+- **Nombres**: Mismo sistema de nombres que las imágenes originales
+
+## Uso
+
+Esta carpeta se genera automáticamente cuando se ejecuta el script `test.py` con la función `run_tests_general()`. El script:
+
+1. Procesa las imágenes de `images_testing_general/` removiendo el fondo
+2. Guarda las imágenes procesadas en esta carpeta (`images-testing-general-nobg/`)
+3. Utiliza estas imágenes procesadas para las pruebas de clasificación
+
+Las imágenes sin fondo mejoran la precisión del modelo al eliminar ruido de fondo y enfocar la atención en las características de las prendas.
+
+## Nota
+
+Esta carpeta puede regenerarse eliminando su contenido y ejecutando nuevamente el script de pruebas. Las imágenes procesadas son derivadas de las imágenes originales en `images_testing_general/`.
+
