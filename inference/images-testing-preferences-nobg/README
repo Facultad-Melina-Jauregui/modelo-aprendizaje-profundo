@@ -1,0 +1,29 @@
+# Imágenes de Testing Preferencias/Estilos (Sin Fondo)
+
+Carpeta con imágenes de prueba procesadas (fondo removido) para evaluar la clasificación de preferencias y estilos de moda.
+
+## Descripción General
+
+Esta carpeta contiene las versiones procesadas de las imágenes de `images-testing-preferences/` con el fondo removido. Todas las imágenes están en formato PNG y han sido procesadas usando la biblioteca `rembg` para eliminar los fondos, lo que mejora el enfoque del modelo en las prendas durante las pruebas.
+
+## Contenido
+
+Esta carpeta contiene las mismas 72 imágenes que `images-testing-preferences/`, pero:
+- **Formato**: Todas en formato PNG (procesadas)
+- **Procesamiento**: Fondo removido usando `rembg`
+- **Nombres**: Mismo sistema de nombres que las imágenes originales
+
+## Uso
+
+Esta carpeta se genera automáticamente cuando se ejecuta el script `test.py` con la función `run_tests_preferences()`. El script:
+
+1. Procesa las imágenes de `images-testing-preferences/` removiendo el fondo
+2. Guarda las imágenes procesadas en esta carpeta (`images-testing-preferences-nobg/`)
+3. Utiliza estas imágenes procesadas para las pruebas de clasificación de estilos y preferencias
+
+Las imágenes sin fondo mejoran la precisión del modelo al eliminar ruido de fondo y enfocar la atención en las características de las prendas y su estilo.
+
+## Nota
+
+Esta carpeta puede regenerarse eliminando su contenido y ejecutando nuevamente el script de pruebas. Las imágenes procesadas son derivadas de las imágenes originales en `images-testing-preferences/`.
+
