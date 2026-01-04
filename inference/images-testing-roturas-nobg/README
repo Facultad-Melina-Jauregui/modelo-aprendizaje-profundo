@@ -1,0 +1,23 @@
+# Imágenes de Testing de Roturas (Sin Fondo) (images-testing-roturas-nobg)
+
+Esta carpeta contiene las versiones procesadas (sin fondo) de las imágenes de la carpeta `images-testing-roturas/`.
+
+## Contenido
+
+- **Cantidad**: 48 imágenes.
+- **Formato**: Todas las imágenes están en formato PNG.
+- **Procesamiento**: El fondo de cada imagen ha sido removido utilizando la librería `rembg`.
+
+## Uso
+
+Esta carpeta se genera automáticamente cuando se ejecuta el script `test.py` con la función `run_tests_roturas()`. Las imágenes aquí almacenadas son las que se utilizan para las pruebas de clasificación de roturas y tipos de jeans, ya que los modelos suelen rendir mejor con imágenes sin fondo.
+
+Las pruebas evalúan:
+- La capacidad del modelo para identificar si un jean tiene roturas o es liso.
+- La clasificación del tipo de corte (wide leg, skinny, recto, palazzo, cargo, mom, acampanado/flared).
+- La distinción entre diferentes variaciones de roturas (simétricas, desmechadas).
+
+## Nota
+
+Estas imágenes son derivadas de las originales en `images-testing-roturas/` y pueden ser regeneradas si se eliminan y se vuelve a ejecutar el script de testing.
+
