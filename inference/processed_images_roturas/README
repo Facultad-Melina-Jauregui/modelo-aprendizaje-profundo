@@ -1,0 +1,42 @@
+# Imágenes Procesadas de Roturas en Español (processed_images_roturas)
+
+Esta carpeta contiene 337 imágenes de jeans procesadas (con fondo removido) utilizadas en los datasets de roturas en español y en los datasets unificados.
+
+## Descripción General
+
+Las imágenes en esta carpeta son versiones procesadas de imágenes originales de jeans descritas en español. Todas las imágenes han sido preprocesadas removiendo el fondo utilizando la librería `rembg`, y están guardadas en formato PNG con transparencia.
+
+## Contenido
+
+- **Cantidad**: 337 imágenes.
+- **Formato**: Todas las imágenes están en formato PNG.
+- **Procesamiento**: El fondo de cada imagen ha sido removido utilizando la librería `rembg`.
+- **Nomenclatura**: Los archivos tienen nombres basados en hash (ej: `76cc29d533e6fdd8e8ea03ba48408569_nobg.png`).
+
+## Uso
+
+Estas imágenes se utilizan en varios datasets:
+
+### Datasets de Roturas en Español (carpeta `datasets/roturas-español/`):
+- `con-sin-roturas-v4-nbg.csv`: Versión con imágenes preprocesadas sin fondo
+- `con-sin-roturas-v5.csv`: Versión con tags estructurados y imágenes procesadas
+
+### Datasets Unificados (carpeta `datasets/unificado/`):
+- `roturas-preferencias.csv` y versiones posteriores (v2, v3, v4, v5, v6): Estas versiones combinan datos de roturas y preferencias. Las imágenes de roturas referencian esta carpeta, mientras que las de preferencias referencian `processed_preferences_images/`.
+
+Las imágenes corresponden a jeans con y sin roturas, de diferentes cortes (recto, palazzo, skinny, wide leg, cargo, mom, acampanado/flared), y fueron originalmente descargadas desde URLs de Pinterest.
+
+## Generación
+
+Las imágenes se generaron procesando los datasets originales de roturas en español (que contenían URLs de Pinterest) mediante scripts de procesamiento que:
+1. Descargaron las imágenes desde las URLs.
+2. Removieron el fondo de cada imagen usando `rembg`.
+3. Guardaron las imágenes procesadas en esta carpeta.
+4. Actualizaron los CSVs con las rutas locales a las imágenes procesadas.
+
+El script `rm_bg_dataset.py` puede utilizarse para generar estas imágenes. Este script determina automáticamente el directorio de destino basándose en los tags: si los tags no comienzan con "Estilos:", las imágenes se guardan en `processed_images_roturas/`.
+
+## Nota
+
+Estas imágenes están optimizadas para el entrenamiento de modelos de visión-lenguaje, ya que los modelos suelen rendir mejor con imágenes sin fondo que permiten enfocarse en las características principales de las prendas (cortes, roturas, detalles) sin distracciones del entorno.
+
