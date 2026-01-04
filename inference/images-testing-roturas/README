@@ -1,0 +1,32 @@
+# Imágenes de Testing de Roturas (images-testing-roturas)
+
+Esta carpeta contiene 48 imágenes de diferentes tipos de jeans utilizadas para probar la capacidad del modelo de clasificar cortes de jeans y detectar la presencia de roturas. Las imágenes cubren múltiples tipos de cortes con variaciones en presencia de roturas, colores y estilos.
+
+## Tipos de Jeans Incluidos
+
+- **Cargo**: Jeans con bolsillos tipo cargo (azul, gris, vintage).
+- **Flared**: Jeans acampanados (negro, varios estilos).
+- **Mom**: Jeans estilo mom (gris, varios estilos, algunos con roturas desmechadas).
+- **Palazzo**: Jeans tipo palazzo (varios estilos y colores).
+- **Recto**: Jeans rectos (varios estilos, algunos con roturas simétricas o desmechadas).
+- **Skinny**: Jeans ajustados (oscuro, rojo, varios estilos, algunos con roturas simétricas o desmechadas).
+- **Wide**: Jeans wide leg (varios estilos, algunos con roturas simétricas y desmechadas, algunos con ondas).
+
+## Variaciones de Roturas
+
+Las imágenes incluyen diferentes tipos de roturas:
+- **Sin roturas**: Jeans lisos sin roturas.
+- **Roturas simétricas**: Roturas distribuidas de manera simétrica en las piernas.
+- **Roturas desmechadas**: Roturas con hilos desmechados, más desgastadas.
+
+## Uso
+
+Estas imágenes se utilizan en el script `test.py` a través de la función `run_tests_roturas()`. Las pruebas evalúan la capacidad del modelo para:
+- Identificar si un jean tiene roturas o es liso.
+- Clasificar el tipo de corte (wide leg, skinny, recto, palazzo, cargo, mom, acampanado/flared).
+- Distinguir entre diferentes variaciones de roturas (simétricas, desmechadas).
+
+## Nota
+
+Las imágenes se nombran descriptivamente (ej: `recto-rotura-simetrica1.jpg`, `wide-rotura-simetrica-desmechada1.png`) para facilitar la identificación y evaluación manual de los resultados de clasificación. Algunas imágenes están en formato JPG y otras en PNG.
+
