@@ -1,0 +1,39 @@
+# Imágenes Procesadas en Inglés (processed_images_english)
+
+Esta carpeta contiene 331 imágenes de jeans procesadas (con fondo removido) utilizadas en los datasets de roturas en inglés.
+
+## Descripción General
+
+Las imágenes en esta carpeta son versiones procesadas de imágenes originales de jeans descritas en inglés. Todas las imágenes han sido preprocesadas removiendo el fondo utilizando la librería `rembg`, y están guardadas en formato PNG con transparencia.
+
+## Contenido
+
+- **Cantidad**: 331 imágenes.
+- **Formato**: Todas las imágenes están en formato PNG.
+- **Procesamiento**: El fondo de cada imagen ha sido removido utilizando la librería `rembg`.
+- **Nomenclatura**: Los archivos tienen nombres basados en hash (ej: `76cc29d533e6fdd8e8ea03ba48408569_nobg_nobg.png`).
+
+## Uso
+
+Estas imágenes se utilizan en los datasets de roturas en inglés (carpeta `datasets/roturas-english/`), específicamente en las versiones:
+- `con-sin-roturas-english-v2.csv`
+- `con-sin-roturas-english-v2.1.csv`
+- `con-sin-roturas-english-v3.csv`
+- `con-sin-roturas-english-v4.csv`
+- `con-sin-roturas-english-v5.csv`
+- `con-sin-roturas-english-v6.csv`
+
+Todas estas versiones del dataset referencian las imágenes locales de esta carpeta en lugar de URLs externas. Las imágenes corresponden a jeans con y sin roturas, de diferentes cortes (straight, palazzo, skinny, wide leg, cargo, mom, flared), y fueron originalmente descargadas desde URLs de Pinterest.
+
+## Generación
+
+Las imágenes se generaron procesando el dataset original `con-sin-roturas-english.csv` (que contenía URLs de Pinterest) mediante scripts de procesamiento que:
+1. Descargaron las imágenes desde las URLs.
+2. Removieron el fondo de cada imagen usando `rembg`.
+3. Guardaron las imágenes procesadas en esta carpeta.
+4. Actualizaron los CSVs con las rutas locales a las imágenes procesadas.
+
+## Nota
+
+Estas imágenes están optimizadas para el entrenamiento de modelos de visión-lenguaje, ya que los modelos suelen rendir mejor con imágenes sin fondo que permiten enfocarse en las características principales de las prendas (cortes, roturas, detalles) sin distracciones del entorno.
+
