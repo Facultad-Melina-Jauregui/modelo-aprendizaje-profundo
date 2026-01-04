@@ -1,0 +1,45 @@
+# Imágenes Procesadas de Preferencias de Estilo (processed_preferences_images)
+
+Esta carpeta contiene 324 imágenes de prendas procesadas (con fondo removido) utilizadas en los datasets de preferencias de estilo y en los datasets unificados.
+
+## Descripción General
+
+Las imágenes en esta carpeta son versiones procesadas de imágenes originales de prendas clasificadas por estilos de moda, descritas en español. Todas las imágenes han sido preprocesadas removiendo el fondo utilizando la librería `rembg`, y están guardadas en formato PNG con transparencia.
+
+## Contenido
+
+- **Cantidad**: 324 imágenes.
+- **Formato**: Todas las imágenes están en formato PNG.
+- **Procesamiento**: El fondo de cada imagen ha sido removido utilizando la librería `rembg`.
+- **Nomenclatura**: Los archivos tienen nombres basados en hash (ej: `000d0ea9dcbb00260bc69fef8d0a1c30_nobg.png`).
+
+## Uso
+
+Estas imágenes se utilizan en varios datasets:
+
+### Datasets de Preferencias de Estilo (carpeta `datasets/preferencias/`):
+- `preferencias-nobg.csv`: Versión con imágenes preprocesadas sin fondo
+- `preferencias-nobg2.csv`: Versión intermedia del dataset
+- `preferencias-nobg3.csv`: Versión con tags en formato simple
+- `preferencias-nobg4.csv`: Versión ampliada con tags en formato simple
+- `preferencias-v5.csv`: Versión con tags estructurados (formato "Estilos: estilo1, estilo2")
+
+### Datasets Unificados (carpeta `datasets/unificado/`):
+- `roturas-preferencias.csv` y versiones posteriores (v2, v3, v4, v5, v6): Estas versiones combinan datos de roturas y preferencias. Las imágenes de preferencias referencian esta carpeta, mientras que las de roturas referencian `processed_images_roturas/`.
+
+Las imágenes corresponden a prendas de diferentes estilos de moda (boho chic, coquette, minimalista, old money, streetwear, deportivo, salir de noche) y fueron originalmente descargadas desde URLs de Pinterest.
+
+## Generación
+
+Las imágenes se generaron procesando los datasets originales de preferencias (que contenían URLs de Pinterest) mediante scripts de procesamiento que:
+1. Descargaron las imágenes desde las URLs.
+2. Removieron el fondo de cada imagen usando `rembg`.
+3. Guardaron las imágenes procesadas en esta carpeta.
+4. Actualizaron los CSVs con las rutas locales a las imágenes procesadas.
+
+El script `rm_bg_dataset.py` puede utilizarse para generar estas imágenes. Este script determina automáticamente el directorio de destino basándose en los tags: si los tags comienzan con "Estilos:", las imágenes se guardan en `processed_preferences_images/`.
+
+## Nota
+
+Estas imágenes están optimizadas para el entrenamiento de modelos de visión-lenguaje, ya que los modelos suelen rendir mejor con imágenes sin fondo que permiten enfocarse en las características principales de las prendas (estilos, detalles, texturas) sin distracciones del entorno.
+
