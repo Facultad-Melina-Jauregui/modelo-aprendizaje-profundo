@@ -1,0 +1,17 @@
+# Resultados de Preferencias de Estilo
+
+Esta carpeta contiene los resultados de pruebas de modelos fine-tuneados para clasificación de preferencias de estilo de moda.
+
+## Contenido
+
+Los archivos `.txt` contienen resultados de evaluación de diferentes modelos (ej: `melijauregui-preferencias1`, `melijauregui-preferencias2`, `melijauregui-preferencias3`) en tareas de clasificación de estilos de moda (boho chic, coquette, minimalista, old money, streetwear, etc.).
+
+Cada archivo incluye:
+- Configuración del modelo y parámetros de fine-tuning
+- Resultados de similitud entre descripciones de texto e imágenes
+- Métricas de clasificación y evaluación del rendimiento
+
+## Nota
+
+Estos resultados corresponden a pruebas realizadas con imágenes **con fondo** (versión original de las imágenes de testing).
+

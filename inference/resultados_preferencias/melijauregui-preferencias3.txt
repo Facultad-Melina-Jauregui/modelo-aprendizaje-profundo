@@ -1,0 +1,231 @@
+Model name: melijauregui/preferencias3 (con tags)
+fine_tune(csv_path="datasets/preferencias-nobg3.csv", original_model_name="Marqo/marqo-fashionSigLIP", model_name="Marqo/marqo-fashionSigLIP",
+              model_name_to_push="melijauregui/preferencias3", data_aug=False,
+              loss_func=contrastive_loss_InfoNCE, batch_size=8, epochs=32, lr=2e-5,
+              n_layers=2)
+
+Descripcion: jean boho chic
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean boho chic'
+
+   1. images-testing-preferences\jean-bohochic3.jpg → Similitud: 0.547
+   2. images-testing-preferences\jean-bohochic2.jpg → Similitud: 0.547
+   3. images-testing-preferences\jean-bohochic.jpg → Similitud: 0.541
+   4. images-testing-preferences\jean-oldmoney-minimalista.jpg → Similitud: 0.535
+   5. images-testing-preferences\jean-oldmoney-minimalista2.jpg → Similitud: 0.532
+   6. images-testing-preferences\pollera-jean-larga-minimalista.jpg → Similitud: 0.529
+   7. images-testing-preferences\jean-streetwear-minimalista.jpg → Similitud: 0.526
+   8. images-testing-preferences\pollera-jean-streetwear-minimalista.jpg → Similitud: 0.516
+   9. images-testing-preferences\pollera-coquette2.jpg → Similitud: 0.496
+   10. images-testing-preferences\short-rosa-sport.jpg → Similitud: 0.487
+   11. images-testing-preferences\pollera-coquette.jpg → Similitud: 0.486
+   12. images-testing-preferences\top-sport2.jpg → Similitud: 0.485
+   13. images-testing-preferences\short-negro-sport.jpg → Similitud: 0.482
+   14. images-testing-preferences\top-sport.jpg → Similitud: 0.481
+   15. images-testing-preferences\short-gris-sport.jpg → Similitud: 0.479
+mayor red flag es jean-oldmoney-minimalista.jpg con 0.5351523160934448 de probabilidad
+[bohochic] jean-bohochic.jpg: 0.541 > 0.535? ✅
+[bohochic] jean-bohochic2.jpg: 0.547 > 0.535? ✅
+[bohochic] jean-bohochic3.jpg: 0.547 > 0.535? ✅
+
+🎯 Porcentaje de acierto: 100.00% (3/3)
+
+Probabilidad más baja: 0.541
+
+Imágenes con probabilidad mayor al mínimo:
+
+
+
+Descripcion: jean old money
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean old money'
+
+   1. images-testing-preferences\jean-oldmoney-minimalista.jpg → Similitud: 0.543
+   2. images-testing-preferences\jean-oldmoney-minimalista2.jpg → Similitud: 0.542
+   3. images-testing-preferences\jean-streetwear-minimalista.jpg → Similitud: 0.539
+   4. images-testing-preferences\jean-bohochic.jpg → Similitud: 0.537
+   5. images-testing-preferences\pollera-jean-larga-minimalista.jpg → Similitud: 0.534
+   6. images-testing-preferences\jean-bohochic2.jpg → Similitud: 0.528
+   7. images-testing-preferences\jean-bohochic3.jpg → Similitud: 0.527
+   8. images-testing-preferences\pollera-jean-streetwear-minimalista.jpg → Similitud: 0.524
+   9. images-testing-preferences\pollera-coquette.jpg → Similitud: 0.493
+   10. images-testing-preferences\short-negro-sport.jpg → Similitud: 0.490
+   11. images-testing-preferences\top-sport.jpg → Similitud: 0.489
+   12. images-testing-preferences\short-rosa-sport.jpg → Similitud: 0.487
+   13. images-testing-preferences\top-sport2.jpg → Similitud: 0.487
+   14. images-testing-preferences\short-gris-sport.jpg → Similitud: 0.486
+   15. images-testing-preferences\pollera-coquette2.jpg → Similitud: 0.483
+mayor red flag es jean-streetwear-minimalista.jpg con 0.5385034084320068 de probabilidad
+[oldmoney] jean-oldmoney-minimalista.jpg: 0.543 > 0.539? ✅
+[oldmoney] jean-oldmoney-minimalista2.jpg: 0.542 > 0.539? ✅
+
+🎯 Porcentaje de acierto: 100.00% (2/2)
+
+Probabilidad más baja: 0.542
+
+Imágenes con probabilidad mayor al mínimo:
+
+
+
+Descripcion: short
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'short'
+
+   1. images-testing-preferences\short-negro-sport.jpg → Similitud: 0.531
+   2. images-testing-preferences\short-rosa-sport.jpg → Similitud: 0.528
+   3. images-testing-preferences\short-gris-sport.jpg → Similitud: 0.527
+   4. images-testing-preferences\pollera-jean-streetwear-minimalista.jpg → Similitud: 0.523
+   5. images-testing-preferences\pollera-coquette2.jpg → Similitud: 0.515
+   6. images-testing-preferences\jean-oldmoney-minimalista2.jpg → Similitud: 0.514
+   7. images-testing-preferences\pollera-coquette.jpg → Similitud: 0.512
+   8. images-testing-preferences\jean-bohochic3.jpg → Similitud: 0.507
+   9. images-testing-preferences\pollera-jean-larga-minimalista.jpg → Similitud: 0.504
+   10. images-testing-preferences\jean-bohochic.jpg → Similitud: 0.503
+   11. images-testing-preferences\jean-streetwear-minimalista.jpg → Similitud: 0.503
+   12. images-testing-preferences\jean-bohochic2.jpg → Similitud: 0.503
+   13. images-testing-preferences\top-sport.jpg → Similitud: 0.501
+   14. images-testing-preferences\jean-oldmoney-minimalista.jpg → Similitud: 0.500
+   15. images-testing-preferences\top-sport2.jpg → Similitud: 0.499
+mayor red flag es pollera-jean-streetwear-minimalista.jpg con 0.5229875445365906 de probabilidad
+[short] short-gris-sport.jpg: 0.527 > 0.523? ✅
+[short] short-negro-sport.jpg: 0.531 > 0.523? ✅
+[short] short-rosa-sport.jpg: 0.528 > 0.523? ✅
+
+🎯 Porcentaje de acierto: 100.00% (3/3)
+
+Probabilidad más baja: 0.527
+
+Imágenes con probabilidad mayor al mínimo:
+
+
+
+Descripcion: pollera
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'pollera'
+
+   1. images-testing-preferences\pollera-coquette2.jpg → Similitud: 0.520
+   2. images-testing-preferences\pollera-jean-larga-minimalista.jpg → Similitud: 0.514
+   3. images-testing-preferences\pollera-coquette.jpg → Similitud: 0.513
+   4. images-testing-preferences\pollera-jean-streetwear-minimalista.jpg → Similitud: 0.510
+   5. images-testing-preferences\jean-oldmoney-minimalista.jpg → Similitud: 0.509
+   6. images-testing-preferences\jean-bohochic3.jpg → Similitud: 0.508
+   7. images-testing-preferences\jean-oldmoney-minimalista2.jpg → Similitud: 0.507
+   8. images-testing-preferences\short-rosa-sport.jpg → Similitud: 0.505
+   9. images-testing-preferences\jean-bohochic2.jpg → Similitud: 0.504
+   10. images-testing-preferences\jean-bohochic.jpg → Similitud: 0.501
+   11. images-testing-preferences\short-gris-sport.jpg → Similitud: 0.500
+   12. images-testing-preferences\jean-streetwear-minimalista.jpg → Similitud: 0.497
+   13. images-testing-preferences\top-sport.jpg → Similitud: 0.493
+   14. images-testing-preferences\short-negro-sport.jpg → Similitud: 0.492
+   15. images-testing-preferences\top-sport2.jpg → Similitud: 0.491
+mayor red flag es jean-oldmoney-minimalista.jpg con 0.5090012550354004 de probabilidad
+[pollera] pollera-coquette.jpg: 0.513 > 0.509? ✅
+[pollera] pollera-coquette2.jpg: 0.520 > 0.509? ✅
+[pollera] pollera-jean-larga-minimalista.jpg: 0.514 > 0.509? ✅
+[pollera] pollera-jean-streetwear-minimalista.jpg: 0.510 > 0.509? ✅
+
+🎯 Porcentaje de acierto: 100.00% (4/4)
+
+Probabilidad más baja: 0.510
+
+Imágenes con probabilidad mayor al mínimo:
+
+
+
+Descripcion: coquette
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'coquette'
+
+   1. images-testing-preferences\pollera-coquette.jpg → Similitud: 0.518
+   2. images-testing-preferences\pollera-coquette2.jpg → Similitud: 0.515
+   3. images-testing-preferences\pollera-jean-streetwear-minimalista.jpg → Similitud: 0.511
+   4. images-testing-preferences\jean-oldmoney-minimalista2.jpg → Similitud: 0.509
+   5. images-testing-preferences\short-negro-sport.jpg → Similitud: 0.508
+   6. images-testing-preferences\short-rosa-sport.jpg → Similitud: 0.508
+   7. images-testing-preferences\pollera-jean-larga-minimalista.jpg → Similitud: 0.506
+   8. images-testing-preferences\short-gris-sport.jpg → Similitud: 0.505
+   9. images-testing-preferences\jean-bohochic.jpg → Similitud: 0.505
+   10. images-testing-preferences\jean-streetwear-minimalista.jpg → Similitud: 0.503
+   11. images-testing-preferences\jean-bohochic2.jpg → Similitud: 0.503
+   12. images-testing-preferences\jean-bohochic3.jpg → Similitud: 0.502
+   13. images-testing-preferences\jean-oldmoney-minimalista.jpg → Similitud: 0.501
+   14. images-testing-preferences\top-sport.jpg → Similitud: 0.500
+   15. images-testing-preferences\top-sport2.jpg → Similitud: 0.499
+mayor red flag es pollera-jean-streetwear-minimalista.jpg con 0.5113801956176758 de probabilidad
+[coquette] pollera-coquette.jpg: 0.518 > 0.511? ✅
+[coquette] pollera-coquette2.jpg: 0.515 > 0.511? ✅
+
+🎯 Porcentaje de acierto: 100.00% (2/2)
+
+Probabilidad más baja: 0.515
+
+Imágenes con probabilidad mayor al mínimo:
+
+
+
+Descripcion: minimalista
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'minimalista'
+
+   1. images-testing-preferences\pollera-jean-larga-minimalista.jpg → Similitud: 0.508
+   2. images-testing-preferences\jean-streetwear-minimalista.jpg → Similitud: 0.504
+   3. images-testing-preferences\jean-oldmoney-minimalista2.jpg → Similitud: 0.504
+   4. images-testing-preferences\pollera-jean-streetwear-minimalista.jpg → Similitud: 0.503
+   5. images-testing-preferences\jean-oldmoney-minimalista.jpg → Similitud: 0.503
+   6. images-testing-preferences\short-gris-sport.jpg → Similitud: 0.502
+   7. images-testing-preferences\jean-bohochic.jpg → Similitud: 0.502
+   8. images-testing-preferences\top-sport2.jpg → Similitud: 0.500
+   9. images-testing-preferences\top-sport.jpg → Similitud: 0.499
+   10. images-testing-preferences\short-rosa-sport.jpg → Similitud: 0.498
+   11. images-testing-preferences\pollera-coquette.jpg → Similitud: 0.496
+   12. images-testing-preferences\jean-bohochic3.jpg → Similitud: 0.495
+   13. images-testing-preferences\short-negro-sport.jpg → Similitud: 0.493
+   14. images-testing-preferences\jean-bohochic2.jpg → Similitud: 0.491
+   15. images-testing-preferences\pollera-coquette2.jpg → Similitud: 0.488
+mayor red flag es short-gris-sport.jpg con 0.5021387338638306 de probabilidad
+[minimalista] jean-oldmoney-minimalista.jpg: 0.503 > 0.502? ✅
+[minimalista] jean-oldmoney-minimalista2.jpg: 0.504 > 0.502? ✅
+[minimalista] jean-streetwear-minimalista.jpg: 0.504 > 0.502? ✅
+[minimalista] pollera-jean-larga-minimalista.jpg: 0.508 > 0.502? ✅
+[minimalista] pollera-jean-streetwear-minimalista.jpg: 0.503 > 0.502? ✅
+
+🎯 Porcentaje de acierto: 100.00% (5/5)
+
+Probabilidad más baja: 0.503
+
+Imágenes con probabilidad mayor al mínimo:
+
+
+
+Descripcion: streetwear
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'streetwear'
+
+   1. images-testing-preferences\jean-oldmoney-minimalista2.jpg → Similitud: 0.514
+   2. images-testing-preferences\jean-streetwear-minimalista.jpg → Similitud: 0.511
+   3. images-testing-preferences\jean-oldmoney-minimalista.jpg → Similitud: 0.511
+   4. images-testing-preferences\pollera-jean-larga-minimalista.jpg → Similitud: 0.508
+   5. images-testing-preferences\jean-bohochic3.jpg → Similitud: 0.508
+   6. images-testing-preferences\pollera-jean-streetwear-minimalista.jpg → Similitud: 0.507
+   7. images-testing-preferences\short-rosa-sport.jpg → Similitud: 0.504
+   8. images-testing-preferences\short-negro-sport.jpg → Similitud: 0.504
+   9. images-testing-preferences\jean-bohochic.jpg → Similitud: 0.503
+   10. images-testing-preferences\jean-bohochic2.jpg → Similitud: 0.501
+   11. images-testing-preferences\short-gris-sport.jpg → Similitud: 0.501
+   12. images-testing-preferences\top-sport.jpg → Similitud: 0.499
+   13. images-testing-preferences\top-sport2.jpg → Similitud: 0.499
+   14. images-testing-preferences\pollera-coquette.jpg → Similitud: 0.497
+   15. images-testing-preferences\pollera-coquette2.jpg → Similitud: 0.496
+mayor red flag es jean-oldmoney-minimalista2.jpg con 0.514244556427002 de probabilidad
+[streetwear] jean-streetwear-minimalista.jpg: 0.511 > 0.514? ❌
+[streetwear] pollera-jean-streetwear-minimalista.jpg: 0.507 > 0.514? ❌
+
+🎯 Porcentaje de acierto: 0.00% (0/2)
+
+Probabilidad más baja: 0.507
+
+Imágenes con probabilidad mayor al mínimo:
+Esta imagen sobrepaso al minimo: jean-bohochic3.jpg: 0.508
+Esta imagen sobrepaso al minimo: jean-oldmoney-minimalista.jpg: 0.511
+Esta imagen sobrepaso al minimo: jean-oldmoney-minimalista2.jpg: 0.514
+Esta imagen sobrepaso al minimo: pollera-jean-larga-minimalista.jpg: 0.508
