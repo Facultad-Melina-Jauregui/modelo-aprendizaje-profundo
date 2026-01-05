@@ -1,0 +1,19 @@
+# Resultados de Roturas y Tipos de Jeans
+
+Esta carpeta contiene los resultados de pruebas de modelos fine-tuneados para clasificación de jeans con y sin roturas, y diferentes tipos de cortes.
+
+## Contenido
+
+Los archivos `.txt` contienen resultados de evaluación de diferentes modelos (ej: `fashionSigLIP-roturas8`, `fashionSigLIP-roturas9`, etc.) en tareas de clasificación de:
+- Presencia o ausencia de roturas en jeans
+- Tipos de cortes (recto, skinny, wide leg, palazzo, cargo, mom, flared)
+
+Cada archivo incluye:
+- Configuración del modelo y parámetros de fine-tuning
+- Resultados de similitud entre descripciones de texto e imágenes
+- Métricas de clasificación y evaluación del rendimiento
+
+## Nota
+
+Esta carpeta contiene resultados de múltiples iteraciones de fine-tuning, permitiendo comparar el rendimiento de diferentes configuraciones de modelos.
+

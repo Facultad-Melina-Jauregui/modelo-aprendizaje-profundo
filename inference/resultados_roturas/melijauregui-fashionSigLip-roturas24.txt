@@ -1,0 +1,548 @@
+fine_tune(csv_path="datasets/con-sin-roturas-v4.csv", original_model_name="Marqo/marqo-fashionSigLIP", model_name="Marqo/marqo-fashionSigLIP",
+              model_name_to_push="melijauregui/fashionSigLIP-roturas24", data_aug=False,
+              loss_func=contrastive_loss_InfoNCE, batch_size=8, epochs=32, lr=2e-5,
+              n_layers=3)
+
+Descripcion: jean liso
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean liso'
+
+   1. images-testing\mom-grey1.jpg → Similitud: 0.526
+   2. images-testing\recto1.jpg → Similitud: 0.522
+   3. images-testing\wide1.png → Similitud: 0.521
+   4. images-testing\recto2.jpg → Similitud: 0.520
+   5. images-testing\wide-ondas1.jpg → Similitud: 0.519
+   6. images-testing\palazzo1.jpg → Similitud: 0.519
+   7. images-testing\skinny-oscuro2.jpg → Similitud: 0.518
+   8. images-testing\skinny1.jpg → Similitud: 0.517
+   9. images-testing\skinny-oscuro.jpg → Similitud: 0.517
+   10. images-testing\palazzo3.jpg → Similitud: 0.517
+   11. images-testing\mom5.jpg → Similitud: 0.517
+   12. images-testing\mom3.jpg → Similitud: 0.515
+   13. images-testing\mom1.jpg → Similitud: 0.514
+   14. images-testing\palazzo4.jpg → Similitud: 0.514
+   15. images-testing\jean-rojo.jpg → Similitud: 0.514
+   16. images-testing\cargo-wide-azul1.jpg → Similitud: 0.512
+   17. images-testing\mom4.jpg → Similitud: 0.511
+   18. images-testing\palazzo5.jpg → Similitud: 0.510
+   19. images-testing\flared2.jpg → Similitud: 0.509
+   20. images-testing\mom6.jpg → Similitud: 0.509
+   21. images-testing\flared-wide-negro1.jpg → Similitud: 0.509
+   22. images-testing\palazzo2.jpg → Similitud: 0.509
+   23. images-testing\cargo-grey1.jpg → Similitud: 0.509
+   24. images-testing\cargo-vintage2.jpg → Similitud: 0.509
+   25. images-testing\flared-vintage1.jpg → Similitud: 0.506
+   26. images-testing\flared1.jpg → Similitud: 0.505
+   27. images-testing\flared6.jpg → Similitud: 0.505
+   28. images-testing\cargo1.jpg → Similitud: 0.501
+   29. images-testing\cargo-vintage1.jpg → Similitud: 0.500
+   30. images-testing\flared5.jpg → Similitud: 0.500
+   31. images-testing\wide-rotura-simetrica-negro2.jpg → Similitud: 0.499
+   32. images-testing\recto-rotura-simetrica1.jpg → Similitud: 0.485
+   33. images-testing\wide-rotura-simetrica-negro1.jpg → Similitud: 0.484
+   34. images-testing\wide-rotura-simetrica1.png → Similitud: 0.482
+   35. images-testing\skinny-rotura-simetrica1.png → Similitud: 0.481
+   36. images-testing\skinny-rotura-simetrica3.jpg → Similitud: 0.480
+   37. images-testing\recto-rotura-desmechada2.jpg → Similitud: 0.479
+   38. images-testing\recto-rotura-desmechada1.png → Similitud: 0.477
+   39. images-testing\skinny-rotura-desmechada1.jpg → Similitud: 0.475
+   40. images-testing\skinny-rotura-simetrica2.jpg → Similitud: 0.475
+   41. images-testing\wide-rotura-simetrica-desmechada1.png → Similitud: 0.470
+mayor no rotura es wide-rotura-simetrica-negro2.jpg con 0.4989868700504303 de probabilidad
+[rotura] cargo-grey1.jpg: 0.509 > 0.499? ✅
+[rotura] cargo-vintage1.jpg: 0.500 > 0.499? ✅
+[rotura] cargo-vintage2.jpg: 0.509 > 0.499? ✅
+[rotura] cargo-wide-azul1.jpg: 0.512 > 0.499? ✅
+[rotura] cargo1.jpg: 0.501 > 0.499? ✅
+[rotura] flared-vintage1.jpg: 0.506 > 0.499? ✅
+[rotura] flared-wide-negro1.jpg: 0.509 > 0.499? ✅
+[rotura] flared1.jpg: 0.505 > 0.499? ✅
+[rotura] flared2.jpg: 0.509 > 0.499? ✅
+[rotura] flared5.jpg: 0.500 > 0.499? ✅
+[rotura] flared6.jpg: 0.505 > 0.499? ✅
+[rotura] jean-rojo.jpg: 0.514 > 0.499? ✅
+[rotura] mom-grey1.jpg: 0.526 > 0.499? ✅
+[rotura] mom1.jpg: 0.514 > 0.499? ✅
+[rotura] mom3.jpg: 0.515 > 0.499? ✅
+[rotura] mom4.jpg: 0.511 > 0.499? ✅
+[rotura] mom5.jpg: 0.517 > 0.499? ✅
+[rotura] mom6.jpg: 0.509 > 0.499? ✅
+[rotura] palazzo1.jpg: 0.519 > 0.499? ✅
+[rotura] palazzo2.jpg: 0.509 > 0.499? ✅
+[rotura] palazzo3.jpg: 0.517 > 0.499? ✅
+[rotura] palazzo4.jpg: 0.514 > 0.499? ✅
+[rotura] palazzo5.jpg: 0.510 > 0.499? ✅
+[rotura] recto1.jpg: 0.522 > 0.499? ✅
+[rotura] recto2.jpg: 0.520 > 0.499? ✅
+[rotura] skinny-oscuro.jpg: 0.517 > 0.499? ✅
+[rotura] skinny-oscuro2.jpg: 0.518 > 0.499? ✅
+[rotura] skinny1.jpg: 0.517 > 0.499? ✅
+[rotura] wide-ondas1.jpg: 0.519 > 0.499? ✅
+[rotura] wide1.png: 0.521 > 0.499? ✅
+
+🎯 Porcentaje de acierto: 100.00% (30/30)
+
+
+
+Descripcion: jean con roturas
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean con roturas'
+
+   1. images-testing\recto-rotura-desmechada2.jpg → Similitud: 0.519
+   2. images-testing\wide-rotura-simetrica-negro2.jpg → Similitud: 0.513
+   3. images-testing\skinny-rotura-simetrica3.jpg → Similitud: 0.513
+   4. images-testing\wide-rotura-simetrica1.png → Similitud: 0.513
+   5. images-testing\wide-rotura-simetrica-negro1.jpg → Similitud: 0.513
+   6. images-testing\recto-rotura-simetrica1.jpg → Similitud: 0.512
+   7. images-testing\skinny-rotura-desmechada1.jpg → Similitud: 0.510
+   8. images-testing\skinny-rotura-simetrica2.jpg → Similitud: 0.508
+   9. images-testing\skinny-rotura-simetrica1.png → Similitud: 0.507
+   10. images-testing\wide-rotura-simetrica-desmechada1.png → Similitud: 0.505
+   11. images-testing\recto-rotura-desmechada1.png → Similitud: 0.504
+   12. images-testing\mom-grey1.jpg → Similitud: 0.500
+   13. images-testing\skinny-oscuro.jpg → Similitud: 0.499
+   14. images-testing\skinny-oscuro2.jpg → Similitud: 0.498
+   15. images-testing\jean-rojo.jpg → Similitud: 0.497
+   16. images-testing\skinny1.jpg → Similitud: 0.496
+   17. images-testing\cargo-vintage1.jpg → Similitud: 0.495
+   18. images-testing\mom3.jpg → Similitud: 0.494
+   19. images-testing\palazzo1.jpg → Similitud: 0.494
+   20. images-testing\cargo-vintage2.jpg → Similitud: 0.494
+   21. images-testing\recto2.jpg → Similitud: 0.494
+   22. images-testing\recto1.jpg → Similitud: 0.493
+   23. images-testing\wide-ondas1.jpg → Similitud: 0.493
+   24. images-testing\mom1.jpg → Similitud: 0.493
+   25. images-testing\cargo-grey1.jpg → Similitud: 0.492
+   26. images-testing\mom5.jpg → Similitud: 0.492
+   27. images-testing\palazzo4.jpg → Similitud: 0.491
+   28. images-testing\mom6.jpg → Similitud: 0.491
+   29. images-testing\mom4.jpg → Similitud: 0.490
+   30. images-testing\cargo-wide-azul1.jpg → Similitud: 0.490
+   31. images-testing\palazzo3.jpg → Similitud: 0.490
+   32. images-testing\wide1.png → Similitud: 0.489
+   33. images-testing\flared-wide-negro1.jpg → Similitud: 0.487
+   34. images-testing\flared-vintage1.jpg → Similitud: 0.487
+   35. images-testing\palazzo2.jpg → Similitud: 0.487
+   36. images-testing\flared2.jpg → Similitud: 0.486
+   37. images-testing\flared1.jpg → Similitud: 0.485
+   38. images-testing\flared6.jpg → Similitud: 0.485
+   39. images-testing\cargo1.jpg → Similitud: 0.485
+   40. images-testing\palazzo5.jpg → Similitud: 0.484
+   41. images-testing\flared5.jpg → Similitud: 0.480
+mayor no rotura es mom-grey1.jpg con 0.5001575350761414 de probabilidad
+[rotura] recto-rotura-desmechada1.png: 0.504 > 0.500? ✅
+[rotura] recto-rotura-desmechada2.jpg: 0.519 > 0.500? ✅
+[rotura] recto-rotura-simetrica1.jpg: 0.512 > 0.500? ✅
+[rotura] skinny-rotura-desmechada1.jpg: 0.510 > 0.500? ✅
+[rotura] skinny-rotura-simetrica1.png: 0.507 > 0.500? ✅
+[rotura] skinny-rotura-simetrica2.jpg: 0.508 > 0.500? ✅
+[rotura] skinny-rotura-simetrica3.jpg: 0.513 > 0.500? ✅
+[rotura] wide-rotura-simetrica-desmechada1.png: 0.505 > 0.500? ✅
+[rotura] wide-rotura-simetrica-negro1.jpg: 0.513 > 0.500? ✅
+[rotura] wide-rotura-simetrica-negro2.jpg: 0.513 > 0.500? ✅
+[rotura] wide-rotura-simetrica1.png: 0.513 > 0.500? ✅
+
+🎯 Porcentaje de acierto: 100.00% (11/11)
+
+
+
+Descripcion: jean wide leg
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean wide leg'
+
+   1. images-testing\palazzo4.jpg → Similitud: 0.545
+   2. images-testing\palazzo1.jpg → Similitud: 0.545
+   3. images-testing\palazzo3.jpg → Similitud: 0.543
+   4. images-testing\wide1.png → Similitud: 0.538
+   5. images-testing\wide-ondas1.jpg → Similitud: 0.537
+   6. images-testing\palazzo2.jpg → Similitud: 0.535
+   7. images-testing\palazzo5.jpg → Similitud: 0.532
+   8. images-testing\wide-rotura-simetrica-negro2.jpg → Similitud: 0.529
+   9. images-testing\flared-wide-negro1.jpg → Similitud: 0.521
+   10. images-testing\flared-vintage1.jpg → Similitud: 0.520
+   11. images-testing\wide-rotura-simetrica1.png → Similitud: 0.516
+   12. images-testing\wide-rotura-simetrica-negro1.jpg → Similitud: 0.513
+   13. images-testing\mom-grey1.jpg → Similitud: 0.510
+   14. images-testing\flared2.jpg → Similitud: 0.509
+   15. images-testing\flared6.jpg → Similitud: 0.509
+   16. images-testing\cargo-wide-azul1.jpg → Similitud: 0.508
+   17. images-testing\flared5.jpg → Similitud: 0.507
+   18. images-testing\recto-rotura-simetrica1.jpg → Similitud: 0.507
+   19. images-testing\cargo-grey1.jpg → Similitud: 0.505
+   20. images-testing\recto1.jpg → Similitud: 0.503
+   21. images-testing\cargo-vintage1.jpg → Similitud: 0.501
+   22. images-testing\mom5.jpg → Similitud: 0.500
+   23. images-testing\flared1.jpg → Similitud: 0.500
+   24. images-testing\cargo-vintage2.jpg → Similitud: 0.499
+   25. images-testing\cargo1.jpg → Similitud: 0.497
+   26. images-testing\recto2.jpg → Similitud: 0.496
+   27. images-testing\mom1.jpg → Similitud: 0.495
+   28. images-testing\mom4.jpg → Similitud: 0.494
+   29. images-testing\mom3.jpg → Similitud: 0.493
+   30. images-testing\mom6.jpg → Similitud: 0.492
+   31. images-testing\recto-rotura-desmechada1.png → Similitud: 0.488
+   32. images-testing\wide-rotura-simetrica-desmechada1.png → Similitud: 0.486
+   33. images-testing\recto-rotura-desmechada2.jpg → Similitud: 0.484
+   34. images-testing\skinny-rotura-simetrica3.jpg → Similitud: 0.482
+   35. images-testing\skinny-rotura-simetrica2.jpg → Similitud: 0.481
+   36. images-testing\skinny-oscuro2.jpg → Similitud: 0.479
+   37. images-testing\skinny-oscuro.jpg → Similitud: 0.477
+   38. images-testing\jean-rojo.jpg → Similitud: 0.475
+   39. images-testing\skinny-rotura-desmechada1.jpg → Similitud: 0.474
+   40. images-testing\skinny1.jpg → Similitud: 0.471
+   41. images-testing\skinny-rotura-simetrica1.png → Similitud: 0.464
+mayor no rotura es flared-vintage1.jpg con 0.5201030373573303 de probabilidad
+mayor no rotura es palazzo4.jpg con 0.5451910495758057 de probabilidad
+[wide] cargo-wide-azul1.jpg: 0.508 > 0.520? ❌
+[wide] flared-wide-negro1.jpg: 0.521 > 0.520? 🟨
+[wide] wide-ondas1.jpg: 0.537 > 0.520? 🟨
+[wide] wide-rotura-simetrica-desmechada1.png: 0.486 > 0.520? ❌
+[wide] wide-rotura-simetrica-negro1.jpg: 0.513 > 0.520? ❌
+[wide] wide-rotura-simetrica-negro2.jpg: 0.529 > 0.520? 🟨
+[wide] wide-rotura-simetrica1.png: 0.516 > 0.520? ❌
+[wide] wide1.png: 0.538 > 0.520? 🟨
+
+🎯 Porcentaje de acierto: 0.00% (0/8)
+
+🎯 Porcentaje de acierto incluyendo 🟨: 50.00% (4/8)
+
+
+
+Descripcion: jean skinny
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean skinny'
+
+   1. images-testing\skinny-oscuro2.jpg → Similitud: 0.542
+   2. images-testing\skinny1.jpg → Similitud: 0.541
+   3. images-testing\skinny-oscuro.jpg → Similitud: 0.541
+   4. images-testing\jean-rojo.jpg → Similitud: 0.534
+   5. images-testing\skinny-rotura-simetrica1.png → Similitud: 0.516
+   6. images-testing\mom3.jpg → Similitud: 0.509
+   7. images-testing\mom1.jpg → Similitud: 0.507
+   8. images-testing\mom5.jpg → Similitud: 0.507
+   9. images-testing\cargo-vintage2.jpg → Similitud: 0.505
+   10. images-testing\recto2.jpg → Similitud: 0.504
+   11. images-testing\mom4.jpg → Similitud: 0.504
+   12. images-testing\mom-grey1.jpg → Similitud: 0.503
+   13. images-testing\cargo-grey1.jpg → Similitud: 0.502
+   14. images-testing\mom6.jpg → Similitud: 0.501
+   15. images-testing\cargo-wide-azul1.jpg → Similitud: 0.501
+   16. images-testing\recto1.jpg → Similitud: 0.500
+   17. images-testing\wide-ondas1.jpg → Similitud: 0.499
+   18. images-testing\flared2.jpg → Similitud: 0.499
+   19. images-testing\recto-rotura-desmechada2.jpg → Similitud: 0.497
+   20. images-testing\flared1.jpg → Similitud: 0.497
+   21. images-testing\cargo1.jpg → Similitud: 0.496
+   22. images-testing\cargo-vintage1.jpg → Similitud: 0.496
+   23. images-testing\skinny-rotura-desmechada1.jpg → Similitud: 0.495
+   24. images-testing\flared6.jpg → Similitud: 0.492
+   25. images-testing\skinny-rotura-simetrica3.jpg → Similitud: 0.492
+   26. images-testing\flared-wide-negro1.jpg → Similitud: 0.492
+   27. images-testing\skinny-rotura-simetrica2.jpg → Similitud: 0.491
+   28. images-testing\palazzo3.jpg → Similitud: 0.490
+   29. images-testing\flared-vintage1.jpg → Similitud: 0.489
+   30. images-testing\palazzo1.jpg → Similitud: 0.486
+   31. images-testing\wide1.png → Similitud: 0.485
+   32. images-testing\wide-rotura-simetrica-desmechada1.png → Similitud: 0.484
+   33. images-testing\flared5.jpg → Similitud: 0.484
+   34. images-testing\recto-rotura-desmechada1.png → Similitud: 0.484
+   35. images-testing\wide-rotura-simetrica-negro1.jpg → Similitud: 0.484
+   36. images-testing\wide-rotura-simetrica-negro2.jpg → Similitud: 0.482
+   37. images-testing\palazzo2.jpg → Similitud: 0.481
+   38. images-testing\palazzo5.jpg → Similitud: 0.480
+   39. images-testing\recto-rotura-simetrica1.jpg → Similitud: 0.479
+   40. images-testing\palazzo4.jpg → Similitud: 0.479
+   41. images-testing\wide-rotura-simetrica1.png → Similitud: 0.476
+mayor no rotura es jean-rojo.jpg con 0.5339470505714417 de probabilidad
+[skinny] skinny-oscuro.jpg: 0.541 > 0.534? ✅
+[skinny] skinny-oscuro2.jpg: 0.542 > 0.534? ✅
+[skinny] skinny-rotura-desmechada1.jpg: 0.495 > 0.534? ❌
+[skinny] skinny-rotura-simetrica1.png: 0.516 > 0.534? ❌
+[skinny] skinny-rotura-simetrica2.jpg: 0.491 > 0.534? ❌
+[skinny] skinny-rotura-simetrica3.jpg: 0.492 > 0.534? ❌
+[skinny] skinny1.jpg: 0.541 > 0.534? ✅
+
+🎯 Porcentaje de acierto: 42.86% (3/7)
+
+
+
+Descripcion: jean recto
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean recto'
+
+   1. images-testing\recto2.jpg → Similitud: 0.530
+   2. images-testing\recto1.jpg → Similitud: 0.528
+   3. images-testing\mom-grey1.jpg → Similitud: 0.527
+   4. images-testing\wide-ondas1.jpg → Similitud: 0.518
+   5. images-testing\mom5.jpg → Similitud: 0.516
+   6. images-testing\wide1.png → Similitud: 0.516
+   7. images-testing\mom4.jpg → Similitud: 0.515
+   8. images-testing\mom3.jpg → Similitud: 0.514
+   9. images-testing\mom1.jpg → Similitud: 0.514
+   10. images-testing\palazzo1.jpg → Similitud: 0.512
+   11. images-testing\palazzo3.jpg → Similitud: 0.510
+   12. images-testing\mom6.jpg → Similitud: 0.510
+   13. images-testing\skinny-oscuro.jpg → Similitud: 0.508
+   14. images-testing\skinny-oscuro2.jpg → Similitud: 0.507
+   15. images-testing\cargo-wide-azul1.jpg → Similitud: 0.507
+   16. images-testing\wide-rotura-simetrica-negro2.jpg → Similitud: 0.507
+   17. images-testing\palazzo4.jpg → Similitud: 0.506
+   18. images-testing\cargo-grey1.jpg → Similitud: 0.505
+   19. images-testing\jean-rojo.jpg → Similitud: 0.505
+   20. images-testing\cargo-vintage2.jpg → Similitud: 0.504
+   21. images-testing\recto-rotura-simetrica1.jpg → Similitud: 0.503
+   22. images-testing\skinny1.jpg → Similitud: 0.503
+   23. images-testing\palazzo5.jpg → Similitud: 0.502
+   24. images-testing\palazzo2.jpg → Similitud: 0.502
+   25. images-testing\flared1.jpg → Similitud: 0.501
+   26. images-testing\flared-wide-negro1.jpg → Similitud: 0.500
+   27. images-testing\flared2.jpg → Similitud: 0.500
+   28. images-testing\flared-vintage1.jpg → Similitud: 0.500
+   29. images-testing\skinny-rotura-simetrica3.jpg → Similitud: 0.500
+   30. images-testing\cargo-vintage1.jpg → Similitud: 0.499
+   31. images-testing\cargo1.jpg → Similitud: 0.499
+   32. images-testing\flared6.jpg → Similitud: 0.497
+   33. images-testing\wide-rotura-simetrica1.png → Similitud: 0.495
+   34. images-testing\recto-rotura-desmechada2.jpg → Similitud: 0.495
+   35. images-testing\wide-rotura-simetrica-negro1.jpg → Similitud: 0.494
+   36. images-testing\skinny-rotura-desmechada1.jpg → Similitud: 0.494
+   37. images-testing\recto-rotura-desmechada1.png → Similitud: 0.493
+   38. images-testing\flared5.jpg → Similitud: 0.490
+   39. images-testing\wide-rotura-simetrica-desmechada1.png → Similitud: 0.487
+   40. images-testing\skinny-rotura-simetrica2.jpg → Similitud: 0.486
+   41. images-testing\skinny-rotura-simetrica1.png → Similitud: 0.483
+mayor no rotura es mom-grey1.jpg con 0.5272925496101379 de probabilidad
+[recto] recto-rotura-desmechada1.png: 0.493 > 0.527? ❌
+[recto] recto-rotura-desmechada2.jpg: 0.495 > 0.527? ❌
+[recto] recto-rotura-simetrica1.jpg: 0.503 > 0.527? ❌
+[recto] recto1.jpg: 0.528 > 0.527? ✅
+[recto] recto2.jpg: 0.530 > 0.527? ✅
+
+🎯 Porcentaje de acierto: 40.00% (2/5)
+
+
+
+Descripcion: jean palazzo
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean palazzo'
+
+   1. images-testing\palazzo4.jpg → Similitud: 0.563
+   2. images-testing\palazzo1.jpg → Similitud: 0.560
+   3. images-testing\palazzo3.jpg → Similitud: 0.559
+   4. images-testing\palazzo2.jpg → Similitud: 0.551
+   5. images-testing\palazzo5.jpg → Similitud: 0.548
+   6. images-testing\wide-ondas1.jpg → Similitud: 0.544
+   7. images-testing\wide1.png → Similitud: 0.536
+   8. images-testing\flared-wide-negro1.jpg → Similitud: 0.526
+   9. images-testing\flared-vintage1.jpg → Similitud: 0.526
+   10. images-testing\wide-rotura-simetrica-negro2.jpg → Similitud: 0.523
+   11. images-testing\wide-rotura-simetrica1.png → Similitud: 0.513
+   12. images-testing\flared2.jpg → Similitud: 0.513
+   13. images-testing\flared6.jpg → Similitud: 0.512
+   14. images-testing\flared5.jpg → Similitud: 0.510
+   15. images-testing\wide-rotura-simetrica-negro1.jpg → Similitud: 0.508
+   16. images-testing\cargo-grey1.jpg → Similitud: 0.506
+   17. images-testing\cargo-wide-azul1.jpg → Similitud: 0.506
+   18. images-testing\cargo-vintage1.jpg → Similitud: 0.503
+   19. images-testing\mom-grey1.jpg → Similitud: 0.502
+   20. images-testing\recto-rotura-simetrica1.jpg → Similitud: 0.499
+   21. images-testing\cargo-vintage2.jpg → Similitud: 0.498
+   22. images-testing\flared1.jpg → Similitud: 0.498
+   23. images-testing\mom5.jpg → Similitud: 0.497
+   24. images-testing\recto1.jpg → Similitud: 0.492
+   25. images-testing\cargo1.jpg → Similitud: 0.490
+   26. images-testing\mom1.jpg → Similitud: 0.489
+   27. images-testing\mom3.jpg → Similitud: 0.486
+   28. images-testing\mom4.jpg → Similitud: 0.485
+   29. images-testing\mom6.jpg → Similitud: 0.483
+   30. images-testing\recto2.jpg → Similitud: 0.481
+   31. images-testing\recto-rotura-desmechada1.png → Similitud: 0.480
+   32. images-testing\recto-rotura-desmechada2.jpg → Similitud: 0.480
+   33. images-testing\wide-rotura-simetrica-desmechada1.png → Similitud: 0.478
+   34. images-testing\skinny-oscuro2.jpg → Similitud: 0.476
+   35. images-testing\skinny-oscuro.jpg → Similitud: 0.474
+   36. images-testing\skinny-rotura-simetrica3.jpg → Similitud: 0.473
+   37. images-testing\skinny-rotura-simetrica2.jpg → Similitud: 0.473
+   38. images-testing\jean-rojo.jpg → Similitud: 0.469
+   39. images-testing\skinny1.jpg → Similitud: 0.467
+   40. images-testing\skinny-rotura-desmechada1.jpg → Similitud: 0.459
+   41. images-testing\skinny-rotura-simetrica1.png → Similitud: 0.457
+mayor no rotura es flared-vintage1.jpg con 0.5257213711738586 de probabilidad
+mayor no rotura es wide-ondas1.jpg con 0.5443599820137024 de probabilidad
+[palazzo] palazzo1.jpg: 0.560 > 0.526? ✅
+[palazzo] palazzo2.jpg: 0.551 > 0.526? ✅
+[palazzo] palazzo3.jpg: 0.559 > 0.526? ✅
+[palazzo] palazzo4.jpg: 0.563 > 0.526? ✅
+[palazzo] palazzo5.jpg: 0.548 > 0.526? ✅
+
+🎯 Porcentaje de acierto: 100.00% (5/5)
+
+
+
+Descripcion: jean cargo
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean cargo'
+
+   1. images-testing\cargo-vintage2.jpg → Similitud: 0.556
+   2. images-testing\cargo-wide-azul1.jpg → Similitud: 0.556
+   3. images-testing\cargo-vintage1.jpg → Similitud: 0.553
+   4. images-testing\cargo-grey1.jpg → Similitud: 0.553
+   5. images-testing\cargo1.jpg → Similitud: 0.545
+   6. images-testing\palazzo1.jpg → Similitud: 0.506
+   7. images-testing\palazzo3.jpg → Similitud: 0.503
+   8. images-testing\wide-ondas1.jpg → Similitud: 0.503
+   9. images-testing\flared-wide-negro1.jpg → Similitud: 0.501
+   10. images-testing\mom-grey1.jpg → Similitud: 0.501
+   11. images-testing\mom5.jpg → Similitud: 0.496
+   12. images-testing\mom1.jpg → Similitud: 0.496
+   13. images-testing\skinny-oscuro2.jpg → Similitud: 0.495
+   14. images-testing\skinny-oscuro.jpg → Similitud: 0.495
+   15. images-testing\mom3.jpg → Similitud: 0.494
+   16. images-testing\flared2.jpg → Similitud: 0.494
+   17. images-testing\flared-vintage1.jpg → Similitud: 0.494
+   18. images-testing\mom6.jpg → Similitud: 0.493
+   19. images-testing\palazzo4.jpg → Similitud: 0.493
+   20. images-testing\recto-rotura-desmechada2.jpg → Similitud: 0.492
+   21. images-testing\palazzo5.jpg → Similitud: 0.491
+   22. images-testing\wide1.png → Similitud: 0.491
+   23. images-testing\jean-rojo.jpg → Similitud: 0.491
+   24. images-testing\mom4.jpg → Similitud: 0.491
+   25. images-testing\flared6.jpg → Similitud: 0.490
+   26. images-testing\skinny1.jpg → Similitud: 0.490
+   27. images-testing\recto1.jpg → Similitud: 0.490
+   28. images-testing\palazzo2.jpg → Similitud: 0.488
+   29. images-testing\wide-rotura-simetrica-negro2.jpg → Similitud: 0.487
+   30. images-testing\flared1.jpg → Similitud: 0.487
+   31. images-testing\recto2.jpg → Similitud: 0.487
+   32. images-testing\skinny-rotura-simetrica2.jpg → Similitud: 0.484
+   33. images-testing\flared5.jpg → Similitud: 0.484
+   34. images-testing\wide-rotura-simetrica-negro1.jpg → Similitud: 0.482
+   35. images-testing\recto-rotura-simetrica1.jpg → Similitud: 0.480
+   36. images-testing\skinny-rotura-simetrica3.jpg → Similitud: 0.480
+   37. images-testing\recto-rotura-desmechada1.png → Similitud: 0.479
+   38. images-testing\wide-rotura-simetrica1.png → Similitud: 0.479
+   39. images-testing\skinny-rotura-desmechada1.jpg → Similitud: 0.476
+   40. images-testing\skinny-rotura-simetrica1.png → Similitud: 0.476
+   41. images-testing\wide-rotura-simetrica-desmechada1.png → Similitud: 0.472
+mayor no rotura es palazzo1.jpg con 0.505533754825592 de probabilidad
+[cargo] cargo-grey1.jpg: 0.553 > 0.506? ✅
+[cargo] cargo-vintage1.jpg: 0.553 > 0.506? ✅
+[cargo] cargo-vintage2.jpg: 0.556 > 0.506? ✅
+[cargo] cargo-wide-azul1.jpg: 0.556 > 0.506? ✅
+[cargo] cargo1.jpg: 0.545 > 0.506? ✅
+
+🎯 Porcentaje de acierto: 100.00% (5/5)
+
+
+
+Descripcion: jean mom
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean mom'
+
+   1. images-testing\mom3.jpg → Similitud: 0.555
+   2. images-testing\mom1.jpg → Similitud: 0.555
+   3. images-testing\mom5.jpg → Similitud: 0.554
+   4. images-testing\mom6.jpg → Similitud: 0.552
+   5. images-testing\mom4.jpg → Similitud: 0.549
+   6. images-testing\skinny-rotura-simetrica2.jpg → Similitud: 0.530
+   7. images-testing\skinny-rotura-desmechada1.jpg → Similitud: 0.522
+   8. images-testing\recto2.jpg → Similitud: 0.519
+   9. images-testing\recto-rotura-desmechada2.jpg → Similitud: 0.518
+   10. images-testing\mom-grey1.jpg → Similitud: 0.516
+   11. images-testing\skinny-rotura-simetrica3.jpg → Similitud: 0.507
+   12. images-testing\recto1.jpg → Similitud: 0.501
+   13. images-testing\jean-rojo.jpg → Similitud: 0.499
+   14. images-testing\recto-rotura-simetrica1.jpg → Similitud: 0.499
+   15. images-testing\cargo-vintage2.jpg → Similitud: 0.498
+   16. images-testing\cargo-grey1.jpg → Similitud: 0.498
+   17. images-testing\cargo-wide-azul1.jpg → Similitud: 0.498
+   18. images-testing\skinny-oscuro2.jpg → Similitud: 0.498
+   19. images-testing\wide-ondas1.jpg → Similitud: 0.497
+   20. images-testing\wide-rotura-simetrica-negro2.jpg → Similitud: 0.496
+   21. images-testing\cargo-vintage1.jpg → Similitud: 0.494
+   22. images-testing\skinny-rotura-simetrica1.png → Similitud: 0.493
+   23. images-testing\cargo1.jpg → Similitud: 0.493
+   24. images-testing\skinny-oscuro.jpg → Similitud: 0.492
+   25. images-testing\skinny1.jpg → Similitud: 0.492
+   26. images-testing\palazzo1.jpg → Similitud: 0.492
+   27. images-testing\palazzo2.jpg → Similitud: 0.491
+   28. images-testing\wide1.png → Similitud: 0.490
+   29. images-testing\wide-rotura-simetrica1.png → Similitud: 0.490
+   30. images-testing\wide-rotura-simetrica-negro1.jpg → Similitud: 0.488
+   31. images-testing\palazzo3.jpg → Similitud: 0.488
+   32. images-testing\recto-rotura-desmechada1.png → Similitud: 0.487
+   33. images-testing\palazzo4.jpg → Similitud: 0.487
+   34. images-testing\wide-rotura-simetrica-desmechada1.png → Similitud: 0.484
+   35. images-testing\flared6.jpg → Similitud: 0.482
+   36. images-testing\flared2.jpg → Similitud: 0.481
+   37. images-testing\flared-wide-negro1.jpg → Similitud: 0.480
+   38. images-testing\flared1.jpg → Similitud: 0.480
+   39. images-testing\palazzo5.jpg → Similitud: 0.478
+   40. images-testing\flared-vintage1.jpg → Similitud: 0.478
+   41. images-testing\flared5.jpg → Similitud: 0.477
+mayor no rotura es skinny-rotura-simetrica2.jpg con 0.5296287536621094 de probabilidad
+[mom] mom-grey1.jpg: 0.516 > 0.530? ❌
+[mom] mom1.jpg: 0.555 > 0.530? ✅
+[mom] mom3.jpg: 0.555 > 0.530? ✅
+[mom] mom4.jpg: 0.549 > 0.530? ✅
+[mom] mom5.jpg: 0.554 > 0.530? ✅
+[mom] mom6.jpg: 0.552 > 0.530? ✅
+
+🎯 Porcentaje de acierto: 83.33% (5/6)
+
+
+
+Descripcion: jean acampanado
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean acampanado'
+
+   1. images-testing\flared-vintage1.jpg → Similitud: 0.558
+   2. images-testing\flared6.jpg → Similitud: 0.557
+   3. images-testing\flared2.jpg → Similitud: 0.557
+   4. images-testing\flared-wide-negro1.jpg → Similitud: 0.555
+   5. images-testing\flared5.jpg → Similitud: 0.550
+   6. images-testing\palazzo5.jpg → Similitud: 0.546
+   7. images-testing\flared1.jpg → Similitud: 0.545
+   8. images-testing\palazzo3.jpg → Similitud: 0.542
+   9. images-testing\wide-ondas1.jpg → Similitud: 0.534
+   10. images-testing\wide1.png → Similitud: 0.527
+   11. images-testing\palazzo4.jpg → Similitud: 0.521
+   12. images-testing\palazzo1.jpg → Similitud: 0.521
+   13. images-testing\palazzo2.jpg → Similitud: 0.513
+   14. images-testing\wide-rotura-simetrica-negro2.jpg → Similitud: 0.502
+   15. images-testing\cargo-vintage1.jpg → Similitud: 0.500
+   16. images-testing\cargo-vintage2.jpg → Similitud: 0.499
+   17. images-testing\cargo-grey1.jpg → Similitud: 0.499
+   18. images-testing\mom-grey1.jpg → Similitud: 0.498
+   19. images-testing\recto1.jpg → Similitud: 0.498
+   20. images-testing\cargo1.jpg → Similitud: 0.496
+   21. images-testing\cargo-wide-azul1.jpg → Similitud: 0.496
+   22. images-testing\wide-rotura-simetrica1.png → Similitud: 0.495
+   23. images-testing\wide-rotura-simetrica-negro1.jpg → Similitud: 0.491
+   24. images-testing\recto2.jpg → Similitud: 0.489
+   25. images-testing\skinny-oscuro2.jpg → Similitud: 0.488
+   26. images-testing\recto-rotura-simetrica1.jpg → Similitud: 0.488
+   27. images-testing\skinny-oscuro.jpg → Similitud: 0.488
+   28. images-testing\jean-rojo.jpg → Similitud: 0.485
+   29. images-testing\mom1.jpg → Similitud: 0.483
+   30. images-testing\mom5.jpg → Similitud: 0.483
+   31. images-testing\skinny1.jpg → Similitud: 0.483
+   32. images-testing\mom3.jpg → Similitud: 0.480
+   33. images-testing\mom4.jpg → Similitud: 0.480
+   34. images-testing\mom6.jpg → Similitud: 0.477
+   35. images-testing\wide-rotura-simetrica-desmechada1.png → Similitud: 0.476
+   36. images-testing\recto-rotura-desmechada1.png → Similitud: 0.475
+   37. images-testing\skinny-rotura-simetrica1.png → Similitud: 0.474
+   38. images-testing\recto-rotura-desmechada2.jpg → Similitud: 0.473
+   39. images-testing\skinny-rotura-simetrica2.jpg → Similitud: 0.471
+   40. images-testing\skinny-rotura-simetrica3.jpg → Similitud: 0.470
+   41. images-testing\skinny-rotura-desmechada1.jpg → Similitud: 0.469
+mayor no rotura es palazzo5.jpg con 0.5461036562919617 de probabilidad
+[flared] flared-vintage1.jpg: 0.558 > 0.546? ✅
+[flared] flared-wide-negro1.jpg: 0.555 > 0.546? ✅
+[flared] flared1.jpg: 0.545 > 0.546? ❌
+[flared] flared2.jpg: 0.557 > 0.546? ✅
+[flared] flared5.jpg: 0.550 > 0.546? ✅
+[flared] flared6.jpg: 0.557 > 0.546? ✅
+
+🎯 Porcentaje de acierto: 83.33% (5/6)

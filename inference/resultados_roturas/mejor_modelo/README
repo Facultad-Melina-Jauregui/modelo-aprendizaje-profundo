@@ -1,0 +1,16 @@
+# Mejores Modelos de Roturas
+
+Esta carpeta contiene los resultados de los **mejores modelos** fine-tuneados para clasificación de cortes de jeans con y sin roturas.
+
+## Contenido
+
+Los archivos `.txt` corresponden a los modelos con mejor rendimiento (ej: `fashionSigLIP-roturas15`, `fashionSigLIP-roturas23`), seleccionados después de evaluar múltiples iteraciones.
+
+Incluye:
+- Resultados detallados de evaluación de los mejores modelos
+- Archivo de métricas específico (`fashionSIgLip-roturas23-metricas.txt`) con análisis de rendimiento
+
+## Nota
+
+Estos modelos representan las mejores configuraciones encontradas durante el proceso de fine-tuning para la tarea de clasificación de roturas y tipos de jeans.
+
