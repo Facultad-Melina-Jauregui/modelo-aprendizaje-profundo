@@ -1,0 +1,851 @@
+Model name: melijauregui/cherrypick-sigLip2
+fine_tune(csv_path="datasets/preferencias/preferencias-v5.csv", original_model_name="Marqo/marqo-fashionSigLIP", model_name="melijauregui/fashionSigLIP-roturas23",
+              model_name_to_push="melijauregui/cherrypick-sigLip2", data_aug=False,
+              loss_func=contrastive_loss_InfoNCE, batch_size=8, epochs=32, lr=2e-5,
+              n_layers=2)
+
+Descripcion: jean liso
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean liso'
+
+   1. images-testing-nob\mom-grey1.png → Similitud: 0.542
+   2. images-testing-nob\recto1.png → Similitud: 0.540
+   3. images-testing-nob\wide1.png → Similitud: 0.540
+   4. images-testing-nob\recto2.png → Similitud: 0.536
+   5. images-testing-nob\mom1.png → Similitud: 0.535
+   6. images-testing-nob\palazzo1.png → Similitud: 0.535
+   7. images-testing-nob\palazzo5.png → Similitud: 0.533
+   8. images-testing-nob\wide-ondas1.png → Similitud: 0.530
+   9. images-testing-nob\mom3.png → Similitud: 0.530
+   10. images-testing-nob\skinny-oscuro.png → Similitud: 0.529
+   11. images-testing-nob\palazzo3.png → Similitud: 0.529
+   12. images-testing-nob\skinny1.png → Similitud: 0.529
+   13. images-testing-nob\skinny-oscuro2.png → Similitud: 0.529
+   14. images-testing-nob\mom5.png → Similitud: 0.529
+   15. images-testing-nob\cargo-wide-azul1.png → Similitud: 0.528
+   16. images-testing-nob\palazzo2.png → Similitud: 0.528
+   17. images-testing-nob\cargo-vintage2.png → Similitud: 0.526
+   18. images-testing-nob\cargo-grey1.png → Similitud: 0.526
+   19. images-testing-nob\flared-vintage1.png → Similitud: 0.526
+   20. images-testing-nob\flared6.png → Similitud: 0.526
+   21. images-testing-nob\cargo1.png → Similitud: 0.525
+   22. images-testing-nob\flared2.png → Similitud: 0.525
+   23. images-testing-nob\flared1.png → Similitud: 0.523
+   24. images-testing-nob\skinny-rojo.png → Similitud: 0.523
+   25. images-testing-nob\flared-wide-negro1.png → Similitud: 0.522
+   26. images-testing-nob\mom6.png → Similitud: 0.522
+   27. images-testing-nob\palazzo4.png → Similitud: 0.519
+   28. images-testing-nob\flared5.png → Similitud: 0.519
+   29. images-testing-nob\mom4.png → Similitud: 0.519
+   30. images-testing-nob\cargo-vintage1.png → Similitud: 0.514
+   31. images-testing-nob\wide-rotura-simetrica-negro2.png → Similitud: 0.498
+   32. images-testing-nob\recto-rotura-desmechada2.png → Similitud: 0.493
+   33. images-testing-nob\recto-rotura-simetrica1.png → Similitud: 0.493
+   34. images-testing-nob\skinny-rotura-simetrica1.png → Similitud: 0.491
+   35. images-testing-nob\wide-rotura-simetrica-negro1.png → Similitud: 0.490
+   36. images-testing-nob\wide-rotura-simetrica1.png → Similitud: 0.489
+   37. images-testing-nob\skinny-rotura-simetrica3.png → Similitud: 0.489
+   38. images-testing-nob\skinny-rotura-desmechada1.png → Similitud: 0.488
+   39. images-testing-nob\skinny-rotura-simetrica2.png → Similitud: 0.487
+   40. images-testing-nob\recto-rotura-desmechada1.png → Similitud: 0.486
+   41. images-testing-nob\wide-rotura-simetrica-desmechada1.png → Similitud: 0.483
+mayor red flag es wide-rotura-simetrica-negro2.png con 0.4981435537338257 de probabilidad
+[rotura] cargo-grey1.png: 0.526 > 0.498? ✅
+[rotura] cargo-vintage1.png: 0.514 > 0.498? ✅
+[rotura] cargo-vintage2.png: 0.526 > 0.498? ✅
+[rotura] cargo-wide-azul1.png: 0.528 > 0.498? ✅
+[rotura] cargo1.png: 0.525 > 0.498? ✅
+[rotura] flared-vintage1.png: 0.526 > 0.498? ✅
+[rotura] flared-wide-negro1.png: 0.522 > 0.498? ✅
+[rotura] flared1.png: 0.523 > 0.498? ✅
+[rotura] flared2.png: 0.525 > 0.498? ✅
+[rotura] flared5.png: 0.519 > 0.498? ✅
+[rotura] flared6.png: 0.526 > 0.498? ✅
+[rotura] mom-grey1.png: 0.542 > 0.498? ✅
+[rotura] mom1.png: 0.535 > 0.498? ✅
+[rotura] mom3.png: 0.530 > 0.498? ✅
+[rotura] mom4.png: 0.519 > 0.498? ✅
+[rotura] mom5.png: 0.529 > 0.498? ✅
+[rotura] mom6.png: 0.522 > 0.498? ✅
+[rotura] palazzo1.png: 0.535 > 0.498? ✅
+[rotura] palazzo2.png: 0.528 > 0.498? ✅
+[rotura] palazzo3.png: 0.529 > 0.498? ✅
+[rotura] palazzo4.png: 0.519 > 0.498? ✅
+[rotura] palazzo5.png: 0.533 > 0.498? ✅
+[rotura] recto1.png: 0.540 > 0.498? ✅
+[rotura] recto2.png: 0.536 > 0.498? ✅
+[rotura] skinny-oscuro.png: 0.529 > 0.498? ✅
+[rotura] skinny-oscuro2.png: 0.529 > 0.498? ✅
+[rotura] skinny-rojo.png: 0.523 > 0.498? ✅
+[rotura] skinny1.png: 0.529 > 0.498? ✅
+[rotura] wide-ondas1.png: 0.530 > 0.498? ✅
+[rotura] wide1.png: 0.540 > 0.498? ✅
+
+🎯 Porcentaje de acierto: 100.00% (30/30)
+
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+
+
+Descripcion: jean con roturas
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean con roturas'
+
+   1. images-testing-nob\wide-rotura-simetrica-negro2.png → Similitud: 0.536
+   2. images-testing-nob\recto-rotura-desmechada2.png → Similitud: 0.534
+   3. images-testing-nob\recto-rotura-simetrica1.png → Similitud: 0.534
+   4. images-testing-nob\wide-rotura-simetrica1.png → Similitud: 0.533
+   5. images-testing-nob\wide-rotura-simetrica-negro1.png → Similitud: 0.532
+   6. images-testing-nob\skinny-rotura-simetrica3.png → Similitud: 0.532
+   7. images-testing-nob\skinny-rotura-simetrica2.png → Similitud: 0.531
+   8. images-testing-nob\recto-rotura-desmechada1.png → Similitud: 0.529
+   9. images-testing-nob\cargo-vintage1.png → Similitud: 0.528
+   10. images-testing-nob\recto2.png → Similitud: 0.527
+   11. images-testing-nob\wide-rotura-simetrica-desmechada1.png → Similitud: 0.527
+   12. images-testing-nob\skinny-rotura-simetrica1.png → Similitud: 0.526
+   13. images-testing-nob\skinny-rotura-desmechada1.png → Similitud: 0.526
+   14. images-testing-nob\wide-ondas1.png → Similitud: 0.523
+   15. images-testing-nob\cargo-wide-azul1.png → Similitud: 0.522
+   16. images-testing-nob\mom-grey1.png → Similitud: 0.521
+   17. images-testing-nob\cargo-vintage2.png → Similitud: 0.521
+   18. images-testing-nob\wide1.png → Similitud: 0.521
+   19. images-testing-nob\recto1.png → Similitud: 0.521
+   20. images-testing-nob\palazzo1.png → Similitud: 0.519
+   21. images-testing-nob\skinny-oscuro.png → Similitud: 0.519
+   22. images-testing-nob\mom1.png → Similitud: 0.518
+   23. images-testing-nob\flared-vintage1.png → Similitud: 0.518
+   24. images-testing-nob\skinny-oscuro2.png → Similitud: 0.518
+   25. images-testing-nob\skinny1.png → Similitud: 0.517
+   26. images-testing-nob\cargo-grey1.png → Similitud: 0.517
+   27. images-testing-nob\cargo1.png → Similitud: 0.516
+   28. images-testing-nob\mom3.png → Similitud: 0.516
+   29. images-testing-nob\palazzo3.png → Similitud: 0.515
+   30. images-testing-nob\mom5.png → Similitud: 0.514
+   31. images-testing-nob\skinny-rojo.png → Similitud: 0.514
+   32. images-testing-nob\flared6.png → Similitud: 0.514
+   33. images-testing-nob\palazzo5.png → Similitud: 0.513
+   34. images-testing-nob\palazzo2.png → Similitud: 0.513
+   35. images-testing-nob\flared2.png → Similitud: 0.513
+   36. images-testing-nob\flared1.png → Similitud: 0.512
+   37. images-testing-nob\mom6.png → Similitud: 0.511
+   38. images-testing-nob\flared-wide-negro1.png → Similitud: 0.511
+   39. images-testing-nob\flared5.png → Similitud: 0.509
+   40. images-testing-nob\palazzo4.png → Similitud: 0.507
+   41. images-testing-nob\mom4.png → Similitud: 0.507
+mayor red flag es cargo-vintage1.png con 0.5281769633293152 de probabilidad
+[rotura] recto-rotura-desmechada1.png: 0.529 > 0.528? ✅
+[rotura] recto-rotura-desmechada2.png: 0.534 > 0.528? ✅
+[rotura] recto-rotura-simetrica1.png: 0.534 > 0.528? ✅
+[rotura] skinny-rotura-desmechada1.png: 0.526 > 0.528? ❌
+[rotura] skinny-rotura-simetrica1.png: 0.526 > 0.528? ❌
+[rotura] skinny-rotura-simetrica2.png: 0.531 > 0.528? ✅
+[rotura] skinny-rotura-simetrica3.png: 0.532 > 0.528? ✅
+[rotura] wide-rotura-simetrica-desmechada1.png: 0.527 > 0.528? ❌
+[rotura] wide-rotura-simetrica-negro1.png: 0.532 > 0.528? ✅
+[rotura] wide-rotura-simetrica-negro2.png: 0.536 > 0.528? ✅
+[rotura] wide-rotura-simetrica1.png: 0.533 > 0.528? ✅
+
+🎯 Porcentaje de acierto: 72.73% (8/11)
+
+📊 Precision: 1.000
+📊 Recall: 0.727
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+
+
+Descripcion: jean wide leg
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean wide leg'
+
+   1. images-testing-nob\palazzo1.png → Similitud: 0.558
+   2. images-testing-nob\palazzo3.png → Similitud: 0.555
+   3. images-testing-nob\palazzo5.png → Similitud: 0.550
+   4. images-testing-nob\palazzo2.png → Similitud: 0.547
+   5. images-testing-nob\flared-vintage1.png → Similitud: 0.545
+   6. images-testing-nob\wide-ondas1.png → Similitud: 0.542
+   7. images-testing-nob\wide1.png → Similitud: 0.541
+   8. images-testing-nob\palazzo4.png → Similitud: 0.537
+   9. images-testing-nob\flared-wide-negro1.png → Similitud: 0.536
+   10. images-testing-nob\flared6.png → Similitud: 0.529
+   11. images-testing-nob\mom-grey1.png → Similitud: 0.528
+   12. images-testing-nob\flared2.png → Similitud: 0.527
+   13. images-testing-nob\flared5.png → Similitud: 0.527
+   14. images-testing-nob\cargo1.png → Similitud: 0.523
+   15. images-testing-nob\cargo-wide-azul1.png → Similitud: 0.523
+   16. images-testing-nob\cargo-grey1.png → Similitud: 0.523
+   17. images-testing-nob\mom1.png → Similitud: 0.522
+   18. images-testing-nob\cargo-vintage2.png → Similitud: 0.521
+   19. images-testing-nob\wide-rotura-simetrica-negro2.png → Similitud: 0.519
+   20. images-testing-nob\cargo-vintage1.png → Similitud: 0.519
+   21. images-testing-nob\recto2.png → Similitud: 0.518
+   22. images-testing-nob\flared1.png → Similitud: 0.517
+   23. images-testing-nob\recto1.png → Similitud: 0.517
+   24. images-testing-nob\mom5.png → Similitud: 0.515
+   25. images-testing-nob\mom3.png → Similitud: 0.513
+   26. images-testing-nob\recto-rotura-simetrica1.png → Similitud: 0.511
+   27. images-testing-nob\mom4.png → Similitud: 0.508
+   28. images-testing-nob\wide-rotura-simetrica-negro1.png → Similitud: 0.508
+   29. images-testing-nob\mom6.png → Similitud: 0.508
+   30. images-testing-nob\wide-rotura-simetrica1.png → Similitud: 0.505
+   31. images-testing-nob\skinny-rotura-simetrica2.png → Similitud: 0.497
+   32. images-testing-nob\recto-rotura-desmechada2.png → Similitud: 0.497
+   33. images-testing-nob\skinny-rotura-simetrica3.png → Similitud: 0.497
+   34. images-testing-nob\wide-rotura-simetrica-desmechada1.png → Similitud: 0.497
+   35. images-testing-nob\skinny-oscuro2.png → Similitud: 0.495
+   36. images-testing-nob\recto-rotura-desmechada1.png → Similitud: 0.494
+   37. images-testing-nob\skinny-oscuro.png → Similitud: 0.493
+   38. images-testing-nob\skinny-rotura-desmechada1.png → Similitud: 0.490
+   39. images-testing-nob\skinny-rojo.png → Similitud: 0.488
+   40. images-testing-nob\skinny1.png → Similitud: 0.488
+   41. images-testing-nob\skinny-rotura-simetrica1.png → Similitud: 0.480
+mayor red flag es flared-vintage1.png con 0.5450408458709717 de probabilidad
+mayor yellow flag es palazzo1.png con 0.5583070516586304 de probabilidad
+[wide] cargo-wide-azul1.png: 0.523 > 0.545? ❌
+[wide] flared-wide-negro1.png: 0.536 > 0.545? ❌
+[wide] wide-ondas1.png: 0.542 > 0.545? ❌
+[wide] wide-rotura-simetrica-desmechada1.png: 0.497 > 0.545? ❌
+[wide] wide-rotura-simetrica-negro1.png: 0.508 > 0.545? ❌
+[wide] wide-rotura-simetrica-negro2.png: 0.519 > 0.545? ❌
+[wide] wide-rotura-simetrica1.png: 0.505 > 0.545? ❌
+[wide] wide1.png: 0.541 > 0.545? ❌
+
+🎯 Porcentaje de acierto: 0.00% (0/8)
+
+📊 Precision: 0.000
+📊 Recall: 0.000
+📊 MRR (Mean Reciprocal Rank): 0.167
+
+
+
+Descripcion: jean skinny
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean skinny'
+
+   1. images-testing-nob\skinny1.png → Similitud: 0.555
+   2. images-testing-nob\skinny-oscuro.png → Similitud: 0.554
+   3. images-testing-nob\skinny-oscuro2.png → Similitud: 0.553
+   4. images-testing-nob\skinny-rojo.png → Similitud: 0.546
+   5. images-testing-nob\cargo-wide-azul1.png → Similitud: 0.529
+   6. images-testing-nob\mom1.png → Similitud: 0.528
+   7. images-testing-nob\recto1.png → Similitud: 0.526
+   8. images-testing-nob\mom3.png → Similitud: 0.526
+   9. images-testing-nob\cargo-vintage2.png → Similitud: 0.526
+   10. images-testing-nob\recto2.png → Similitud: 0.526
+   11. images-testing-nob\mom-grey1.png → Similitud: 0.526
+   12. images-testing-nob\wide-ondas1.png → Similitud: 0.525
+   13. images-testing-nob\mom5.png → Similitud: 0.525
+   14. images-testing-nob\skinny-rotura-simetrica1.png → Similitud: 0.524
+   15. images-testing-nob\flared2.png → Similitud: 0.524
+   16. images-testing-nob\flared1.png → Similitud: 0.523
+   17. images-testing-nob\cargo1.png → Similitud: 0.523
+   18. images-testing-nob\flared6.png → Similitud: 0.522
+   19. images-testing-nob\cargo-grey1.png → Similitud: 0.521
+   20. images-testing-nob\wide1.png → Similitud: 0.521
+   21. images-testing-nob\mom6.png → Similitud: 0.519
+   22. images-testing-nob\flared-vintage1.png → Similitud: 0.516
+   23. images-testing-nob\cargo-vintage1.png → Similitud: 0.515
+   24. images-testing-nob\flared-wide-negro1.png → Similitud: 0.513
+   25. images-testing-nob\palazzo5.png → Similitud: 0.513
+   26. images-testing-nob\mom4.png → Similitud: 0.513
+   27. images-testing-nob\palazzo2.png → Similitud: 0.512
+   28. images-testing-nob\palazzo3.png → Similitud: 0.512
+   29. images-testing-nob\recto-rotura-desmechada2.png → Similitud: 0.511
+   30. images-testing-nob\flared5.png → Similitud: 0.511
+   31. images-testing-nob\palazzo1.png → Similitud: 0.511
+   32. images-testing-nob\palazzo4.png → Similitud: 0.505
+   33. images-testing-nob\wide-rotura-simetrica-negro2.png → Similitud: 0.503
+   34. images-testing-nob\skinny-rotura-simetrica3.png → Similitud: 0.501
+   35. images-testing-nob\recto-rotura-simetrica1.png → Similitud: 0.500
+   36. images-testing-nob\wide-rotura-simetrica-negro1.png → Similitud: 0.500
+   37. images-testing-nob\skinny-rotura-desmechada1.png → Similitud: 0.499
+   38. images-testing-nob\skinny-rotura-simetrica2.png → Similitud: 0.499
+   39. images-testing-nob\recto-rotura-desmechada1.png → Similitud: 0.498
+   40. images-testing-nob\wide-rotura-simetrica1.png → Similitud: 0.498
+   41. images-testing-nob\wide-rotura-simetrica-desmechada1.png → Similitud: 0.496
+mayor red flag es cargo-wide-azul1.png con 0.5286545157432556 de probabilidad
+[skinny] skinny-oscuro.png: 0.554 > 0.529? ✅
+[skinny] skinny-oscuro2.png: 0.553 > 0.529? ✅
+[skinny] skinny-rojo.png: 0.546 > 0.529? ✅
+[skinny] skinny-rotura-desmechada1.png: 0.499 > 0.529? ❌
+[skinny] skinny-rotura-simetrica1.png: 0.524 > 0.529? ❌
+[skinny] skinny-rotura-simetrica2.png: 0.499 > 0.529? ❌
+[skinny] skinny-rotura-simetrica3.png: 0.501 > 0.529? ❌
+[skinny] skinny1.png: 0.555 > 0.529? ✅
+
+🎯 Porcentaje de acierto: 50.00% (4/8)
+
+📊 Precision: 1.000
+📊 Recall: 0.500
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+
+
+Descripcion: jean recto
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean recto'
+
+   1. images-testing-nob\recto2.png → Similitud: 0.547
+   2. images-testing-nob\recto1.png → Similitud: 0.546
+   3. images-testing-nob\mom-grey1.png → Similitud: 0.544
+   4. images-testing-nob\wide1.png → Similitud: 0.541
+   5. images-testing-nob\mom1.png → Similitud: 0.537
+   6. images-testing-nob\palazzo1.png → Similitud: 0.534
+   7. images-testing-nob\wide-ondas1.png → Similitud: 0.533
+   8. images-testing-nob\mom3.png → Similitud: 0.533
+   9. images-testing-nob\mom5.png → Similitud: 0.531
+   10. images-testing-nob\palazzo2.png → Similitud: 0.530
+   11. images-testing-nob\palazzo5.png → Similitud: 0.530
+   12. images-testing-nob\palazzo3.png → Similitud: 0.529
+   13. images-testing-nob\flared-vintage1.png → Similitud: 0.528
+   14. images-testing-nob\mom6.png → Similitud: 0.526
+   15. images-testing-nob\cargo-wide-azul1.png → Similitud: 0.526
+   16. images-testing-nob\cargo1.png → Similitud: 0.525
+   17. images-testing-nob\palazzo4.png → Similitud: 0.524
+   18. images-testing-nob\cargo-vintage2.png → Similitud: 0.523
+   19. images-testing-nob\mom4.png → Similitud: 0.523
+   20. images-testing-nob\cargo-grey1.png → Similitud: 0.522
+   21. images-testing-nob\flared6.png → Similitud: 0.522
+   22. images-testing-nob\flared1.png → Similitud: 0.521
+   23. images-testing-nob\flared2.png → Similitud: 0.521
+   24. images-testing-nob\skinny-oscuro.png → Similitud: 0.521
+   25. images-testing-nob\skinny-oscuro2.png → Similitud: 0.518
+   26. images-testing-nob\cargo-vintage1.png → Similitud: 0.517
+   27. images-testing-nob\flared-wide-negro1.png → Similitud: 0.516
+   28. images-testing-nob\skinny1.png → Similitud: 0.515
+   29. images-testing-nob\skinny-rojo.png → Similitud: 0.513
+   30. images-testing-nob\flared5.png → Similitud: 0.512
+   31. images-testing-nob\recto-rotura-simetrica1.png → Similitud: 0.510
+   32. images-testing-nob\wide-rotura-simetrica-negro2.png → Similitud: 0.510
+   33. images-testing-nob\skinny-rotura-desmechada1.png → Similitud: 0.506
+   34. images-testing-nob\skinny-rotura-simetrica3.png → Similitud: 0.505
+   35. images-testing-nob\recto-rotura-desmechada2.png → Similitud: 0.504
+   36. images-testing-nob\wide-rotura-simetrica1.png → Similitud: 0.503
+   37. images-testing-nob\recto-rotura-desmechada1.png → Similitud: 0.501
+   38. images-testing-nob\wide-rotura-simetrica-negro1.png → Similitud: 0.499
+   39. images-testing-nob\skinny-rotura-simetrica2.png → Similitud: 0.497
+   40. images-testing-nob\wide-rotura-simetrica-desmechada1.png → Similitud: 0.497
+   41. images-testing-nob\skinny-rotura-simetrica1.png → Similitud: 0.495
+mayor red flag es wide1.png con 0.5412531495094299 de probabilidad
+mayor yellow flag es mom-grey1.png con 0.5443858504295349 de probabilidad
+[recto] recto-rotura-desmechada1.png: 0.501 > 0.541? ❌
+[recto] recto-rotura-desmechada2.png: 0.504 > 0.541? ❌
+[recto] recto-rotura-simetrica1.png: 0.510 > 0.541? ❌
+[recto] recto1.png: 0.546 > 0.541? ✅
+[recto] recto2.png: 0.547 > 0.541? ✅
+
+🎯 Porcentaje de acierto: 40.00% (2/5)
+
+📊 Precision: 0.667
+📊 Recall: 0.400
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+
+
+Descripcion: jean palazzo
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean palazzo'
+
+   1. images-testing-nob\palazzo3.png → Similitud: 0.567
+   2. images-testing-nob\palazzo1.png → Similitud: 0.563
+   3. images-testing-nob\palazzo5.png → Similitud: 0.557
+   4. images-testing-nob\palazzo2.png → Similitud: 0.557
+   5. images-testing-nob\flared-vintage1.png → Similitud: 0.546
+   6. images-testing-nob\wide-ondas1.png → Similitud: 0.543
+   7. images-testing-nob\palazzo4.png → Similitud: 0.542
+   8. images-testing-nob\flared-wide-negro1.png → Similitud: 0.539
+   9. images-testing-nob\wide1.png → Similitud: 0.532
+   10. images-testing-nob\flared5.png → Similitud: 0.530
+   11. images-testing-nob\flared6.png → Similitud: 0.527
+   12. images-testing-nob\flared2.png → Similitud: 0.527
+   13. images-testing-nob\cargo-grey1.png → Similitud: 0.521
+   14. images-testing-nob\cargo-vintage2.png → Similitud: 0.521
+   15. images-testing-nob\mom-grey1.png → Similitud: 0.519
+   16. images-testing-nob\cargo-vintage1.png → Similitud: 0.518
+   17. images-testing-nob\cargo-wide-azul1.png → Similitud: 0.518
+   18. images-testing-nob\cargo1.png → Similitud: 0.516
+   19. images-testing-nob\mom1.png → Similitud: 0.515
+   20. images-testing-nob\wide-rotura-simetrica-negro2.png → Similitud: 0.514
+   21. images-testing-nob\flared1.png → Similitud: 0.513
+   22. images-testing-nob\mom5.png → Similitud: 0.511
+   23. images-testing-nob\recto-rotura-simetrica1.png → Similitud: 0.507
+   24. images-testing-nob\wide-rotura-simetrica-negro1.png → Similitud: 0.507
+   25. images-testing-nob\mom3.png → Similitud: 0.504
+   26. images-testing-nob\recto1.png → Similitud: 0.504
+   27. images-testing-nob\wide-rotura-simetrica1.png → Similitud: 0.502
+   28. images-testing-nob\recto2.png → Similitud: 0.501
+   29. images-testing-nob\mom6.png → Similitud: 0.499
+   30. images-testing-nob\mom4.png → Similitud: 0.499
+   31. images-testing-nob\recto-rotura-desmechada2.png → Similitud: 0.498
+   32. images-testing-nob\wide-rotura-simetrica-desmechada1.png → Similitud: 0.494
+   33. images-testing-nob\skinny-oscuro2.png → Similitud: 0.493
+   34. images-testing-nob\skinny-rotura-simetrica3.png → Similitud: 0.493
+   35. images-testing-nob\skinny-rotura-simetrica2.png → Similitud: 0.493
+   36. images-testing-nob\skinny-oscuro.png → Similitud: 0.490
+   37. images-testing-nob\recto-rotura-desmechada1.png → Similitud: 0.490
+   38. images-testing-nob\skinny1.png → Similitud: 0.486
+   39. images-testing-nob\skinny-rojo.png → Similitud: 0.485
+   40. images-testing-nob\skinny-rotura-desmechada1.png → Similitud: 0.482
+   41. images-testing-nob\skinny-rotura-simetrica1.png → Similitud: 0.476
+mayor red flag es flared-vintage1.png con 0.5461927056312561 de probabilidad
+[palazzo] palazzo1.png: 0.563 > 0.546? ✅
+[palazzo] palazzo2.png: 0.557 > 0.546? ✅
+[palazzo] palazzo3.png: 0.567 > 0.546? ✅
+[palazzo] palazzo4.png: 0.542 > 0.546? ❌
+[palazzo] palazzo5.png: 0.557 > 0.546? ✅
+
+🎯 Porcentaje de acierto: 80.00% (4/5)
+
+📊 Precision: 1.000
+📊 Recall: 0.800
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+
+
+Descripcion: jean cargo
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean cargo'
+
+   1. images-testing-nob\cargo-vintage2.png → Similitud: 0.574
+   2. images-testing-nob\cargo-wide-azul1.png → Similitud: 0.567
+   3. images-testing-nob\cargo1.png → Similitud: 0.565
+   4. images-testing-nob\cargo-grey1.png → Similitud: 0.563
+   5. images-testing-nob\cargo-vintage1.png → Similitud: 0.561
+   6. images-testing-nob\palazzo1.png → Similitud: 0.537
+   7. images-testing-nob\palazzo3.png → Similitud: 0.533
+   8. images-testing-nob\wide-ondas1.png → Similitud: 0.525
+   9. images-testing-nob\flared-vintage1.png → Similitud: 0.524
+   10. images-testing-nob\mom1.png → Similitud: 0.524
+   11. images-testing-nob\flared-wide-negro1.png → Similitud: 0.523
+   12. images-testing-nob\palazzo5.png → Similitud: 0.522
+   13. images-testing-nob\mom-grey1.png → Similitud: 0.522
+   14. images-testing-nob\flared2.png → Similitud: 0.521
+   15. images-testing-nob\flared6.png → Similitud: 0.520
+   16. images-testing-nob\mom5.png → Similitud: 0.520
+   17. images-testing-nob\wide1.png → Similitud: 0.519
+   18. images-testing-nob\palazzo2.png → Similitud: 0.519
+   19. images-testing-nob\mom3.png → Similitud: 0.516
+   20. images-testing-nob\flared1.png → Similitud: 0.516
+   21. images-testing-nob\flared5.png → Similitud: 0.515
+   22. images-testing-nob\recto1.png → Similitud: 0.514
+   23. images-testing-nob\skinny-oscuro.png → Similitud: 0.514
+   24. images-testing-nob\skinny-oscuro2.png → Similitud: 0.513
+   25. images-testing-nob\mom6.png → Similitud: 0.513
+   26. images-testing-nob\recto2.png → Similitud: 0.512
+   27. images-testing-nob\skinny1.png → Similitud: 0.509
+   28. images-testing-nob\palazzo4.png → Similitud: 0.509
+   29. images-testing-nob\skinny-rojo.png → Similitud: 0.505
+   30. images-testing-nob\mom4.png → Similitud: 0.505
+   31. images-testing-nob\wide-rotura-simetrica-negro2.png → Similitud: 0.505
+   32. images-testing-nob\skinny-rotura-simetrica2.png → Similitud: 0.503
+   33. images-testing-nob\recto-rotura-desmechada2.png → Similitud: 0.502
+   34. images-testing-nob\wide-rotura-simetrica-negro1.png → Similitud: 0.501
+   35. images-testing-nob\recto-rotura-simetrica1.png → Similitud: 0.500
+   36. images-testing-nob\recto-rotura-desmechada1.png → Similitud: 0.497
+   37. images-testing-nob\skinny-rotura-simetrica3.png → Similitud: 0.497
+   38. images-testing-nob\wide-rotura-simetrica1.png → Similitud: 0.493
+   39. images-testing-nob\skinny-rotura-simetrica1.png → Similitud: 0.492
+   40. images-testing-nob\skinny-rotura-desmechada1.png → Similitud: 0.491
+   41. images-testing-nob\wide-rotura-simetrica-desmechada1.png → Similitud: 0.488
+mayor red flag es palazzo1.png con 0.5374795198440552 de probabilidad
+[cargo] cargo-grey1.png: 0.563 > 0.537? ✅
+[cargo] cargo-vintage1.png: 0.561 > 0.537? ✅
+[cargo] cargo-vintage2.png: 0.574 > 0.537? ✅
+[cargo] cargo-wide-azul1.png: 0.567 > 0.537? ✅
+[cargo] cargo1.png: 0.565 > 0.537? ✅
+
+🎯 Porcentaje de acierto: 100.00% (5/5)
+
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+
+
+Descripcion: jean mom
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean mom'
+
+   1. images-testing-nob\mom5.png → Similitud: 0.560
+   2. images-testing-nob\mom1.png → Similitud: 0.559
+   3. images-testing-nob\mom3.png → Similitud: 0.556
+   4. images-testing-nob\mom6.png → Similitud: 0.555
+   5. images-testing-nob\mom4.png → Similitud: 0.544
+   6. images-testing-nob\recto2.png → Similitud: 0.530
+   7. images-testing-nob\mom-grey1.png → Similitud: 0.529
+   8. images-testing-nob\skinny-rotura-simetrica2.png → Similitud: 0.523
+   9. images-testing-nob\palazzo2.png → Similitud: 0.522
+   10. images-testing-nob\wide1.png → Similitud: 0.521
+   11. images-testing-nob\recto1.png → Similitud: 0.520
+   12. images-testing-nob\skinny-rotura-desmechada1.png → Similitud: 0.516
+   13. images-testing-nob\cargo-wide-azul1.png → Similitud: 0.516
+   14. images-testing-nob\palazzo1.png → Similitud: 0.516
+   15. images-testing-nob\cargo-vintage2.png → Similitud: 0.515
+   16. images-testing-nob\wide-ondas1.png → Similitud: 0.513
+   17. images-testing-nob\cargo1.png → Similitud: 0.513
+   18. images-testing-nob\palazzo4.png → Similitud: 0.509
+   19. images-testing-nob\cargo-grey1.png → Similitud: 0.508
+   20. images-testing-nob\cargo-vintage1.png → Similitud: 0.507
+   21. images-testing-nob\skinny-oscuro2.png → Similitud: 0.506
+   22. images-testing-nob\palazzo3.png → Similitud: 0.505
+   23. images-testing-nob\flared6.png → Similitud: 0.505
+   24. images-testing-nob\wide-rotura-simetrica-negro2.png → Similitud: 0.504
+   25. images-testing-nob\skinny-oscuro.png → Similitud: 0.503
+   26. images-testing-nob\flared-vintage1.png → Similitud: 0.503
+   27. images-testing-nob\skinny-rojo.png → Similitud: 0.503
+   28. images-testing-nob\palazzo5.png → Similitud: 0.502
+   29. images-testing-nob\skinny1.png → Similitud: 0.502
+   30. images-testing-nob\recto-rotura-simetrica1.png → Similitud: 0.501
+   31. images-testing-nob\flared2.png → Similitud: 0.499
+   32. images-testing-nob\skinny-rotura-simetrica3.png → Similitud: 0.499
+   33. images-testing-nob\wide-rotura-simetrica1.png → Similitud: 0.498
+   34. images-testing-nob\recto-rotura-desmechada2.png → Similitud: 0.497
+   35. images-testing-nob\flared-wide-negro1.png → Similitud: 0.497
+   36. images-testing-nob\flared1.png → Similitud: 0.497
+   37. images-testing-nob\flared5.png → Similitud: 0.496
+   38. images-testing-nob\skinny-rotura-simetrica1.png → Similitud: 0.496
+   39. images-testing-nob\wide-rotura-simetrica-negro1.png → Similitud: 0.495
+   40. images-testing-nob\recto-rotura-desmechada1.png → Similitud: 0.493
+   41. images-testing-nob\wide-rotura-simetrica-desmechada1.png → Similitud: 0.492
+mayor red flag es skinny-rotura-simetrica2.png con 0.5230971574783325 de probabilidad
+mayor yellow flag es recto2.png con 0.5303305983543396 de probabilidad
+[mom] mom-grey1.png: 0.529 > 0.523? 🟨
+[mom] mom1.png: 0.559 > 0.523? ✅
+[mom] mom3.png: 0.556 > 0.523? ✅
+[mom] mom4.png: 0.544 > 0.523? ✅
+[mom] mom5.png: 0.560 > 0.523? ✅
+[mom] mom6.png: 0.555 > 0.523? ✅
+
+🎯 Porcentaje de acierto: 83.33% (5/6)
+
+🎯 Porcentaje de acierto incluyendo 🟨: 100.00% (6/6)
+
+📊 Precision: 0.857
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+
+
+Descripcion: jean acampanado
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean acampanado'
+
+   1. images-testing-nob\flared6.png → Similitud: 0.573
+   2. images-testing-nob\flared-wide-negro1.png → Similitud: 0.572
+   3. images-testing-nob\flared5.png → Similitud: 0.571
+   4. images-testing-nob\flared-vintage1.png → Similitud: 0.571
+   5. images-testing-nob\palazzo5.png → Similitud: 0.570
+   6. images-testing-nob\flared2.png → Similitud: 0.570
+   7. images-testing-nob\flared1.png → Similitud: 0.563
+   8. images-testing-nob\palazzo3.png → Similitud: 0.548
+   9. images-testing-nob\wide-ondas1.png → Similitud: 0.545
+   10. images-testing-nob\palazzo1.png → Similitud: 0.539
+   11. images-testing-nob\wide1.png → Similitud: 0.535
+   12. images-testing-nob\palazzo4.png → Similitud: 0.527
+   13. images-testing-nob\palazzo2.png → Similitud: 0.524
+   14. images-testing-nob\cargo-vintage2.png → Similitud: 0.522
+   15. images-testing-nob\cargo1.png → Similitud: 0.521
+   16. images-testing-nob\mom-grey1.png → Similitud: 0.520
+   17. images-testing-nob\cargo-wide-azul1.png → Similitud: 0.519
+   18. images-testing-nob\cargo-grey1.png → Similitud: 0.518
+   19. images-testing-nob\recto1.png → Similitud: 0.517
+   20. images-testing-nob\cargo-vintage1.png → Similitud: 0.516
+   21. images-testing-nob\recto2.png → Similitud: 0.515
+   22. images-testing-nob\mom1.png → Similitud: 0.511
+   23. images-testing-nob\wide-rotura-simetrica-negro2.png → Similitud: 0.510
+   24. images-testing-nob\skinny-oscuro2.png → Similitud: 0.506
+   25. images-testing-nob\skinny-oscuro.png → Similitud: 0.506
+   26. images-testing-nob\skinny1.png → Similitud: 0.505
+   27. images-testing-nob\recto-rotura-simetrica1.png → Similitud: 0.502
+   28. images-testing-nob\skinny-rojo.png → Similitud: 0.502
+   29. images-testing-nob\mom5.png → Similitud: 0.501
+   30. images-testing-nob\mom3.png → Similitud: 0.500
+   31. images-testing-nob\wide-rotura-simetrica-negro1.png → Similitud: 0.498
+   32. images-testing-nob\wide-rotura-simetrica1.png → Similitud: 0.498
+   33. images-testing-nob\mom4.png → Similitud: 0.495
+   34. images-testing-nob\recto-rotura-desmechada2.png → Similitud: 0.494
+   35. images-testing-nob\mom6.png → Similitud: 0.493
+   36. images-testing-nob\wide-rotura-simetrica-desmechada1.png → Similitud: 0.491
+   37. images-testing-nob\skinny-rotura-simetrica3.png → Similitud: 0.490
+   38. images-testing-nob\recto-rotura-desmechada1.png → Similitud: 0.490
+   39. images-testing-nob\skinny-rotura-simetrica2.png → Similitud: 0.489
+   40. images-testing-nob\skinny-rotura-simetrica1.png → Similitud: 0.488
+   41. images-testing-nob\skinny-rotura-desmechada1.png → Similitud: 0.484
+mayor red flag es palazzo5.png con 0.5702540874481201 de probabilidad
+[flared] flared-vintage1.png: 0.571 > 0.570? ✅
+[flared] flared-wide-negro1.png: 0.572 > 0.570? ✅
+[flared] flared1.png: 0.563 > 0.570? ❌
+[flared] flared2.png: 0.570 > 0.570? ❌
+[flared] flared5.png: 0.571 > 0.570? ✅
+[flared] flared6.png: 0.573 > 0.570? ✅
+
+🎯 Porcentaje de acierto: 66.67% (4/6)
+
+📊 Precision: 1.000
+📊 Recall: 0.667
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+Descripcion: jean boho chic
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean boho chic'
+
+   1. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.536
+   2. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.533
+   3. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.520
+   4. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.519
+   5. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.518
+   6. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.517
+   7. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.516
+   8. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.511
+   9. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.508
+   10. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.496
+   11. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.495
+   12. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.488
+   13. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.486
+   14. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.485
+   15. images-testing-preferences-nobg\top-sport.png → Similitud: 0.484
+mayor red flag es pollera-jean-larga-minimalista.png con 0.5200597643852234 de probabilidad
+[bohochic] jean-bohochic.png: 0.516 > 0.520? ❌
+[bohochic] jean-bohochic2.png: 0.536 > 0.520? ✅
+[bohochic] jean-bohochic3.png: 0.533 > 0.520? ✅
+
+🎯 Porcentaje de acierto: 66.67% (2/3)
+
+📊 Precision: 1.000
+📊 Recall: 0.667
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+Probabilidad más baja: 0.516
+
+Imágenes con probabilidad mayor al mínimo:
+Esta imagen sobrepaso al minimo: jean-oldmoney-minimalista2.png: 0.517
+Esta imagen sobrepaso al minimo: jean-streetwear-minimalista.png: 0.519
+Esta imagen sobrepaso al minimo: pollera-jean-larga-minimalista.png: 0.520
+Esta imagen sobrepaso al minimo: pollera-jean-streetwear-minimalista.png: 0.518
+
+
+
+Descripcion: jean old money
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'jean old money'
+
+   1. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.543
+   2. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.531
+   3. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.529
+   4. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.524
+   5. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.522
+   6. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.519
+   7. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.519
+   8. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.513
+   9. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.500
+   10. images-testing-preferences-nobg\top-sport.png → Similitud: 0.499
+   11. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.499
+   12. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.497
+   13. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.497
+   14. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.496
+   15. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.495
+mayor red flag es jean-streetwear-minimalista.png con 0.5310359597206116 de probabilidad
+[oldmoney] jean-oldmoney-minimalista.png: 0.529 > 0.531? ❌
+[oldmoney] jean-oldmoney-minimalista2.png: 0.543 > 0.531? ✅
+
+🎯 Porcentaje de acierto: 50.00% (1/2)
+
+📊 Precision: 1.000
+📊 Recall: 0.500
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+Probabilidad más baja: 0.529
+
+Imágenes con probabilidad mayor al mínimo:
+Esta imagen sobrepaso al minimo: jean-streetwear-minimalista.png: 0.531
+
+
+
+Descripcion: short
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'short'
+
+   1. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.532
+   2. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.525
+   3. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.522
+   4. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.516
+   5. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.515
+   6. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.514
+   7. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.511
+   8. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.508
+   9. images-testing-preferences-nobg\top-sport.png → Similitud: 0.505
+   10. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.502
+   11. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.500
+   12. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.499
+   13. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.498
+   14. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.495
+   15. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.494
+mayor red flag es pollera-jean-streetwear-minimalista.png con 0.5155918002128601 de probabilidad
+[short] short-gris-sport.png: 0.525 > 0.516? ✅
+[short] short-negro-sport.png: 0.532 > 0.516? ✅
+[short] short-rosa-sport.png: 0.522 > 0.516? ✅
+
+🎯 Porcentaje de acierto: 100.00% (3/3)
+
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+Probabilidad más baja: 0.522
+
+Imágenes con probabilidad mayor al mínimo:
+
+
+
+Descripcion: pollera
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'pollera'
+
+   1. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.533
+   2. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.523
+   3. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.521
+   4. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.516
+   5. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.515
+   6. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.514
+   7. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.512
+   8. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.511
+   9. images-testing-preferences-nobg\top-sport.png → Similitud: 0.503
+   10. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.502
+   11. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.502
+   12. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.500
+   13. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.499
+   14. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.497
+   15. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.489
+mayor red flag es jean-bohochic3.png con 0.5148104429244995 de probabilidad
+[pollera] pollera-coquette.png: 0.521 > 0.515? ✅
+[pollera] pollera-coquette2.png: 0.533 > 0.515? ✅
+[pollera] pollera-jean-larga-minimalista.png: 0.516 > 0.515? ✅
+[pollera] pollera-jean-streetwear-minimalista.png: 0.523 > 0.515? ✅
+
+🎯 Porcentaje de acierto: 100.00% (4/4)
+
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+Probabilidad más baja: 0.516
+
+Imágenes con probabilidad mayor al mínimo:
+
+
+
+Descripcion: coquette
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'coquette'
+
+   1. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.526
+   2. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.519
+   3. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.516
+   4. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.512
+   5. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.512
+   6. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.507
+   7. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.505
+   8. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.503
+   9. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.502
+   10. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.501
+   11. images-testing-preferences-nobg\top-sport.png → Similitud: 0.500
+   12. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.500
+   13. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.497
+   14. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.497
+   15. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.495
+mayor red flag es short-negro-sport.png con 0.5161386728286743 de probabilidad
+[coquette] pollera-coquette.png: 0.526 > 0.516? ✅
+[coquette] pollera-coquette2.png: 0.519 > 0.516? ✅
+
+🎯 Porcentaje de acierto: 100.00% (2/2)
+
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+
+Probabilidad más baja: 0.519
+
+Imágenes con probabilidad mayor al mínimo:
+
+
+
+Descripcion: minimalista
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'minimalista'
+
+   1. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.512
+   2. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.511
+   3. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.511
+   4. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.509
+   5. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.506
+   6. images-testing-preferences-nobg\top-sport.png → Similitud: 0.506
+   7. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.505
+   8. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.505
+   9. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.505
+   10. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.503
+   11. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.501
+   12. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.500
+   13. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.498
+   14. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.496
+   15. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.494
+mayor red flag es short-gris-sport.png con 0.5120430588722229 de probabilidad
+[minimalista] jean-oldmoney-minimalista.png: 0.506 > 0.512? ❌
+[minimalista] jean-oldmoney-minimalista2.png: 0.511 > 0.512? ❌
+[minimalista] jean-streetwear-minimalista.png: 0.511 > 0.512? ❌
+[minimalista] pollera-jean-larga-minimalista.png: 0.509 > 0.512? ❌
+[minimalista] pollera-jean-streetwear-minimalista.png: 0.505 > 0.512? ❌
+
+🎯 Porcentaje de acierto: 0.00% (0/5)
+
+📊 Precision: 0.000
+📊 Recall: 0.000
+📊 MRR (Mean Reciprocal Rank): 0.500
+
+Probabilidad más baja: 0.505
+
+Imágenes con probabilidad mayor al mínimo:
+Esta imagen sobrepaso al minimo: short-gris-sport.png: 0.512
+Esta imagen sobrepaso al minimo: short-negro-sport.png: 0.505
+Esta imagen sobrepaso al minimo: short-rosa-sport.png: 0.505
+Esta imagen sobrepaso al minimo: top-sport.png: 0.506
+
+
+
+Descripcion: streetwear
+
+📝 SIMILITUD CON DESCRIPCIÓN: 'streetwear'
+
+   1. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.508
+   2. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.506
+   3. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.506
+   4. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.506
+   5. images-testing-preferences-nobg\top-sport.png → Similitud: 0.505
+   6. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.504
+   7. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.504
+   8. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.504
+   9. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.504
+   10. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.503
+   11. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.502
+   12. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.502
+   13. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.502
+   14. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.500
+   15. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.496
+mayor red flag es short-negro-sport.png con 0.5075623989105225 de probabilidad
+mayor yellow flag es jean-bohochic3.png con 0.5058631896972656 de probabilidad
+[streetwear] jean-streetwear-minimalista.png: 0.506 > 0.508? ❌
+[streetwear] pollera-jean-streetwear-minimalista.png: 0.504 > 0.508? ❌
+
+🎯 Porcentaje de acierto: 0.00% (0/2)
+
+📊 Precision: 0.000
+📊 Recall: 0.000
+📊 MRR (Mean Reciprocal Rank): 0.333
+
+Probabilidad más baja: 0.504
+
+Imágenes con probabilidad mayor al mínimo:
+Esta imagen sobrepaso al minimo: jean-bohochic3.png: 0.506
+Esta imagen sobrepaso al minimo: short-gris-sport.png: 0.506
+Esta imagen sobrepaso al minimo: short-negro-sport.png: 0.508
+Esta imagen sobrepaso al minimo: top-sport.png: 0.505

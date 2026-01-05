@@ -1,0 +1,1718 @@
+Model name: melijauregui/cherrypick-sigLip3
+fine_tune(csv_path="datasets/unificado/roturas-preferencias-v2.csv", original_model_name="Marqo/marqo-fashionSigLIP", model_name="Marqo/marqo-fashionSigLIP",
+              model_name_to_push="melijauregui/cherrypick-sigLip3", data_aug=False,
+              loss_func=contrastive_loss_InfoNCE, batch_size=8, epochs=32, lr=2e-5,
+              n_layers=2)
+
+Descripcion: jean liso
+   1. images-testing-roturas-nobg\recto1.png → Similitud: 0.542
+   2. images-testing-roturas-nobg\recto2.png → Similitud: 0.537
+   3. images-testing-roturas-nobg\mom-grey1.png → Similitud: 0.533
+   4. images-testing-roturas-nobg\wide1.png → Similitud: 0.531
+   5. images-testing-roturas-nobg\mom3.png → Similitud: 0.530
+   6. images-testing-roturas-nobg\mom5.png → Similitud: 0.529
+   7. images-testing-roturas-nobg\mom1.png → Similitud: 0.529
+   8. images-testing-roturas-nobg\skinny-oscuro2.png → Similitud: 0.528
+   9. images-testing-roturas-nobg\palazzo1.png → Similitud: 0.527
+   10. images-testing-roturas-nobg\skinny-oscuro.png → Similitud: 0.525
+   11. images-testing-roturas-nobg\mom4.png → Similitud: 0.524
+   12. images-testing-roturas-nobg\skinny-rojo.png → Similitud: 0.523
+   13. images-testing-roturas-nobg\cargo-wide-azul1.png → Similitud: 0.522
+   14. images-testing-roturas-nobg\mom6.png → Similitud: 0.522
+   15. images-testing-roturas-nobg\skinny1.png → Similitud: 0.521
+   16. images-testing-roturas-nobg\wide-ondas1.png → Similitud: 0.518
+   17. images-testing-roturas-nobg\palazzo3.png → Similitud: 0.517
+   18. images-testing-roturas-nobg\flared6.png → Similitud: 0.516
+   19. images-testing-roturas-nobg\flared1.png → Similitud: 0.515
+   20. images-testing-roturas-nobg\flared-vintage1.png → Similitud: 0.514
+   21. images-testing-roturas-nobg\cargo1.png → Similitud: 0.513
+   22. images-testing-roturas-nobg\flared2.png → Similitud: 0.512
+   23. images-testing-roturas-nobg\cargo-vintage2.png → Similitud: 0.511
+   24. images-testing-roturas-nobg\cargo-grey1.png → Similitud: 0.511
+   25. images-testing-roturas-nobg\palazzo5.png → Similitud: 0.511
+   26. images-testing-roturas-nobg\flared-wide-negro1.png → Similitud: 0.508
+   27. images-testing-roturas-nobg\recto-rotura-desmechada1.png → Similitud: 0.508
+   28. images-testing-roturas-nobg\skinny-rotura-simetrica3.png → Similitud: 0.507
+   29. images-testing-roturas-nobg\flared5.png → Similitud: 0.507
+   30. images-testing-roturas-nobg\cargo-vintage1.png → Similitud: 0.506
+   31. images-testing-roturas-nobg\palazzo2.png → Similitud: 0.506
+   32. images-testing-roturas-nobg\recto-rotura-simetrica1.png → Similitud: 0.503
+   33. images-testing-roturas-nobg\wide-rotura-simetrica-negro1.png → Similitud: 0.503
+   34. images-testing-roturas-nobg\palazzo4.png → Similitud: 0.502
+   35. images-testing-roturas-nobg\wide-rotura-simetrica-desmechada1.png → Similitud: 0.502
+   36. images-testing-roturas-nobg\wide-rotura-simetrica-negro2.png → Similitud: 0.501
+   37. images-testing-roturas-nobg\wide-rotura-simetrica1.png → Similitud: 0.500
+   38. images-testing-roturas-nobg\skinny-rotura-desmechada1.png → Similitud: 0.499
+   39. images-testing-roturas-nobg\skinny-rotura-simetrica2.png → Similitud: 0.499
+   40. images-testing-roturas-nobg\recto-rotura-desmechada2.png → Similitud: 0.498
+   41. images-testing-roturas-nobg\skinny-rotura-simetrica1.png → Similitud: 0.497
+mayor red flag es recto-rotura-desmechada1.png con 0.5080899596214294 de probabilidad
+[rotura] cargo-grey1.png: 0.511 > 0.508? ✅
+[rotura] cargo-vintage1.png: 0.506 > 0.508? ❌
+[rotura] cargo-vintage2.png: 0.511 > 0.508? ✅
+[rotura] cargo-wide-azul1.png: 0.522 > 0.508? ✅
+[rotura] cargo1.png: 0.513 > 0.508? ✅
+[rotura] flared-vintage1.png: 0.514 > 0.508? ✅
+[rotura] flared-wide-negro1.png: 0.508 > 0.508? ✅
+[rotura] flared1.png: 0.515 > 0.508? ✅
+[rotura] flared2.png: 0.512 > 0.508? ✅
+[rotura] flared5.png: 0.507 > 0.508? ❌
+[rotura] flared6.png: 0.516 > 0.508? ✅
+[rotura] mom-grey1.png: 0.533 > 0.508? ✅
+[rotura] mom1.png: 0.529 > 0.508? ✅
+[rotura] mom3.png: 0.530 > 0.508? ✅
+[rotura] mom4.png: 0.524 > 0.508? ✅
+[rotura] mom5.png: 0.529 > 0.508? ✅
+[rotura] mom6.png: 0.522 > 0.508? ✅
+[rotura] palazzo1.png: 0.527 > 0.508? ✅
+[rotura] palazzo2.png: 0.506 > 0.508? ❌
+[rotura] palazzo3.png: 0.517 > 0.508? ✅
+[rotura] palazzo4.png: 0.502 > 0.508? ❌
+[rotura] palazzo5.png: 0.511 > 0.508? ✅
+[rotura] recto1.png: 0.542 > 0.508? ✅
+[rotura] recto2.png: 0.537 > 0.508? ✅
+[rotura] skinny-oscuro.png: 0.525 > 0.508? ✅
+[rotura] skinny-oscuro2.png: 0.528 > 0.508? ✅
+[rotura] skinny-rojo.png: 0.523 > 0.508? ✅
+[rotura] skinny1.png: 0.521 > 0.508? ✅
+[rotura] wide-ondas1.png: 0.518 > 0.508? ✅
+[rotura] wide1.png: 0.531 > 0.508? ✅
+🎯 Porcentaje de acierto: 86.67% (26/30)
+📊 Precision: 1.000
+📊 Recall: 0.867
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean con roturas
+   1. images-testing-roturas-nobg\recto-rotura-desmechada1.png → Similitud: 0.544
+   2. images-testing-roturas-nobg\skinny-rotura-simetrica3.png → Similitud: 0.543
+   3. images-testing-roturas-nobg\wide-rotura-simetrica-desmechada1.png → Similitud: 0.541
+   4. images-testing-roturas-nobg\recto-rotura-simetrica1.png → Similitud: 0.540
+   5. images-testing-roturas-nobg\wide-rotura-simetrica1.png → Similitud: 0.536
+   6. images-testing-roturas-nobg\wide-rotura-simetrica-negro1.png → Similitud: 0.534
+   7. images-testing-roturas-nobg\wide-rotura-simetrica-negro2.png → Similitud: 0.533
+   8. images-testing-roturas-nobg\skinny-rotura-desmechada1.png → Similitud: 0.533
+   9. images-testing-roturas-nobg\recto-rotura-desmechada2.png → Similitud: 0.532
+   10. images-testing-roturas-nobg\skinny-rotura-simetrica2.png → Similitud: 0.531
+   11. images-testing-roturas-nobg\skinny-rotura-simetrica1.png → Similitud: 0.531
+   12. images-testing-roturas-nobg\recto2.png → Similitud: 0.514
+   13. images-testing-roturas-nobg\recto1.png → Similitud: 0.513
+   14. images-testing-roturas-nobg\skinny-oscuro.png → Similitud: 0.510
+   15. images-testing-roturas-nobg\skinny-oscuro2.png → Similitud: 0.510
+   16. images-testing-roturas-nobg\skinny-rojo.png → Similitud: 0.507
+   17. images-testing-roturas-nobg\cargo-vintage1.png → Similitud: 0.507
+   18. images-testing-roturas-nobg\palazzo1.png → Similitud: 0.506
+   19. images-testing-roturas-nobg\mom3.png → Similitud: 0.504
+   20. images-testing-roturas-nobg\wide-ondas1.png → Similitud: 0.504
+   21. images-testing-roturas-nobg\mom-grey1.png → Similitud: 0.503
+   22. images-testing-roturas-nobg\cargo-wide-azul1.png → Similitud: 0.503
+   23. images-testing-roturas-nobg\skinny1.png → Similitud: 0.502
+   24. images-testing-roturas-nobg\flared-vintage1.png → Similitud: 0.502
+   25. images-testing-roturas-nobg\cargo-vintage2.png → Similitud: 0.500
+   26. images-testing-roturas-nobg\wide1.png → Similitud: 0.500
+   27. images-testing-roturas-nobg\mom5.png → Similitud: 0.498
+   28. images-testing-roturas-nobg\flared1.png → Similitud: 0.498
+   29. images-testing-roturas-nobg\mom4.png → Similitud: 0.498
+   30. images-testing-roturas-nobg\palazzo3.png → Similitud: 0.498
+   31. images-testing-roturas-nobg\flared2.png → Similitud: 0.497
+   32. images-testing-roturas-nobg\mom1.png → Similitud: 0.496
+   33. images-testing-roturas-nobg\flared6.png → Similitud: 0.496
+   34. images-testing-roturas-nobg\cargo-grey1.png → Similitud: 0.495
+   35. images-testing-roturas-nobg\flared-wide-negro1.png → Similitud: 0.495
+   36. images-testing-roturas-nobg\mom6.png → Similitud: 0.494
+   37. images-testing-roturas-nobg\palazzo4.png → Similitud: 0.491
+   38. images-testing-roturas-nobg\cargo1.png → Similitud: 0.490
+   39. images-testing-roturas-nobg\flared5.png → Similitud: 0.488
+   40. images-testing-roturas-nobg\palazzo2.png → Similitud: 0.488
+   41. images-testing-roturas-nobg\palazzo5.png → Similitud: 0.488
+mayor red flag es recto2.png con 0.5143380165100098 de probabilidad
+[rotura] recto-rotura-desmechada1.png: 0.544 > 0.514? ✅
+[rotura] recto-rotura-desmechada2.png: 0.532 > 0.514? ✅
+[rotura] recto-rotura-simetrica1.png: 0.540 > 0.514? ✅
+[rotura] skinny-rotura-desmechada1.png: 0.533 > 0.514? ✅
+[rotura] skinny-rotura-simetrica1.png: 0.531 > 0.514? ✅
+[rotura] skinny-rotura-simetrica2.png: 0.531 > 0.514? ✅
+[rotura] skinny-rotura-simetrica3.png: 0.543 > 0.514? ✅
+[rotura] wide-rotura-simetrica-desmechada1.png: 0.541 > 0.514? ✅
+[rotura] wide-rotura-simetrica-negro1.png: 0.534 > 0.514? ✅
+[rotura] wide-rotura-simetrica-negro2.png: 0.533 > 0.514? ✅
+[rotura] wide-rotura-simetrica1.png: 0.536 > 0.514? ✅
+🎯 Porcentaje de acierto: 100.00% (11/11)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean wide leg
+   1. images-testing-roturas-nobg\palazzo3.png → Similitud: 0.543
+   2. images-testing-roturas-nobg\palazzo1.png → Similitud: 0.540
+   3. images-testing-roturas-nobg\wide1.png → Similitud: 0.540
+   4. images-testing-roturas-nobg\wide-ondas1.png → Similitud: 0.539
+   5. images-testing-roturas-nobg\wide-rotura-simetrica1.png → Similitud: 0.538
+   6. images-testing-roturas-nobg\flared-vintage1.png → Similitud: 0.534
+   7. images-testing-roturas-nobg\palazzo5.png → Similitud: 0.534
+   8. images-testing-roturas-nobg\wide-rotura-simetrica-negro2.png → Similitud: 0.533
+   9. images-testing-roturas-nobg\palazzo2.png → Similitud: 0.532
+   10. images-testing-roturas-nobg\palazzo4.png → Similitud: 0.531
+   11. images-testing-roturas-nobg\recto-rotura-simetrica1.png → Similitud: 0.529
+   12. images-testing-roturas-nobg\flared-wide-negro1.png → Similitud: 0.526
+   13. images-testing-roturas-nobg\mom-grey1.png → Similitud: 0.526
+   14. images-testing-roturas-nobg\wide-rotura-simetrica-negro1.png → Similitud: 0.522
+   15. images-testing-roturas-nobg\flared6.png → Similitud: 0.521
+   16. images-testing-roturas-nobg\wide-rotura-simetrica-desmechada1.png → Similitud: 0.520
+   17. images-testing-roturas-nobg\cargo-wide-azul1.png → Similitud: 0.519
+   18. images-testing-roturas-nobg\recto-rotura-desmechada1.png → Similitud: 0.518
+   19. images-testing-roturas-nobg\flared2.png → Similitud: 0.517
+   20. images-testing-roturas-nobg\cargo-vintage1.png → Similitud: 0.513
+   21. images-testing-roturas-nobg\flared5.png → Similitud: 0.512
+   22. images-testing-roturas-nobg\recto1.png → Similitud: 0.512
+   23. images-testing-roturas-nobg\cargo-grey1.png → Similitud: 0.511
+   24. images-testing-roturas-nobg\mom1.png → Similitud: 0.510
+   25. images-testing-roturas-nobg\flared1.png → Similitud: 0.509
+   26. images-testing-roturas-nobg\recto2.png → Similitud: 0.509
+   27. images-testing-roturas-nobg\cargo-vintage2.png → Similitud: 0.508
+   28. images-testing-roturas-nobg\mom5.png → Similitud: 0.507
+   29. images-testing-roturas-nobg\mom4.png → Similitud: 0.505
+   30. images-testing-roturas-nobg\mom3.png → Similitud: 0.505
+   31. images-testing-roturas-nobg\cargo1.png → Similitud: 0.503
+   32. images-testing-roturas-nobg\mom6.png → Similitud: 0.501
+   33. images-testing-roturas-nobg\skinny-rotura-simetrica3.png → Similitud: 0.497
+   34. images-testing-roturas-nobg\skinny-rotura-simetrica2.png → Similitud: 0.494
+   35. images-testing-roturas-nobg\skinny-oscuro2.png → Similitud: 0.494
+   36. images-testing-roturas-nobg\skinny-oscuro.png → Similitud: 0.488
+   37. images-testing-roturas-nobg\skinny-rotura-desmechada1.png → Similitud: 0.487
+   38. images-testing-roturas-nobg\skinny-rojo.png → Similitud: 0.486
+   39. images-testing-roturas-nobg\skinny1.png → Similitud: 0.486
+   40. images-testing-roturas-nobg\recto-rotura-desmechada2.png → Similitud: 0.486
+   41. images-testing-roturas-nobg\skinny-rotura-simetrica1.png → Similitud: 0.478
+mayor red flag es flared-vintage1.png con 0.5340747237205505 de probabilidad
+mayor yellow flag es palazzo3.png con 0.5430771112442017 de probabilidad
+[wide] cargo-wide-azul1.png: 0.519 > 0.534? ❌
+[wide] flared-wide-negro1.png: 0.526 > 0.534? ❌
+[wide] wide-ondas1.png: 0.539 > 0.534? 🟨
+[wide] wide-rotura-simetrica-desmechada1.png: 0.520 > 0.534? ❌
+[wide] wide-rotura-simetrica-negro1.png: 0.522 > 0.534? ❌
+[wide] wide-rotura-simetrica-negro2.png: 0.533 > 0.534? ❌
+[wide] wide-rotura-simetrica1.png: 0.538 > 0.534? 🟨
+[wide] wide1.png: 0.540 > 0.534? 🟨
+🎯 Porcentaje de acierto: 0.00% (0/8)
+🎯 Porcentaje de acierto incluyendo 🟨: 37.50% (3/8)
+📊 Precision: 0.600
+📊 Recall: 0.375
+📊 MRR (Mean Reciprocal Rank): 0.333
+📊 Primer positivo aparece en rank: 3
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Precision (>= 0.7)
+❌ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean skinny
+   1. images-testing-roturas-nobg\skinny-oscuro.png → Similitud: 0.549
+   2. images-testing-roturas-nobg\skinny-oscuro2.png → Similitud: 0.549
+   3. images-testing-roturas-nobg\skinny1.png → Similitud: 0.545
+   4. images-testing-roturas-nobg\skinny-rojo.png → Similitud: 0.543
+   5. images-testing-roturas-nobg\skinny-rotura-simetrica1.png → Similitud: 0.532
+   6. images-testing-roturas-nobg\recto2.png → Similitud: 0.523
+   7. images-testing-roturas-nobg\recto1.png → Similitud: 0.523
+   8. images-testing-roturas-nobg\recto-rotura-desmechada2.png → Similitud: 0.522
+   9. images-testing-roturas-nobg\mom3.png → Similitud: 0.517
+   10. images-testing-roturas-nobg\flared1.png → Similitud: 0.517
+   11. images-testing-roturas-nobg\skinny-rotura-simetrica3.png → Similitud: 0.517
+   12. images-testing-roturas-nobg\mom5.png → Similitud: 0.514
+   13. images-testing-roturas-nobg\cargo-wide-azul1.png → Similitud: 0.514
+   14. images-testing-roturas-nobg\flared2.png → Similitud: 0.513
+   15. images-testing-roturas-nobg\flared6.png → Similitud: 0.512
+   16. images-testing-roturas-nobg\mom1.png → Similitud: 0.511
+   17. images-testing-roturas-nobg\cargo1.png → Similitud: 0.511
+   18. images-testing-roturas-nobg\mom-grey1.png → Similitud: 0.509
+   19. images-testing-roturas-nobg\skinny-rotura-desmechada1.png → Similitud: 0.508
+   20. images-testing-roturas-nobg\mom6.png → Similitud: 0.508
+   21. images-testing-roturas-nobg\mom4.png → Similitud: 0.508
+   22. images-testing-roturas-nobg\cargo-vintage2.png → Similitud: 0.508
+   23. images-testing-roturas-nobg\cargo-grey1.png → Similitud: 0.507
+   24. images-testing-roturas-nobg\wide-ondas1.png → Similitud: 0.507
+   25. images-testing-roturas-nobg\palazzo1.png → Similitud: 0.507
+   26. images-testing-roturas-nobg\recto-rotura-desmechada1.png → Similitud: 0.504
+   27. images-testing-roturas-nobg\skinny-rotura-simetrica2.png → Similitud: 0.504
+   28. images-testing-roturas-nobg\flared-vintage1.png → Similitud: 0.504
+   29. images-testing-roturas-nobg\palazzo3.png → Similitud: 0.503
+   30. images-testing-roturas-nobg\flared-wide-negro1.png → Similitud: 0.503
+   31. images-testing-roturas-nobg\cargo-vintage1.png → Similitud: 0.502
+   32. images-testing-roturas-nobg\flared5.png → Similitud: 0.501
+   33. images-testing-roturas-nobg\wide1.png → Similitud: 0.500
+   34. images-testing-roturas-nobg\recto-rotura-simetrica1.png → Similitud: 0.498
+   35. images-testing-roturas-nobg\wide-rotura-simetrica-desmechada1.png → Similitud: 0.498
+   36. images-testing-roturas-nobg\palazzo5.png → Similitud: 0.496
+   37. images-testing-roturas-nobg\wide-rotura-simetrica-negro1.png → Similitud: 0.494
+   38. images-testing-roturas-nobg\palazzo2.png → Similitud: 0.492
+   39. images-testing-roturas-nobg\wide-rotura-simetrica-negro2.png → Similitud: 0.489
+   40. images-testing-roturas-nobg\palazzo4.png → Similitud: 0.488
+   41. images-testing-roturas-nobg\wide-rotura-simetrica1.png → Similitud: 0.485
+mayor red flag es recto2.png con 0.5229114294052124 de probabilidad
+[skinny] skinny-oscuro.png: 0.549 > 0.523? ✅
+[skinny] skinny-oscuro2.png: 0.549 > 0.523? ✅
+[skinny] skinny-rojo.png: 0.543 > 0.523? ✅
+[skinny] skinny-rotura-desmechada1.png: 0.508 > 0.523? ❌
+[skinny] skinny-rotura-simetrica1.png: 0.532 > 0.523? ✅
+[skinny] skinny-rotura-simetrica2.png: 0.504 > 0.523? ❌
+[skinny] skinny-rotura-simetrica3.png: 0.517 > 0.523? ❌
+[skinny] skinny1.png: 0.545 > 0.523? ✅
+🎯 Porcentaje de acierto: 62.50% (5/8)
+📊 Precision: 1.000
+📊 Recall: 0.625
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean recto
+   1. images-testing-roturas-nobg\recto1.png → Similitud: 0.549
+   2. images-testing-roturas-nobg\recto2.png → Similitud: 0.546
+   3. images-testing-roturas-nobg\mom-grey1.png → Similitud: 0.538
+   4. images-testing-roturas-nobg\wide1.png → Similitud: 0.535
+   5. images-testing-roturas-nobg\recto-rotura-desmechada1.png → Similitud: 0.530
+   6. images-testing-roturas-nobg\mom3.png → Similitud: 0.529
+   7. images-testing-roturas-nobg\mom4.png → Similitud: 0.528
+   8. images-testing-roturas-nobg\palazzo1.png → Similitud: 0.525
+   9. images-testing-roturas-nobg\mom5.png → Similitud: 0.524
+   10. images-testing-roturas-nobg\recto-rotura-simetrica1.png → Similitud: 0.524
+   11. images-testing-roturas-nobg\wide-rotura-simetrica-desmechada1.png → Similitud: 0.524
+   12. images-testing-roturas-nobg\mom1.png → Similitud: 0.523
+   13. images-testing-roturas-nobg\wide-ondas1.png → Similitud: 0.523
+   14. images-testing-roturas-nobg\skinny-rotura-simetrica3.png → Similitud: 0.521
+   15. images-testing-roturas-nobg\mom6.png → Similitud: 0.520
+   16. images-testing-roturas-nobg\cargo-wide-azul1.png → Similitud: 0.520
+   17. images-testing-roturas-nobg\skinny-oscuro2.png → Similitud: 0.517
+   18. images-testing-roturas-nobg\palazzo3.png → Similitud: 0.517
+   19. images-testing-roturas-nobg\flared-vintage1.png → Similitud: 0.516
+   20. images-testing-roturas-nobg\wide-rotura-simetrica1.png → Similitud: 0.516
+   21. images-testing-roturas-nobg\wide-rotura-simetrica-negro2.png → Similitud: 0.516
+   22. images-testing-roturas-nobg\skinny-oscuro.png → Similitud: 0.516
+   23. images-testing-roturas-nobg\wide-rotura-simetrica-negro1.png → Similitud: 0.516
+   24. images-testing-roturas-nobg\flared1.png → Similitud: 0.513
+   25. images-testing-roturas-nobg\cargo1.png → Similitud: 0.512
+   26. images-testing-roturas-nobg\flared6.png → Similitud: 0.511
+   27. images-testing-roturas-nobg\skinny-rotura-desmechada1.png → Similitud: 0.510
+   28. images-testing-roturas-nobg\skinny-rojo.png → Similitud: 0.509
+   29. images-testing-roturas-nobg\skinny1.png → Similitud: 0.509
+   30. images-testing-roturas-nobg\cargo-vintage1.png → Similitud: 0.508
+   31. images-testing-roturas-nobg\cargo-grey1.png → Similitud: 0.507
+   32. images-testing-roturas-nobg\flared2.png → Similitud: 0.506
+   33. images-testing-roturas-nobg\cargo-vintage2.png → Similitud: 0.505
+   34. images-testing-roturas-nobg\palazzo5.png → Similitud: 0.504
+   35. images-testing-roturas-nobg\recto-rotura-desmechada2.png → Similitud: 0.502
+   36. images-testing-roturas-nobg\palazzo2.png → Similitud: 0.502
+   37. images-testing-roturas-nobg\skinny-rotura-simetrica2.png → Similitud: 0.502
+   38. images-testing-roturas-nobg\palazzo4.png → Similitud: 0.502
+   39. images-testing-roturas-nobg\flared-wide-negro1.png → Similitud: 0.501
+   40. images-testing-roturas-nobg\skinny-rotura-simetrica1.png → Similitud: 0.495
+   41. images-testing-roturas-nobg\flared5.png → Similitud: 0.493
+mayor red flag es wide1.png con 0.5347775220870972 de probabilidad
+mayor yellow flag es mom-grey1.png con 0.5379154086112976 de probabilidad
+[recto] recto-rotura-desmechada1.png: 0.530 > 0.535? ❌
+[recto] recto-rotura-desmechada2.png: 0.502 > 0.535? ❌
+[recto] recto-rotura-simetrica1.png: 0.524 > 0.535? ❌
+[recto] recto1.png: 0.549 > 0.535? ✅
+[recto] recto2.png: 0.546 > 0.535? ✅
+🎯 Porcentaje de acierto: 40.00% (2/5)
+📊 Precision: 0.667
+📊 Recall: 0.400
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Precision (>= 0.7)
+❌ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean palazzo
+   1. images-testing-roturas-nobg\palazzo3.png → Similitud: 0.559
+   2. images-testing-roturas-nobg\palazzo2.png → Similitud: 0.558
+   3. images-testing-roturas-nobg\palazzo5.png → Similitud: 0.557
+   4. images-testing-roturas-nobg\palazzo4.png → Similitud: 0.545
+   5. images-testing-roturas-nobg\palazzo1.png → Similitud: 0.542
+   6. images-testing-roturas-nobg\wide-ondas1.png → Similitud: 0.542
+   7. images-testing-roturas-nobg\flared-vintage1.png → Similitud: 0.534
+   8. images-testing-roturas-nobg\flared-wide-negro1.png → Similitud: 0.530
+   9. images-testing-roturas-nobg\wide-rotura-simetrica1.png → Similitud: 0.530
+   10. images-testing-roturas-nobg\wide1.png → Similitud: 0.525
+   11. images-testing-roturas-nobg\wide-rotura-simetrica-negro2.png → Similitud: 0.521
+   12. images-testing-roturas-nobg\mom-grey1.png → Similitud: 0.518
+   13. images-testing-roturas-nobg\recto-rotura-simetrica1.png → Similitud: 0.518
+   14. images-testing-roturas-nobg\flared2.png → Similitud: 0.516
+   15. images-testing-roturas-nobg\cargo-vintage1.png → Similitud: 0.516
+   16. images-testing-roturas-nobg\flared5.png → Similitud: 0.516
+   17. images-testing-roturas-nobg\flared6.png → Similitud: 0.514
+   18. images-testing-roturas-nobg\cargo-vintage2.png → Similitud: 0.512
+   19. images-testing-roturas-nobg\cargo-wide-azul1.png → Similitud: 0.512
+   20. images-testing-roturas-nobg\cargo-grey1.png → Similitud: 0.511
+   21. images-testing-roturas-nobg\wide-rotura-simetrica-negro1.png → Similitud: 0.511
+   22. images-testing-roturas-nobg\wide-rotura-simetrica-desmechada1.png → Similitud: 0.504
+   23. images-testing-roturas-nobg\mom1.png → Similitud: 0.504
+   24. images-testing-roturas-nobg\flared1.png → Similitud: 0.504
+   25. images-testing-roturas-nobg\recto-rotura-desmechada1.png → Similitud: 0.503
+   26. images-testing-roturas-nobg\mom5.png → Similitud: 0.501
+   27. images-testing-roturas-nobg\recto1.png → Similitud: 0.496
+   28. images-testing-roturas-nobg\mom6.png → Similitud: 0.492
+   29. images-testing-roturas-nobg\cargo1.png → Similitud: 0.492
+   30. images-testing-roturas-nobg\mom3.png → Similitud: 0.491
+   31. images-testing-roturas-nobg\recto2.png → Similitud: 0.491
+   32. images-testing-roturas-nobg\skinny-oscuro2.png → Similitud: 0.490
+   33. images-testing-roturas-nobg\mom4.png → Similitud: 0.489
+   34. images-testing-roturas-nobg\skinny-rotura-simetrica2.png → Similitud: 0.487
+   35. images-testing-roturas-nobg\skinny-oscuro.png → Similitud: 0.487
+   36. images-testing-roturas-nobg\skinny1.png → Similitud: 0.486
+   37. images-testing-roturas-nobg\recto-rotura-desmechada2.png → Similitud: 0.485
+   38. images-testing-roturas-nobg\skinny-rojo.png → Similitud: 0.485
+   39. images-testing-roturas-nobg\skinny-rotura-simetrica3.png → Similitud: 0.484
+   40. images-testing-roturas-nobg\skinny-rotura-desmechada1.png → Similitud: 0.473
+   41. images-testing-roturas-nobg\skinny-rotura-simetrica1.png → Similitud: 0.472
+mayor red flag es flared-vintage1.png con 0.5336900353431702 de probabilidad
+mayor yellow flag es wide-ondas1.png con 0.5416586399078369 de probabilidad
+[palazzo] palazzo1.png: 0.542 > 0.534? ✅
+[palazzo] palazzo2.png: 0.558 > 0.534? ✅
+[palazzo] palazzo3.png: 0.559 > 0.534? ✅
+[palazzo] palazzo4.png: 0.545 > 0.534? ✅
+[palazzo] palazzo5.png: 0.557 > 0.534? ✅
+🎯 Porcentaje de acierto: 100.00% (5/5)
+📊 Precision: 0.833
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean cargo
+   1. images-testing-roturas-nobg\cargo-wide-azul1.png → Similitud: 0.564
+   2. images-testing-roturas-nobg\cargo-vintage2.png → Similitud: 0.563
+   3. images-testing-roturas-nobg\cargo-grey1.png → Similitud: 0.558
+   4. images-testing-roturas-nobg\cargo-vintage1.png → Similitud: 0.554
+   5. images-testing-roturas-nobg\cargo1.png → Similitud: 0.553
+   6. images-testing-roturas-nobg\palazzo1.png → Similitud: 0.534
+   7. images-testing-roturas-nobg\palazzo3.png → Similitud: 0.520
+   8. images-testing-roturas-nobg\flared-vintage1.png → Similitud: 0.514
+   9. images-testing-roturas-nobg\wide-ondas1.png → Similitud: 0.514
+   10. images-testing-roturas-nobg\mom5.png → Similitud: 0.513
+   11. images-testing-roturas-nobg\mom3.png → Similitud: 0.512
+   12. images-testing-roturas-nobg\mom1.png → Similitud: 0.511
+   13. images-testing-roturas-nobg\skinny-oscuro2.png → Similitud: 0.510
+   14. images-testing-roturas-nobg\mom-grey1.png → Similitud: 0.509
+   15. images-testing-roturas-nobg\flared2.png → Similitud: 0.508
+   16. images-testing-roturas-nobg\skinny-oscuro.png → Similitud: 0.508
+   17. images-testing-roturas-nobg\wide1.png → Similitud: 0.508
+   18. images-testing-roturas-nobg\flared6.png → Similitud: 0.508
+   19. images-testing-roturas-nobg\recto1.png → Similitud: 0.507
+   20. images-testing-roturas-nobg\mom6.png → Similitud: 0.507
+   21. images-testing-roturas-nobg\flared-wide-negro1.png → Similitud: 0.506
+   22. images-testing-roturas-nobg\flared1.png → Similitud: 0.506
+   23. images-testing-roturas-nobg\recto2.png → Similitud: 0.505
+   24. images-testing-roturas-nobg\skinny1.png → Similitud: 0.505
+   25. images-testing-roturas-nobg\palazzo2.png → Similitud: 0.504
+   26. images-testing-roturas-nobg\mom4.png → Similitud: 0.502
+   27. images-testing-roturas-nobg\skinny-rotura-simetrica2.png → Similitud: 0.502
+   28. images-testing-roturas-nobg\skinny-rojo.png → Similitud: 0.501
+   29. images-testing-roturas-nobg\palazzo5.png → Similitud: 0.501
+   30. images-testing-roturas-nobg\recto-rotura-desmechada1.png → Similitud: 0.500
+   31. images-testing-roturas-nobg\palazzo4.png → Similitud: 0.500
+   32. images-testing-roturas-nobg\skinny-rotura-simetrica3.png → Similitud: 0.500
+   33. images-testing-roturas-nobg\recto-rotura-desmechada2.png → Similitud: 0.498
+   34. images-testing-roturas-nobg\recto-rotura-simetrica1.png → Similitud: 0.498
+   35. images-testing-roturas-nobg\flared5.png → Similitud: 0.496
+   36. images-testing-roturas-nobg\wide-rotura-simetrica-negro2.png → Similitud: 0.494
+   37. images-testing-roturas-nobg\wide-rotura-simetrica1.png → Similitud: 0.494
+   38. images-testing-roturas-nobg\wide-rotura-simetrica-desmechada1.png → Similitud: 0.494
+   39. images-testing-roturas-nobg\wide-rotura-simetrica-negro1.png → Similitud: 0.493
+   40. images-testing-roturas-nobg\skinny-rotura-desmechada1.png → Similitud: 0.493
+   41. images-testing-roturas-nobg\skinny-rotura-simetrica1.png → Similitud: 0.489
+mayor red flag es palazzo1.png con 0.5335598587989807 de probabilidad
+[cargo] cargo-grey1.png: 0.558 > 0.534? ✅
+[cargo] cargo-vintage1.png: 0.554 > 0.534? ✅
+[cargo] cargo-vintage2.png: 0.563 > 0.534? ✅
+[cargo] cargo-wide-azul1.png: 0.564 > 0.534? ✅
+[cargo] cargo1.png: 0.553 > 0.534? ✅
+🎯 Porcentaje de acierto: 100.00% (5/5)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean mom
+   1. images-testing-roturas-nobg\mom3.png → Similitud: 0.557
+   2. images-testing-roturas-nobg\mom6.png → Similitud: 0.554
+   3. images-testing-roturas-nobg\mom1.png → Similitud: 0.553
+   4. images-testing-roturas-nobg\mom4.png → Similitud: 0.552
+   5. images-testing-roturas-nobg\mom5.png → Similitud: 0.552
+   6. images-testing-roturas-nobg\skinny-rotura-simetrica2.png → Similitud: 0.547
+   7. images-testing-roturas-nobg\skinny-rotura-desmechada1.png → Similitud: 0.545
+   8. images-testing-roturas-nobg\skinny-rotura-simetrica3.png → Similitud: 0.532
+   9. images-testing-roturas-nobg\recto2.png → Similitud: 0.528
+   10. images-testing-roturas-nobg\mom-grey1.png → Similitud: 0.525
+   11. images-testing-roturas-nobg\recto-rotura-desmechada1.png → Similitud: 0.520
+   12. images-testing-roturas-nobg\palazzo1.png → Similitud: 0.517
+   13. images-testing-roturas-nobg\recto-rotura-desmechada2.png → Similitud: 0.517
+   14. images-testing-roturas-nobg\recto1.png → Similitud: 0.515
+   15. images-testing-roturas-nobg\wide-rotura-simetrica-desmechada1.png → Similitud: 0.515
+   16. images-testing-roturas-nobg\skinny-oscuro2.png → Similitud: 0.514
+   17. images-testing-roturas-nobg\recto-rotura-simetrica1.png → Similitud: 0.511
+   18. images-testing-roturas-nobg\wide1.png → Similitud: 0.511
+   19. images-testing-roturas-nobg\wide-rotura-simetrica1.png → Similitud: 0.509
+   20. images-testing-roturas-nobg\skinny-rojo.png → Similitud: 0.509
+   21. images-testing-roturas-nobg\cargo-wide-azul1.png → Similitud: 0.508
+   22. images-testing-roturas-nobg\wide-rotura-simetrica-negro1.png → Similitud: 0.508
+   23. images-testing-roturas-nobg\wide-rotura-simetrica-negro2.png → Similitud: 0.506
+   24. images-testing-roturas-nobg\skinny-rotura-simetrica1.png → Similitud: 0.506
+   25. images-testing-roturas-nobg\skinny1.png → Similitud: 0.505
+   26. images-testing-roturas-nobg\skinny-oscuro.png → Similitud: 0.505
+   27. images-testing-roturas-nobg\flared6.png → Similitud: 0.504
+   28. images-testing-roturas-nobg\wide-ondas1.png → Similitud: 0.503
+   29. images-testing-roturas-nobg\cargo1.png → Similitud: 0.500
+   30. images-testing-roturas-nobg\palazzo3.png → Similitud: 0.499
+   31. images-testing-roturas-nobg\palazzo2.png → Similitud: 0.498
+   32. images-testing-roturas-nobg\cargo-vintage2.png → Similitud: 0.498
+   33. images-testing-roturas-nobg\flared-vintage1.png → Similitud: 0.497
+   34. images-testing-roturas-nobg\cargo-grey1.png → Similitud: 0.496
+   35. images-testing-roturas-nobg\flared2.png → Similitud: 0.495
+   36. images-testing-roturas-nobg\flared1.png → Similitud: 0.492
+   37. images-testing-roturas-nobg\cargo-vintage1.png → Similitud: 0.491
+   38. images-testing-roturas-nobg\palazzo4.png → Similitud: 0.490
+   39. images-testing-roturas-nobg\flared-wide-negro1.png → Similitud: 0.489
+   40. images-testing-roturas-nobg\flared5.png → Similitud: 0.489
+   41. images-testing-roturas-nobg\palazzo5.png → Similitud: 0.482
+mayor red flag es skinny-rotura-simetrica2.png con 0.5465935468673706 de probabilidad
+mayor yellow flag es recto2.png con 0.5282046794891357 de probabilidad
+[mom] mom-grey1.png: 0.525 > 0.547? ❌
+[mom] mom1.png: 0.553 > 0.547? ✅
+[mom] mom3.png: 0.557 > 0.547? ✅
+[mom] mom4.png: 0.552 > 0.547? ✅
+[mom] mom5.png: 0.552 > 0.547? ✅
+[mom] mom6.png: 0.554 > 0.547? ✅
+🎯 Porcentaje de acierto: 83.33% (5/6)
+📊 Precision: 1.000
+📊 Recall: 0.833
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean acampanado
+   1. images-testing-roturas-nobg\flared6.png → Similitud: 0.561
+   2. images-testing-roturas-nobg\flared2.png → Similitud: 0.561
+   3. images-testing-roturas-nobg\flared-wide-negro1.png → Similitud: 0.559
+   4. images-testing-roturas-nobg\flared5.png → Similitud: 0.557
+   5. images-testing-roturas-nobg\flared1.png → Similitud: 0.554
+   6. images-testing-roturas-nobg\flared-vintage1.png → Similitud: 0.554
+   7. images-testing-roturas-nobg\palazzo5.png → Similitud: 0.536
+   8. images-testing-roturas-nobg\palazzo3.png → Similitud: 0.527
+   9. images-testing-roturas-nobg\wide-ondas1.png → Similitud: 0.527
+   10. images-testing-roturas-nobg\wide1.png → Similitud: 0.525
+   11. images-testing-roturas-nobg\palazzo1.png → Similitud: 0.517
+   12. images-testing-roturas-nobg\cargo-vintage1.png → Similitud: 0.514
+   13. images-testing-roturas-nobg\recto1.png → Similitud: 0.512
+   14. images-testing-roturas-nobg\cargo-wide-azul1.png → Similitud: 0.512
+   15. images-testing-roturas-nobg\cargo1.png → Similitud: 0.510
+   16. images-testing-roturas-nobg\recto-rotura-simetrica1.png → Similitud: 0.510
+   17. images-testing-roturas-nobg\cargo-grey1.png → Similitud: 0.510
+   18. images-testing-roturas-nobg\cargo-vintage2.png → Similitud: 0.510
+   19. images-testing-roturas-nobg\wide-rotura-simetrica-negro2.png → Similitud: 0.507
+   20. images-testing-roturas-nobg\recto2.png → Similitud: 0.507
+   21. images-testing-roturas-nobg\skinny-oscuro2.png → Similitud: 0.507
+   22. images-testing-roturas-nobg\palazzo2.png → Similitud: 0.505
+   23. images-testing-roturas-nobg\skinny1.png → Similitud: 0.504
+   24. images-testing-roturas-nobg\skinny-oscuro.png → Similitud: 0.504
+   25. images-testing-roturas-nobg\palazzo4.png → Similitud: 0.504
+   26. images-testing-roturas-nobg\mom-grey1.png → Similitud: 0.504
+   27. images-testing-roturas-nobg\skinny-rojo.png → Similitud: 0.502
+   28. images-testing-roturas-nobg\wide-rotura-simetrica1.png → Similitud: 0.501
+   29. images-testing-roturas-nobg\wide-rotura-simetrica-desmechada1.png → Similitud: 0.499
+   30. images-testing-roturas-nobg\recto-rotura-desmechada1.png → Similitud: 0.499
+   31. images-testing-roturas-nobg\wide-rotura-simetrica-negro1.png → Similitud: 0.494
+   32. images-testing-roturas-nobg\skinny-rotura-simetrica1.png → Similitud: 0.492
+   33. images-testing-roturas-nobg\mom1.png → Similitud: 0.492
+   34. images-testing-roturas-nobg\mom5.png → Similitud: 0.492
+   35. images-testing-roturas-nobg\mom3.png → Similitud: 0.491
+   36. images-testing-roturas-nobg\skinny-rotura-simetrica3.png → Similitud: 0.488
+   37. images-testing-roturas-nobg\mom4.png → Similitud: 0.485
+   38. images-testing-roturas-nobg\mom6.png → Similitud: 0.484
+   39. images-testing-roturas-nobg\skinny-rotura-simetrica2.png → Similitud: 0.483
+   40. images-testing-roturas-nobg\recto-rotura-desmechada2.png → Similitud: 0.482
+   41. images-testing-roturas-nobg\skinny-rotura-desmechada1.png → Similitud: 0.482
+mayor red flag es palazzo5.png con 0.5359287261962891 de probabilidad
+[flared] flared-vintage1.png: 0.554 > 0.536? ✅
+[flared] flared-wide-negro1.png: 0.559 > 0.536? ✅
+[flared] flared1.png: 0.554 > 0.536? ✅
+[flared] flared2.png: 0.561 > 0.536? ✅
+[flared] flared5.png: 0.557 > 0.536? ✅
+[flared] flared6.png: 0.561 > 0.536? ✅
+🎯 Porcentaje de acierto: 100.00% (6/6)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean boho chic
+   1. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.530
+   2. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.525
+   3. images-testing-preferences-nobg\pollera-jean-streetwear2.png → Similitud: 0.513
+   4. images-testing-preferences-nobg\jean-oldmoney3.png → Similitud: 0.512
+   5. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.510
+   6. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.509
+   7. images-testing-preferences-nobg\pollera-jean-streetwear.png → Similitud: 0.508
+   8. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.506
+   9. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.505
+   10. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.504
+   11. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.503
+   12. images-testing-preferences-nobg\jean-negro-streetwear.png → Similitud: 0.503
+   13. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.503
+   14. images-testing-preferences-nobg\short-negro-streetwear.png → Similitud: 0.495
+   15. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.491
+   16. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.486
+   17. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.481
+   18. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.478
+   19. images-testing-preferences-nobg\top-sport.png → Similitud: 0.478
+   20. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.473
+mayor red flag es pollera-jean-streetwear2.png con 0.5127078294754028 de probabilidad
+[bohochic] jean-bohochic.png: 0.509 > 0.513? ❌
+[bohochic] jean-bohochic2.png: 0.530 > 0.513? ✅
+[bohochic] jean-bohochic3.png: 0.525 > 0.513? ✅
+🎯 Porcentaje de acierto: 66.67% (2/3)
+📊 Precision: 1.000
+📊 Recall: 0.667
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: jean old money
+   1. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.530
+   2. images-testing-preferences-nobg\jean-oldmoney3.png → Similitud: 0.527
+   3. images-testing-preferences-nobg\pollera-jean-streetwear2.png → Similitud: 0.521
+   4. images-testing-preferences-nobg\short-negro-streetwear.png → Similitud: 0.519
+   5. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.517
+   6. images-testing-preferences-nobg\pollera-jean-streetwear.png → Similitud: 0.512
+   7. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.511
+   8. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.507
+   9. images-testing-preferences-nobg\jean-negro-streetwear.png → Similitud: 0.503
+   10. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.503
+   11. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.499
+   12. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.495
+   13. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.495
+   14. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.492
+   15. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.489
+   16. images-testing-preferences-nobg\top-sport.png → Similitud: 0.488
+   17. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.488
+   18. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.486
+   19. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.482
+   20. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.481
+mayor red flag es pollera-jean-streetwear2.png con 0.5209606289863586 de probabilidad
+[oldmoney] jean-oldmoney-minimalista.png: 0.517 > 0.521? ❌
+[oldmoney] jean-oldmoney-minimalista2.png: 0.530 > 0.521? ✅
+[oldmoney] jean-oldmoney3.png: 0.527 > 0.521? ✅
+🎯 Porcentaje de acierto: 66.67% (2/3)
+📊 Precision: 1.000
+📊 Recall: 0.667
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: short
+   1. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.528
+   2. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.527
+   3. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.526
+   4. images-testing-preferences-nobg\short-negro-streetwear.png → Similitud: 0.522
+   5. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.513
+   6. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.513
+   7. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.511
+   8. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.510
+   9. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.510
+   10. images-testing-preferences-nobg\pollera-jean-streetwear2.png → Similitud: 0.509
+   11. images-testing-preferences-nobg\pollera-jean-streetwear.png → Similitud: 0.508
+   12. images-testing-preferences-nobg\jean-oldmoney3.png → Similitud: 0.507
+   13. images-testing-preferences-nobg\top-sport.png → Similitud: 0.503
+   14. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.499
+   15. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.498
+   16. images-testing-preferences-nobg\jean-negro-streetwear.png → Similitud: 0.497
+   17. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.496
+   18. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.495
+   19. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.494
+   20. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.490
+mayor red flag es pollera-jean-streetwear-minimalista.png con 0.5134885907173157 de probabilidad
+[short] short-gris-sport.png: 0.526 > 0.513? ✅
+[short] short-negro-sport.png: 0.528 > 0.513? ✅
+[short] short-negro-streetwear.png: 0.522 > 0.513? ✅
+[short] short-rosa-sport.png: 0.527 > 0.513? ✅
+🎯 Porcentaje de acierto: 100.00% (4/4)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: pollera
+   1. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.533
+   2. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.526
+   3. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.526
+   4. images-testing-preferences-nobg\pollera-jean-streetwear2.png → Similitud: 0.516
+   5. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.516
+   6. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.512
+   7. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.510
+   8. images-testing-preferences-nobg\pollera-jean-streetwear.png → Similitud: 0.510
+   9. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.506
+   10. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.505
+   11. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.505
+   12. images-testing-preferences-nobg\top-sport.png → Similitud: 0.502
+   13. images-testing-preferences-nobg\jean-oldmoney3.png → Similitud: 0.501
+   14. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.499
+   15. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.498
+   16. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.496
+   17. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.496
+   18. images-testing-preferences-nobg\short-negro-streetwear.png → Similitud: 0.496
+   19. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.491
+   20. images-testing-preferences-nobg\jean-negro-streetwear.png → Similitud: 0.488
+mayor red flag es short-rosa-sport.png con 0.5120577216148376 de probabilidad
+[pollera] pollera-coquette.png: 0.526 > 0.512? ✅
+[pollera] pollera-coquette2.png: 0.533 > 0.512? ✅
+[pollera] pollera-jean-larga-minimalista.png: 0.516 > 0.512? ✅
+[pollera] pollera-jean-streetwear-minimalista.png: 0.526 > 0.512? ✅
+[pollera] pollera-jean-streetwear.png: 0.510 > 0.512? ❌
+[pollera] pollera-jean-streetwear2.png: 0.516 > 0.512? ✅
+🎯 Porcentaje de acierto: 83.33% (5/6)
+📊 Precision: 1.000
+📊 Recall: 0.833
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: coquette
+   1. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.528
+   2. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.518
+   3. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.513
+   4. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.513
+   5. images-testing-preferences-nobg\pollera-jean-streetwear.png → Similitud: 0.511
+   6. images-testing-preferences-nobg\pollera-jean-streetwear2.png → Similitud: 0.510
+   7. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.509
+   8. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.508
+   9. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.508
+   10. images-testing-preferences-nobg\jean-negro-streetwear.png → Similitud: 0.504
+   11. images-testing-preferences-nobg\jean-oldmoney3.png → Similitud: 0.503
+   12. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.502
+   13. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.501
+   14. images-testing-preferences-nobg\short-negro-streetwear.png → Similitud: 0.500
+   15. images-testing-preferences-nobg\top-sport.png → Similitud: 0.498
+   16. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.498
+   17. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.495
+   18. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.495
+   19. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.495
+   20. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.492
+mayor red flag es short-negro-sport.png con 0.5133013129234314 de probabilidad
+[coquette] pollera-coquette.png: 0.528 > 0.513? ✅
+[coquette] pollera-coquette2.png: 0.518 > 0.513? ✅
+🎯 Porcentaje de acierto: 100.00% (2/2)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: minimalista
+   1. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.517
+   2. images-testing-preferences-nobg\jean-oldmoney3.png → Similitud: 0.513
+   3. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.511
+   4. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.507
+   5. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.506
+   6. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.506
+   7. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.505
+   8. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.504
+   9. images-testing-preferences-nobg\top-sport.png → Similitud: 0.503
+   10. images-testing-preferences-nobg\pollera-jean-streetwear2.png → Similitud: 0.503
+   11. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.502
+   12. images-testing-preferences-nobg\short-negro-streetwear.png → Similitud: 0.502
+   13. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.501
+   14. images-testing-preferences-nobg\pollera-jean-streetwear.png → Similitud: 0.501
+   15. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.498
+   16. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.491
+   17. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.491
+   18. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.491
+   19. images-testing-preferences-nobg\jean-negro-streetwear.png → Similitud: 0.489
+   20. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.488
+mayor red flag es jean-oldmoney3.png con 0.5131280422210693 de probabilidad
+[minimalista] jean-oldmoney-minimalista.png: 0.507 > 0.513? ❌
+[minimalista] jean-oldmoney-minimalista2.png: 0.517 > 0.513? ✅
+[minimalista] jean-streetwear-minimalista.png: 0.511 > 0.513? ❌
+[minimalista] pollera-jean-larga-minimalista.png: 0.506 > 0.513? ❌
+[minimalista] pollera-jean-streetwear-minimalista.png: 0.498 > 0.513? ❌
+🎯 Porcentaje de acierto: 20.00% (1/5)
+📊 Precision: 1.000
+📊 Recall: 0.200
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+❌ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: streetwear
+   1. images-testing-preferences-nobg\short-negro-streetwear.png → Similitud: 0.518
+   2. images-testing-preferences-nobg\jean-streetwear-minimalista.png → Similitud: 0.505
+   3. images-testing-preferences-nobg\pollera-jean-streetwear.png → Similitud: 0.505
+   4. images-testing-preferences-nobg\jean-oldmoney-minimalista2.png → Similitud: 0.504
+   5. images-testing-preferences-nobg\jean-oldmoney-minimalista.png → Similitud: 0.504
+   6. images-testing-preferences-nobg\short-rosa-sport.png → Similitud: 0.504
+   7. images-testing-preferences-nobg\jean-negro-streetwear.png → Similitud: 0.503
+   8. images-testing-preferences-nobg\top-sport.png → Similitud: 0.503
+   9. images-testing-preferences-nobg\short-negro-sport.png → Similitud: 0.503
+   10. images-testing-preferences-nobg\pollera-jean-streetwear2.png → Similitud: 0.503
+   11. images-testing-preferences-nobg\short-gris-sport.png → Similitud: 0.502
+   12. images-testing-preferences-nobg\jean-oldmoney3.png → Similitud: 0.501
+   13. images-testing-preferences-nobg\top-sport2.png → Similitud: 0.500
+   14. images-testing-preferences-nobg\pollera-coquette.png → Similitud: 0.499
+   15. images-testing-preferences-nobg\jean-bohochic3.png → Similitud: 0.499
+   16. images-testing-preferences-nobg\pollera-jean-larga-minimalista.png → Similitud: 0.498
+   17. images-testing-preferences-nobg\pollera-coquette2.png → Similitud: 0.497
+   18. images-testing-preferences-nobg\pollera-jean-streetwear-minimalista.png → Similitud: 0.497
+   19. images-testing-preferences-nobg\jean-bohochic2.png → Similitud: 0.494
+   20. images-testing-preferences-nobg\jean-bohochic.png → Similitud: 0.489
+mayor red flag es jean-oldmoney-minimalista2.png con 0.5042774081230164 de probabilidad
+[streetwear] jean-negro-streetwear.png: 0.503 > 0.504? ❌
+[streetwear] jean-streetwear-minimalista.png: 0.505 > 0.504? ✅
+[streetwear] pollera-jean-streetwear-minimalista.png: 0.497 > 0.504? ❌
+[streetwear] pollera-jean-streetwear.png: 0.505 > 0.504? ✅
+[streetwear] pollera-jean-streetwear2.png: 0.503 > 0.504? ❌
+[streetwear] short-negro-streetwear.png: 0.518 > 0.504? ✅
+🎯 Porcentaje de acierto: 50.00% (3/6)
+📊 Precision: 1.000
+📊 Recall: 0.500
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+❌ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: remera
+   1. images-testing-general-nobg\remera-azul1.png → Similitud: 0.535
+   2. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.529
+   3. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.527
+   4. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.522
+   5. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.521
+   6. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.521
+   7. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.514
+   8. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.514
+   9. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.513
+   10. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.512
+   11. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.508
+   12. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.507
+   13. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.507
+   14. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.506
+   15. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.505
+   16. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.504
+   17. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.502
+   18. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.501
+   19. images-testing-general-nobg\sweater-verde.png → Similitud: 0.501
+   20. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.501
+   21. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.498
+   22. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.497
+   23. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.497
+   24. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.497
+   25. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.497
+   26. images-testing-general-nobg\campera-beige.png → Similitud: 0.496
+   27. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.495
+   28. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.495
+   29. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.495
+mayor red flag es camisa-rosa-manga-corta.png con 0.5143756866455078 de probabilidad
+[remera] remera-azul1.png: 0.535 > 0.514? ✅
+[remera] remera-celeste-blanca.png: 0.521 > 0.514? ✅
+[remera] remera-celeste1.png: 0.529 > 0.514? ✅
+[remera] remera-celeste2.png: 0.527 > 0.514? ✅
+[remera] remera-rosa1.png: 0.522 > 0.514? ✅
+[remera] remera-rosa2.png: 0.521 > 0.514? ✅
+🎯 Porcentaje de acierto: 100.00% (6/6)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: remera celeste
+   1. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.565
+   2. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.561
+   3. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.544
+   4. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.543
+   5. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.540
+   6. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.539
+   7. images-testing-general-nobg\remera-azul1.png → Similitud: 0.536
+   8. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.527
+   9. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.519
+   10. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.516
+   11. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.513
+   12. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.513
+   13. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.508
+   14. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.503
+   15. images-testing-general-nobg\sweater-verde.png → Similitud: 0.495
+   16. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.493
+   17. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.492
+   18. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.492
+   19. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.491
+   20. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.490
+   21. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.490
+   22. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.488
+   23. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.487
+   24. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.481
+   25. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.481
+   26. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.480
+   27. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.477
+   28. images-testing-general-nobg\campera-beige.png → Similitud: 0.476
+   29. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.474
+mayor red flag es campera-jean-celeste.png con 0.5385594367980957 de probabilidad
+mayor yellow flag es camisa-celeste-manga-larga.png con 0.5442610383033752 de probabilidad
+[remera celeste] remera-celeste-blanca.png: 0.540 > 0.539? 🟨
+[remera celeste] remera-celeste1.png: 0.565 > 0.539? ✅
+[remera celeste] remera-celeste2.png: 0.561 > 0.539? ✅
+🎯 Porcentaje de acierto: 66.67% (2/3)
+🎯 Porcentaje de acierto incluyendo 🟨: 100.00% (3/3)
+📊 Precision: 0.600
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Precision (>= 0.7), ✅ con yellow flags
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: sweater
+   1. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.532
+   2. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.532
+   3. images-testing-general-nobg\sweater-verde.png → Similitud: 0.532
+   4. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.527
+   5. images-testing-general-nobg\remera-azul1.png → Similitud: 0.514
+   6. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.511
+   7. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.508
+   8. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.508
+   9. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.507
+   10. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.506
+   11. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.506
+   12. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.506
+   13. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.505
+   14. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.505
+   15. images-testing-general-nobg\campera-beige.png → Similitud: 0.503
+   16. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.503
+   17. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.502
+   18. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.502
+   19. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.501
+   20. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.501
+   21. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.501
+   22. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.499
+   23. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.498
+   24. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.497
+   25. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.496
+   26. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.496
+   27. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.495
+   28. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.494
+   29. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.493
+mayor red flag es remera-azul1.png con 0.5137234330177307 de probabilidad
+[sweater] sweater-rosa.png: 0.532 > 0.514? ✅
+[sweater] sweater-rosa2.png: 0.527 > 0.514? ✅
+[sweater] sweater-rosa3.png: 0.532 > 0.514? ✅
+[sweater] sweater-verde.png: 0.532 > 0.514? ✅
+🎯 Porcentaje de acierto: 100.00% (4/4)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: sweater rosa
+   1. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.559
+   2. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.556
+   3. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.549
+   4. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.541
+   5. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.535
+   6. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.533
+   7. images-testing-general-nobg\sweater-verde.png → Similitud: 0.530
+   8. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.526
+   9. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.511
+   10. images-testing-general-nobg\remera-azul1.png → Similitud: 0.511
+   11. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.511
+   12. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.510
+   13. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.508
+   14. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.507
+   15. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.507
+   16. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.506
+   17. images-testing-general-nobg\campera-beige.png → Similitud: 0.503
+   18. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.502
+   19. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.502
+   20. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.501
+   21. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.501
+   22. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.501
+   23. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.501
+   24. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.500
+   25. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.500
+   26. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.498
+   27. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.497
+   28. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.496
+   29. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.494
+mayor red flag es remera-rosa1.png con 0.5408307909965515 de probabilidad
+[sweater rosa] sweater-rosa.png: 0.559 > 0.541? ✅
+[sweater rosa] sweater-rosa2.png: 0.549 > 0.541? ✅
+[sweater rosa] sweater-rosa3.png: 0.556 > 0.541? ✅
+🎯 Porcentaje de acierto: 100.00% (3/3)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: vestido
+   1. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.525
+   2. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.525
+   3. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.524
+   4. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.524
+   5. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.522
+   6. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.522
+   7. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.521
+   8. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.520
+   9. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.511
+   10. images-testing-general-nobg\remera-azul1.png → Similitud: 0.510
+   11. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.509
+   12. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.509
+   13. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.507
+   14. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.506
+   15. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.504
+   16. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.503
+   17. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.503
+   18. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.502
+   19. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.501
+   20. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.501
+   21. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.501
+   22. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.500
+   23. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.499
+   24. images-testing-general-nobg\sweater-verde.png → Similitud: 0.499
+   25. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.499
+   26. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.499
+   27. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.497
+   28. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.497
+   29. images-testing-general-nobg\campera-beige.png → Similitud: 0.494
+mayor red flag es camisa-rosa-manga-larga.png con 0.5105108022689819 de probabilidad
+[vestido] vestido-celeste-liso.png: 0.520 > 0.511? ✅
+[vestido] vestido-estampado1.png: 0.522 > 0.511? ✅
+[vestido] vestido-estampado2.png: 0.521 > 0.511? ✅
+[vestido] vestido-estampado3.png: 0.524 > 0.511? ✅
+[vestido] vestido-rojo-estampado.png: 0.525 > 0.511? ✅
+[vestido] vestido-rojo-liso1.png: 0.525 > 0.511? ✅
+[vestido] vestido-rojo-liso2.png: 0.524 > 0.511? ✅
+[vestido] vestido-verde-liso.png: 0.522 > 0.511? ✅
+🎯 Porcentaje de acierto: 100.00% (8/8)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: vestido estampado
+   1. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.544
+   2. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.539
+   3. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.537
+   4. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.533
+   5. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.519
+   6. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.518
+   7. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.516
+   8. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.512
+   9. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.511
+   10. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.511
+   11. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.510
+   12. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.507
+   13. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.505
+   14. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.505
+   15. images-testing-general-nobg\remera-azul1.png → Similitud: 0.505
+   16. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.505
+   17. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.500
+   18. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.498
+   19. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.497
+   20. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.496
+   21. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.496
+   22. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.494
+   23. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.494
+   24. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.494
+   25. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.493
+   26. images-testing-general-nobg\campera-beige.png → Similitud: 0.493
+   27. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.492
+   28. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.492
+   29. images-testing-general-nobg\sweater-verde.png → Similitud: 0.491
+mayor red flag es vestido-rojo-liso1.png con 0.5191360712051392 de probabilidad
+[vestido estampado] vestido-estampado1.png: 0.537 > 0.519? ✅
+[vestido estampado] vestido-estampado2.png: 0.533 > 0.519? ✅
+[vestido estampado] vestido-estampado3.png: 0.539 > 0.519? ✅
+[vestido estampado] vestido-rojo-estampado.png: 0.544 > 0.519? ✅
+🎯 Porcentaje de acierto: 100.00% (4/4)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: vestido liso
+   1. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.531
+   2. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.527
+   3. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.526
+   4. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.525
+   5. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.519
+   6. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.519
+   7. images-testing-general-nobg\remera-azul1.png → Similitud: 0.518
+   8. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.516
+   9. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.515
+   10. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.515
+   11. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.515
+   12. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.512
+   13. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.512
+   14. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.512
+   15. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.512
+   16. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.511
+   17. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.510
+   18. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.507
+   19. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.506
+   20. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.506
+   21. images-testing-general-nobg\sweater-verde.png → Similitud: 0.504
+   22. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.504
+   23. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.502
+   24. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.499
+   25. images-testing-general-nobg\campera-beige.png → Similitud: 0.499
+   26. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.498
+   27. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.497
+   28. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.495
+   29. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.495
+mayor red flag es vestido-rojo-estampado.png con 0.5194708108901978 de probabilidad
+[vestido liso] vestido-celeste-liso.png: 0.525 > 0.519? ✅
+[vestido liso] vestido-rojo-liso1.png: 0.531 > 0.519? ✅
+[vestido liso] vestido-rojo-liso2.png: 0.527 > 0.519? ✅
+[vestido liso] vestido-verde-liso.png: 0.526 > 0.519? ✅
+🎯 Porcentaje de acierto: 100.00% (4/4)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: vestido rojo
+   1. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.558
+   2. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.552
+   3. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.549
+   4. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.533
+   5. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.527
+   6. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.517
+   7. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.511
+   8. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.508
+   9. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.506
+   10. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.505
+   11. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.503
+   12. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.503
+   13. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.502
+   14. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.501
+   15. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.500
+   16. images-testing-general-nobg\remera-azul1.png → Similitud: 0.500
+   17. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.500
+   18. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.494
+   19. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.492
+   20. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.491
+   21. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.490
+   22. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.489
+   23. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.488
+   24. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.487
+   25. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.485
+   26. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.484
+   27. images-testing-general-nobg\campera-beige.png → Similitud: 0.483
+   28. images-testing-general-nobg\sweater-verde.png → Similitud: 0.481
+   29. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.478
+mayor red flag es campera-cuero-roja.png con 0.5330920815467834 de probabilidad
+[vestido rojo] vestido-rojo-estampado.png: 0.549 > 0.533? ✅
+[vestido rojo] vestido-rojo-liso1.png: 0.558 > 0.533? ✅
+[vestido rojo] vestido-rojo-liso2.png: 0.552 > 0.533? ✅
+🎯 Porcentaje de acierto: 100.00% (3/3)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: vestido estampado rojo
+   1. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.573
+   2. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.551
+   3. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.547
+   4. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.542
+   5. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.537
+   6. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.529
+   7. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.529
+   8. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.504
+   9. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.503
+   10. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.503
+   11. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.502
+   12. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.501
+   13. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.501
+   14. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.499
+   15. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.496
+   16. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.496
+   17. images-testing-general-nobg\remera-azul1.png → Similitud: 0.495
+   18. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.494
+   19. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.491
+   20. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.490
+   21. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.488
+   22. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.487
+   23. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.485
+   24. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.485
+   25. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.485
+   26. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.483
+   27. images-testing-general-nobg\campera-beige.png → Similitud: 0.483
+   28. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.478
+   29. images-testing-general-nobg\sweater-verde.png → Similitud: 0.474
+mayor red flag es vestido-rojo-liso1.png con 0.5512468218803406 de probabilidad
+[vestido estampado rojo] vestido-rojo-estampado.png: 0.573 > 0.551? ✅
+🎯 Porcentaje de acierto: 100.00% (1/1)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: campera
+   1. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.531
+   2. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.528
+   3. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.525
+   4. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.525
+   5. images-testing-general-nobg\campera-beige.png → Similitud: 0.523
+   6. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.520
+   7. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.519
+   8. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.512
+   9. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.510
+   10. images-testing-general-nobg\remera-azul1.png → Similitud: 0.509
+   11. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.509
+   12. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.509
+   13. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.508
+   14. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.508
+   15. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.507
+   16. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.505
+   17. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.504
+   18. images-testing-general-nobg\sweater-verde.png → Similitud: 0.504
+   19. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.503
+   20. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.502
+   21. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.502
+   22. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.502
+   23. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.501
+   24. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.501
+   25. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.501
+   26. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.499
+   27. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.499
+   28. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.496
+   29. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.495
+mayor red flag es sweater-rosa2.png con 0.5190454721450806 de probabilidad
+[campera] campera-beige.png: 0.523 > 0.519? ✅
+[campera] campera-cuero-negra.png: 0.525 > 0.519? ✅
+[campera] campera-cuero-roja.png: 0.525 > 0.519? ✅
+[campera] campera-jean-azul.png: 0.528 > 0.519? ✅
+[campera] campera-jean-celeste.png: 0.531 > 0.519? ✅
+[campera] campera-jean-negra.png: 0.520 > 0.519? ✅
+🎯 Porcentaje de acierto: 100.00% (6/6)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: campera de cuero
+   1. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.536
+   2. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.534
+   3. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.528
+   4. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.524
+   5. images-testing-general-nobg\campera-beige.png → Similitud: 0.510
+   6. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.509
+   7. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.508
+   8. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.508
+   9. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.507
+   10. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.506
+   11. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.506
+   12. images-testing-general-nobg\remera-azul1.png → Similitud: 0.505
+   13. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.505
+   14. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.504
+   15. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.503
+   16. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.503
+   17. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.501
+   18. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.499
+   19. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.498
+   20. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.497
+   21. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.497
+   22. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.497
+   23. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.497
+   24. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.496
+   25. images-testing-general-nobg\sweater-verde.png → Similitud: 0.496
+   26. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.495
+   27. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.495
+   28. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.494
+   29. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.489
+mayor red flag es campera-jean-azul.png con 0.5280038118362427 de probabilidad
+[campera cuero] campera-cuero-negra.png: 0.534 > 0.528? ✅
+[campera cuero] campera-cuero-roja.png: 0.536 > 0.528? ✅
+🎯 Porcentaje de acierto: 100.00% (2/2)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: campera negra
+   1. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.547
+   2. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.545
+   3. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.520
+   4. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.519
+   5. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.516
+   6. images-testing-general-nobg\campera-beige.png → Similitud: 0.512
+   7. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.508
+   8. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.505
+   9. images-testing-general-nobg\remera-azul1.png → Similitud: 0.502
+   10. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.502
+   11. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.495
+   12. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.493
+   13. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.493
+   14. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.493
+   15. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.492
+   16. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.492
+   17. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.492
+   18. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.490
+   19. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.488
+   20. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.488
+   21. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.486
+   22. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.486
+   23. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.486
+   24. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.484
+   25. images-testing-general-nobg\sweater-verde.png → Similitud: 0.484
+   26. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.484
+   27. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.483
+   28. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.481
+   29. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.476
+mayor red flag es campera-jean-celeste.png con 0.5203952193260193 de probabilidad
+[campera negra] campera-cuero-negra.png: 0.545 > 0.520? ✅
+[campera negra] campera-jean-negra.png: 0.547 > 0.520? ✅
+🎯 Porcentaje de acierto: 100.00% (2/2)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: campera de jean
+   1. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.542
+   2. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.541
+   3. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.527
+   4. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.510
+   5. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.510
+   6. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.509
+   7. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.508
+   8. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.508
+   9. images-testing-general-nobg\campera-beige.png → Similitud: 0.507
+   10. images-testing-general-nobg\remera-azul1.png → Similitud: 0.506
+   11. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.502
+   12. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.501
+   13. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.501
+   14. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.501
+   15. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.499
+   16. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.499
+   17. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.499
+   18. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.499
+   19. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.498
+   20. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.497
+   21. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.497
+   22. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.496
+   23. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.495
+   24. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.493
+   25. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.493
+   26. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.493
+   27. images-testing-general-nobg\sweater-verde.png → Similitud: 0.492
+   28. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.491
+   29. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.490
+mayor red flag es campera-cuero-roja.png con 0.5098125338554382 de probabilidad
+[campera jean] campera-jean-azul.png: 0.542 > 0.510? ✅
+[campera jean] campera-jean-celeste.png: 0.541 > 0.510? ✅
+[campera jean] campera-jean-negra.png: 0.527 > 0.510? ✅
+🎯 Porcentaje de acierto: 100.00% (3/3)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: camisa
+   1. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.535
+   2. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.533
+   3. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.526
+   4. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.526
+   5. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.524
+   6. images-testing-general-nobg\remera-azul1.png → Similitud: 0.522
+   7. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.521
+   8. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.518
+   9. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.514
+   10. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.514
+   11. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.510
+   12. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.510
+   13. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.510
+   14. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.508
+   15. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.505
+   16. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.504
+   17. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.503
+   18. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.503
+   19. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.502
+   20. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.502
+   21. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.501
+   22. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.500
+   23. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.500
+   24. images-testing-general-nobg\sweater-verde.png → Similitud: 0.500
+   25. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.500
+   26. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.499
+   27. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.497
+   28. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.497
+   29. images-testing-general-nobg\campera-beige.png → Similitud: 0.495
+mayor red flag es remera-azul1.png con 0.5224003791809082 de probabilidad
+[camisa] camisa-celeste-blanca-manga-larga.png: 0.526 > 0.522? ✅
+[camisa] camisa-celeste-manga-corta.png: 0.524 > 0.522? ✅
+[camisa] camisa-celeste-manga-larga.png: 0.533 > 0.522? ✅
+[camisa] camisa-rosa-manga-corta.png: 0.526 > 0.522? ✅
+[camisa] camisa-rosa-manga-larga.png: 0.535 > 0.522? ✅
+🎯 Porcentaje de acierto: 100.00% (5/5)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: camisa celeste
+   1. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.566
+   2. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.555
+   3. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.552
+   4. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.549
+   5. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.543
+   6. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.538
+   7. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.530
+   8. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.527
+   9. images-testing-general-nobg\remera-azul1.png → Similitud: 0.525
+   10. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.520
+   11. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.517
+   12. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.511
+   13. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.505
+   14. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.502
+   15. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.492
+   16. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.491
+   17. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.491
+   18. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.491
+   19. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.489
+   20. images-testing-general-nobg\sweater-verde.png → Similitud: 0.487
+   21. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.486
+   22. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.485
+   23. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.484
+   24. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.481
+   25. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.480
+   26. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.475
+   27. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.475
+   28. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.473
+   29. images-testing-general-nobg\campera-beige.png → Similitud: 0.472
+mayor red flag es campera-jean-celeste.png con 0.5377166867256165 de probabilidad
+mayor yellow flag es remera-celeste1.png con 0.5552805662155151 de probabilidad
+[camisa celeste] camisa-celeste-blanca-manga-larga.png: 0.543 > 0.538? 🟨
+[camisa celeste] camisa-celeste-manga-corta.png: 0.552 > 0.538? 🟨
+[camisa celeste] camisa-celeste-manga-larga.png: 0.566 > 0.538? ✅
+🎯 Porcentaje de acierto: 33.33% (1/3)
+🎯 Porcentaje de acierto incluyendo 🟨: 100.00% (3/3)
+📊 Precision: 0.600
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Precision (>= 0.7), ✅ con yellow flags
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: camisa manga larga
+   1. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.543
+   2. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.542
+   3. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.533
+   4. images-testing-general-nobg\remera-azul1.png → Similitud: 0.518
+   5. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.517
+   6. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.515
+   7. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.512
+   8. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.510
+   9. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.509
+   10. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.509
+   11. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.508
+   12. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.508
+   13. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.507
+   14. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.507
+   15. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.507
+   16. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.506
+   17. images-testing-general-nobg\sweater-verde.png → Similitud: 0.505
+   18. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.505
+   19. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.502
+   20. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.500
+   21. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.500
+   22. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.499
+   23. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.497
+   24. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.494
+   25. images-testing-general-nobg\campera-beige.png → Similitud: 0.493
+   26. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.493
+   27. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.490
+   28. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.489
+   29. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.487
+mayor red flag es remera-azul1.png con 0.5177720785140991 de probabilidad
+[camisa manga larga] camisa-celeste-blanca-manga-larga.png: 0.533 > 0.518? ✅
+[camisa manga larga] camisa-celeste-manga-larga.png: 0.542 > 0.518? ✅
+[camisa manga larga] camisa-rosa-manga-larga.png: 0.543 > 0.518? ✅
+🎯 Porcentaje de acierto: 100.00% (3/3)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
+
+
+Descripcion: camisa manga corta
+   1. images-testing-general-nobg\camisa-rosa-manga-corta.png → Similitud: 0.541
+   2. images-testing-general-nobg\camisa-celeste-manga-corta.png → Similitud: 0.539
+   3. images-testing-general-nobg\remera-azul1.png → Similitud: 0.535
+   4. images-testing-general-nobg\remera-rosa2.png → Similitud: 0.530
+   5. images-testing-general-nobg\remera-celeste1.png → Similitud: 0.529
+   6. images-testing-general-nobg\camisa-rosa-manga-larga.png → Similitud: 0.529
+   7. images-testing-general-nobg\camisa-celeste-manga-larga.png → Similitud: 0.528
+   8. images-testing-general-nobg\remera-rosa1.png → Similitud: 0.527
+   9. images-testing-general-nobg\remera-celeste2.png → Similitud: 0.524
+   10. images-testing-general-nobg\remera-celeste-blanca.png → Similitud: 0.522
+   11. images-testing-general-nobg\vestido-rojo-estampado.png → Similitud: 0.520
+   12. images-testing-general-nobg\camisa-celeste-blanca-manga-larga.png → Similitud: 0.517
+   13. images-testing-general-nobg\vestido-rojo-liso1.png → Similitud: 0.514
+   14. images-testing-general-nobg\vestido-estampado1.png → Similitud: 0.510
+   15. images-testing-general-nobg\campera-jean-azul.png → Similitud: 0.507
+   16. images-testing-general-nobg\campera-jean-celeste.png → Similitud: 0.506
+   17. images-testing-general-nobg\sweater-rosa2.png → Similitud: 0.502
+   18. images-testing-general-nobg\campera-jean-negra.png → Similitud: 0.502
+   19. images-testing-general-nobg\campera-cuero-roja.png → Similitud: 0.501
+   20. images-testing-general-nobg\sweater-rosa.png → Similitud: 0.499
+   21. images-testing-general-nobg\campera-cuero-negra.png → Similitud: 0.498
+   22. images-testing-general-nobg\campera-beige.png → Similitud: 0.496
+   23. images-testing-general-nobg\sweater-verde.png → Similitud: 0.495
+   24. images-testing-general-nobg\vestido-estampado2.png → Similitud: 0.494
+   25. images-testing-general-nobg\vestido-verde-liso.png → Similitud: 0.494
+   26. images-testing-general-nobg\vestido-celeste-liso.png → Similitud: 0.494
+   27. images-testing-general-nobg\sweater-rosa3.png → Similitud: 0.494
+   28. images-testing-general-nobg\vestido-rojo-liso2.png → Similitud: 0.494
+   29. images-testing-general-nobg\vestido-estampado3.png → Similitud: 0.494
+mayor red flag es remera-azul1.png con 0.5350136756896973 de probabilidad
+[camisa manga corta] camisa-celeste-manga-corta.png: 0.539 > 0.535? ✅
+[camisa manga corta] camisa-rosa-manga-corta.png: 0.541 > 0.535? ✅
+🎯 Porcentaje de acierto: 100.00% (2/2)
+📊 Precision: 1.000
+📊 Recall: 1.000
+📊 MRR (Mean Reciprocal Rank): 1.000
+📊 Primer positivo aparece en rank: 1
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.6)
+✅ MRR (>= 0.3)
+✅ Top-3 check
+==============================
