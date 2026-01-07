@@ -29,7 +29,7 @@ import torch.nn.functional as F
 import multiprocessing
 from nltk.corpus import stopwords
 import re
-from database.fashionclipFinetuned.utils import *
+from inference.fashionclipFinetuned.utils import *
 
 # --- CONFIGURACIÓN ---
 BATCH_SIZE = 30
@@ -99,6 +99,11 @@ class FashionDataset(Dataset):
         row = self.dataframe.iloc[idx]
 
         filename = row["image"]
+        # Normalizar rutas: convertir backslashes a forward slashes y hacer ruta relativa al directorio inference
+        filename = filename.replace("\\", "/")
+        if not os.path.isabs(filename):
+            # Si es relativa, asumir que es relativa al directorio inference
+            filename = os.path.join("inference", filename)
 
         try:
             image = Image.open(filename).convert("RGB")
@@ -327,12 +332,8 @@ def evaluate(model, loader, processor, loss_func, desc):
 if __name__ == "__main__":
     multiprocessing.freeze_support()
     start_time = time.time()
-    # fine_tune(csv_path="datasets/unificado/roturas-preferencias-v6.csv", original_model_name="Marqo/marqo-fashionSigLIP", model_name="Marqo/marqo-fashionSigLIP",
-    #           model_name_to_push="melijauregui/cherrypick-sigLip11", data_aug=False,
-    #           loss_func=contrastive_loss_InfoNCE, batch_size=16, epochs=32, lr=2e-5,
-    #           n_layers=2)
-    fine_tune(csv_path="datasets/unificado/roturas-preferencias-v6.csv", original_model_name="Marqo/marqo-fashionSigLIP", model_name="Marqo/marqo-fashionSigLIP",
-              model_name_to_push="melijauregui/cherrypick-best-sigLip", data_aug=False,
+    fine_tune(csv_path="inference/datasets/unificado/roturas-preferencias-v6.csv", original_model_name="Marqo/marqo-fashionSigLIP", model_name="Marqo/marqo-fashionSigLIP",
+              model_name_to_push="melijauregui/cherrypick-best-sigLip-v2", data_aug=False,
               loss_func=contrastive_loss_InfoNCE, batch_size=16, epochs=32, lr=2e-5,
               n_layers=2)
     elapsed_time = time.time() - start_time

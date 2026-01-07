@@ -17,7 +17,7 @@ from fashionClipTestingText import test_text_clasification, find_similarities_ma
 
 # --- CONFIGURACIÓN ---
 ORIGINAL_MODEL_NAME = "Marqo/marqo-fashionSigLIP"
-MODEL_NAME_TO_PUSH = "melijauregui/cherrypick-sigLip11"
+MODEL_NAME_TO_PUSH = "melijauregui/cherrypick-best-sigLip"
 
 BATCH_SIZE = 32
 EPOCHS = 30

@@ -1,0 +1,4 @@
+train:
+cd /Users/melinajauregui/Documents/modeloAprendizajeProfundo && source inference/.venv/bin/activate && PYTHONPATH=/Users/melinajauregui/Documents/modeloAprendizajeProfundo:$PYTHONPATH python inference/fashionclipFinetuned/sigLip-finetune-best.py
+test:
+cd /Users/melinajauregui/Documents/modeloAprendizajeProfundo/inference && source .venv/bin/activate && PYTHONPATH=/Users/melinajauregui/Documents/modeloAprendizajeProfundo:$PYTHONPATH python fashionclipFinetuned/test.py > resultados-modelo/mejor-modelo/cherrypick-best-sigLip.txt 2>&1
