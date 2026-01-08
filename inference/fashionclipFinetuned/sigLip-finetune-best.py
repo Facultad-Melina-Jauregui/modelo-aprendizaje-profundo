@@ -333,7 +333,7 @@ if __name__ == "__main__":
     multiprocessing.freeze_support()
     start_time = time.time()
     fine_tune(csv_path="inference/datasets/unificado/roturas-preferencias-v6.csv", original_model_name="Marqo/marqo-fashionSigLIP", model_name="Marqo/marqo-fashionSigLIP",
-              model_name_to_push="melijauregui/cherrypick-best-sigLip-v2", data_aug=False,
+              model_name_to_push="melijauregui/cherrypick-best-sigLip", data_aug=False,
               loss_func=contrastive_loss_InfoNCE, batch_size=16, epochs=32, lr=2e-5,
               n_layers=2)
     elapsed_time = time.time() - start_time
