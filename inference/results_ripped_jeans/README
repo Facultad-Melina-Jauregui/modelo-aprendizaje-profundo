@@ -1,0 +1,23 @@
+# Resultados de Roturas en Jeans (Inglés)
+
+Esta carpeta contiene los resultados de pruebas de modelos fine-tuneados para clasificación de jeans con y sin roturas, utilizando descripciones **en inglés**.
+
+## Contenido
+
+Los archivos `.txt` contienen resultados de evaluación de diferentes modelos:
+- **`marqo-fashionSigLip.txt`**: Resultados del modelo base sin fine-tuning
+- **Modelos fine-tuneados**: `fashionSigLIP-roturas27`, `fashionSigLIP-roturas28`, `fashionSigLIP-roturas29`, `fashionSigLIP-roturas30`, `fashionSigLIP-roturas34`
+
+Las pruebas evalúan la clasificación de:
+- Presencia o ausencia de roturas (plain jeans vs ripped jeans)
+- Tipos de cortes (straight, skinny, wide leg, palazzo, cargo, mom, flared)
+
+Cada archivo incluye:
+- Configuración del modelo y parámetros de fine-tuning
+- Resultados de similitud entre descripciones en inglés e imágenes sin fondo
+- Métricas de clasificación y evaluación del rendimiento
+
+## Nota
+
+Estos resultados corresponden a modelos entrenados con el dataset `con-sin-roturas-english-v3.csv` y probados con imágenes sin fondo (`images-testing-nob`), utilizando descripciones en inglés para las pruebas de clasificación.
+
