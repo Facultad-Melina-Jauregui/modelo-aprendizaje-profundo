@@ -1,3 +1,8 @@
+fine_tune(csv_path="inference/datasets/unificado/roturas-preferencias-v6.csv", original_model_name="Marqo/marqo-fashionSigLIP", model_name="Marqo/marqo-fashionSigLIP",
+              model_name_to_push="melijauregui/cherrypick-best-sigLip", data_aug=False,
+              loss_func=contrastive_loss_InfoNCE, batch_size=16, epochs=32, lr=2e-5,
+              n_layers=2)
+
 Descripcion: jean liso
    1. images-testing-roturas-nobg/recto3.png → Similitud: 0.530
    2. images-testing-roturas-nobg/recto1.png → Similitud: 0.528
