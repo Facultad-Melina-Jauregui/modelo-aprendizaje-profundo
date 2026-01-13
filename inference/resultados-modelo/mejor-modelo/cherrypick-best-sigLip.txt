@@ -94,9 +94,9 @@ mayor red flag es recto-rotura4.png con 0.5083667635917664 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -171,9 +171,9 @@ mayor red flag es skinny-oscuro.png con 0.506424605846405 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -245,9 +245,9 @@ mayor yellow flag es palazzo7.png con 0.5407007932662964 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Accuracy vs red/yellow flags (>= 0.6)
 ❌ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -317,9 +317,9 @@ mayor red flag es mom-rotura-desmechada2.png con 0.5260679721832275 de probabili
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -390,9 +390,9 @@ mayor yellow flag es mom-grey1.png con 0.533646821975708 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Accuracy vs red/yellow flags (>= 0.6)
 ❌ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -463,9 +463,9 @@ mayor yellow flag es wide2.png con 0.550606369972229 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Accuracy vs red/yellow flags (>= 0.6)
 ❌ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -532,9 +532,9 @@ mayor red flag es palazzo1.png con 0.5284927487373352 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -604,9 +604,9 @@ mayor yellow flag es recto-rotura-desmechada1.png con 0.5191919207572937 de prob
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -674,9 +674,9 @@ mayor red flag es palazzo5.png con 0.5393307209014893 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -784,9 +784,9 @@ mayor red flag es coquette-outfit2-pollera.png con 0.5178422331809998 de probabi
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -885,9 +885,9 @@ mayor red flag es bohochic-outfit4-pollera.png con 0.5330982804298401 de probabi
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -982,9 +982,9 @@ mayor red flag es pollera-coquette3.png con 0.5389657616615295 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1084,9 +1084,9 @@ mayor yellow flag es minimalista-outfit1-pantalon.png con 0.5199867486953735 de 
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1184,9 +1184,9 @@ mayor yellow flag es minimalista-outfit1-pantalon.png con 0.5389823317527771 de 
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1277,9 +1277,9 @@ mayor red flag es oldmoney-minimalista-pantalon1.png con 0.5233510732650757 de p
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1383,9 +1383,9 @@ mayor red flag es bohochic-outfit8-pantalon.png con 0.5214141011238098 de probab
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1481,9 +1481,9 @@ mayor red flag es night-top2.png con 0.5191895961761475 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1587,9 +1587,9 @@ mayor yellow flag es oldmoney-outfit1-pantalon.png con 0.5144217610359192 de pro
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-❌ Recall (>= 0.6)
+❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1685,9 +1685,9 @@ mayor red flag es night-outfit3.png con 0.5159463286399841 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1779,9 +1779,9 @@ mayor red flag es bohochic-outfit2-pollera.png con 0.5134884119033813 de probabi
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1830,9 +1830,9 @@ mayor red flag es camisa-rosa-manga-corta.png con 0.520573079586029 de probabili
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1879,9 +1879,9 @@ mayor yellow flag es camisa-celeste-manga-larga.png con 0.5432358384132385 de pr
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1928,9 +1928,9 @@ mayor red flag es remera-azul1.png con 0.5174608826637268 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -1976,9 +1976,9 @@ mayor red flag es remera-rosa1.png con 0.5446588397026062 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2029,9 +2029,9 @@ mayor red flag es remera-azul1.png con 0.5141554474830627 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2078,9 +2078,9 @@ mayor red flag es vestido-verde-liso.png con 0.5236884951591492 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2127,9 +2127,9 @@ mayor red flag es vestido-rojo-estampado.png con 0.5247989296913147 de probabili
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2175,9 +2175,9 @@ mayor red flag es vestido-estampado2.png con 0.5293760299682617 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2221,9 +2221,9 @@ mayor red flag es vestido-rojo-liso1.png con 0.5517418384552002 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2272,9 +2272,9 @@ mayor red flag es sweater-rosa2.png con 0.5240351557731628 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2319,9 +2319,9 @@ mayor red flag es campera-jean-celeste.png con 0.5224098563194275 de probabilida
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2366,9 +2366,9 @@ mayor red flag es campera-jean-celeste.png con 0.5173856019973755 de probabilida
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2414,9 +2414,9 @@ mayor red flag es campera-cuero-negra.png con 0.5103240609169006 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2464,9 +2464,9 @@ mayor red flag es remera-azul1.png con 0.5284625887870789 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2514,9 +2514,9 @@ mayor yellow flag es remera-celeste1.png con 0.5527207851409912 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+❌ Accuracy vs red/yellow flags (>= 0.6)
 ❌ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2562,9 +2562,9 @@ mayor red flag es camisa-rosa-manga-corta.png con 0.5228724479675293 de probabil
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================
@@ -2609,9 +2609,9 @@ mayor red flag es remera-azul1.png con 0.5373066663742065 de probabilidad
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-✅ Accuracy vs red/yellow flags (>= 0.8)
+✅ Accuracy vs red/yellow flags (>= 0.6)
 ✅ Precision (>= 0.7)
-✅ Recall (>= 0.6)
+✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
 ==============================

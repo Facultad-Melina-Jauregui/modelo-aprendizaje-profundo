@@ -87,8 +87,12 @@ mayor red flag es wide-rotura-simetrica-negro2.png con 0.5036175847053528 de pro
 📊 Recall: 0.867
 📊 MRR (Mean Reciprocal Rank): 1.000
 
-
-
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Descripcion: jean con roturas
 
 📝 SIMILITUD CON DESCRIPCIÓN: 'jean con roturas'
@@ -153,8 +157,12 @@ mayor red flag es recto1.png con 0.5056756734848022 de probabilidad
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 
-
-
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Descripcion: jean wide leg
 
 📝 SIMILITUD CON DESCRIPCIÓN: 'jean wide leg'
@@ -219,8 +227,12 @@ mayor yellow flag es palazzo3.png con 0.5419130921363831 de probabilidad
 📊 Recall: 0.250
 📊 MRR (Mean Reciprocal Rank): 0.333
 
-
-
+RESUMEN FINAL:
+❌ Accuracy vs red/yellow flags (>= 0.6)
+❌ Precision (>= 0.7)
+❌ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Descripcion: jean skinny
 
 📝 SIMILITUD CON DESCRIPCIÓN: 'jean skinny'
@@ -282,8 +294,12 @@ mayor red flag es recto-rotura-desmechada2.png con 0.515712559223175 de probabil
 📊 Recall: 0.625
 📊 MRR (Mean Reciprocal Rank): 1.000
 
-
-
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+❌ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Descripcion: jean recto
 
 📝 SIMILITUD CON DESCRIPCIÓN: 'jean recto'
@@ -343,8 +359,12 @@ mayor yellow flag es mom-grey1.png con 0.5354056358337402 de probabilidad
 📊 Recall: 0.400
 📊 MRR (Mean Reciprocal Rank): 1.000
 
-
-
+RESUMEN FINAL:
+❌ Accuracy vs red/yellow flags (>= 0.6)
+❌ Precision (>= 0.7)
+❌ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Descripcion: jean palazzo
 
 📝 SIMILITUD CON DESCRIPCIÓN: 'jean palazzo'
@@ -406,8 +426,12 @@ mayor yellow flag es wide-ondas1.png con 0.538590669631958 de probabilidad
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 
-
-
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Descripcion: jean cargo
 
 📝 SIMILITUD CON DESCRIPCIÓN: 'jean cargo'
@@ -466,8 +490,12 @@ mayor red flag es palazzo1.png con 0.5274247527122498 de probabilidad
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 
-
-
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Descripcion: jean mom
 
 📝 SIMILITUD CON DESCRIPCIÓN: 'jean mom'
@@ -528,8 +556,12 @@ mayor yellow flag es recto2.png con 0.5261715650558472 de probabilidad
 📊 Recall: 0.667
 📊 MRR (Mean Reciprocal Rank): 1.000
 
-
-
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+❌ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Descripcion: jean acampanado
 
 📝 SIMILITUD CON DESCRIPCIÓN: 'jean acampanado'
@@ -589,6 +621,12 @@ mayor red flag es palazzo5.png con 0.538547694683075 de probabilidad
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Descripcion: jean boho chic
 
 📝 SIMILITUD CON DESCRIPCIÓN: 'jean boho chic'
@@ -619,6 +657,12 @@ mayor red flag es pollera-jean-streetwear-minimalista.png con 0.5084150433540344
 📊 Recall: 0.667
 📊 MRR (Mean Reciprocal Rank): 1.000
 
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+❌ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Probabilidad más baja: 0.504
 
 Imágenes con probabilidad mayor al mínimo:
@@ -657,6 +701,12 @@ mayor red flag es jean-bohochic2.png con 0.5090556144714355 de probabilidad
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Probabilidad más baja: 0.511
 
 Imágenes con probabilidad mayor al mínimo:
@@ -693,6 +743,12 @@ mayor red flag es pollera-coquette.png con 0.514110267162323 de probabilidad
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Probabilidad más baja: 0.527
 
 Imágenes con probabilidad mayor al mínimo:
@@ -730,6 +786,12 @@ mayor red flag es short-gris-sport.png con 0.5145721435546875 de probabilidad
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Probabilidad más baja: 0.517
 
 Imágenes con probabilidad mayor al mínimo:
@@ -765,6 +827,12 @@ mayor red flag es short-negro-sport.png con 0.5152232050895691 de probabilidad
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 
+RESUMEN FINAL:
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+✅ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Probabilidad más baja: 0.523
 
 Imágenes con probabilidad mayor al mínimo:
@@ -803,6 +871,12 @@ mayor red flag es short-gris-sport.png con 0.5106884837150574 de probabilidad
 📊 Recall: 0.200
 📊 MRR (Mean Reciprocal Rank): 1.000
 
+RESUMEN FINAL:
+❌ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
+❌ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Probabilidad más baja: 0.505
 
 Imágenes con probabilidad mayor al mínimo:
@@ -843,6 +917,12 @@ mayor yellow flag es jean-oldmoney-minimalista2.png con 0.5024108290672302 de pr
 📊 Recall: 0.000
 📊 MRR (Mean Reciprocal Rank): 0.500
 
+RESUMEN FINAL:
+❌ Accuracy vs red/yellow flags (>= 0.6)
+❌ Precision (>= 0.7)
+❌ Recall (>= 0.8)
+✅ MRR (>= 0.3)
+==============================
 Probabilidad más baja: 0.500
 
 Imágenes con probabilidad mayor al mínimo:
