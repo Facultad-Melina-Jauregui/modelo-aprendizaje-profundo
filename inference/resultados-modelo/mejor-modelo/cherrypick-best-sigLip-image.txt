@@ -1,0 +1,226 @@
+Query imagen: wide-rotura-simetrica-negro1.png
+mayor red flag es recto-rotura-simetrica1.png con 0.500 de similitud
+mayor yellow flag es wide-rotura-simetrica2.png con 0.574 de similitud
+
+green_flags:
+  ✅ wide-rotura-simetrica-negro2.png: 0.863
+
+yellow_flags:
+  ✅ wide-rotura-simetrica2.png: 0.574
+  ✅ recto-rotura-desmechada1.png: 0.551
+  ✅ wide-rotura-simetrica1.png: 0.509
+  ✅ wide-rotura-simetrica-desmechada1.png: 0.546
+
+
+Query imagen: recto-rotura-desmechada1.png
+mayor red flag es skinny-rotura-desmechada1.png con 0.633 de similitud
+mayor yellow flag es wide-rotura-simetrica1.png con 0.750 de similitud
+
+green_flags:
+  ✅ wide-rotura-simetrica-desmechada1.png: 0.840
+  ✅ recto-rotura-simetrica1.png: 0.784
+  ❌ mom-rotura-desmechada2.png: 0.468
+  🟡 recto-rotura4.png: 0.702
+
+yellow_flags:
+  ❌ recto4.png: 0.370
+  ✅ wide-rotura-simetrica1.png: 0.750
+
+
+Query imagen: cargo-vintage1.png
+mayor red flag es palazzo5.png con 0.360 de similitud
+mayor yellow flag es cargo-grey1.png con 0.436 de similitud
+
+green_flags:
+  ✅ cargo1.png: 0.690
+  ✅ cargo-vintage2.png: 0.575
+  🟡 wide2.png: 0.383
+
+yellow_flags:
+  ✅ cargo-azul1.png: 0.382
+  ✅ cargo-grey1.png: 0.436
+
+
+Query imagen: flared1.png
+mayor red flag es skinny1.png con 0.531 de similitud
+mayor yellow flag es flared7.png con 0.619 de similitud
+
+green_flags:
+  ✅ flared2.png: 0.701
+  ✅ flared5.png: 0.650
+  ✅ flared6.png: 0.675
+
+yellow_flags:
+  ✅ flared7.png: 0.619
+
+
+Query imagen: mom1.png
+mayor red flag es skinny-rotura-simetrica2.png con 0.453 de similitud
+mayor yellow flag es palazzo1.png con 0.480 de similitud
+
+green_flags:
+  ✅ mom3.png: 0.811
+  ✅ mom4.png: 0.713
+  ✅ mom5.png: 0.909
+  ✅ mom6.png: 0.695
+
+yellow_flags:
+  ❌ mom-grey1.png: 0.441
+  ✅ palazzo1.png: 0.480
+
+
+Query imagen: palazzo2.png
+mayor red flag es cargo-vintage1.png con 0.317 de similitud
+mayor yellow flag es wide2.png con 0.549 de similitud
+
+green_flags:
+  ✅ palazzo5.png: 0.565
+  ✅ palazzo7.png: 0.693
+
+yellow_flags:
+  ✅ wide2.png: 0.549
+  ✅ wide1.png: 0.512
+  ✅ palazzo3.png: 0.321
+  ✅ palazzo4.png: 0.438
+  ✅ palazzo6.png: 0.536
+
+
+Query imagen: recto1.png
+mayor red flag es wide1.png con 0.511 de similitud
+mayor yellow flag es mom4.png con 0.533 de similitud
+
+green_flags:
+  ✅ recto2.png: 0.861
+  ✅ recto3.png: 0.836
+  ✅ recto4.png: 0.882
+
+yellow_flags:
+  ✅ mom4.png: 0.533
+
+
+Query imagen: skinny-oscuro.png
+mayor red flag es skinny-rojo.png con 0.588 de similitud
+mayor yellow flag es skinny1.png con 0.843 de similitud
+
+green_flags:
+  ✅ skinny-oscuro2.png: 0.869
+
+yellow_flags:
+  ✅ skinny1.png: 0.843
+
+
+Query imagen: skinny1.png
+mayor red flag es skinny-rojo.png con 0.614 de similitud
+mayor yellow flag es flared1.png con 0.531 de similitud
+
+green_flags:
+  ✅ skinny-oscuro.png: 0.843
+  ✅ skinny-oscuro2.png: 0.807
+
+yellow_flags:
+  ❌ flared6.png: 0.443
+  ❌ flared2.png: 0.486
+  ❌ flared1.png: 0.531
+
+
+Query imagen: wide1.png
+mayor red flag es palazzo5.png con 0.588 de similitud
+mayor yellow flag es palazzo7.png con 0.594 de similitud
+
+green_flags:
+  ✅ wide2.png: 0.746
+  ✅ recto4.png: 0.603
+  ✅ recto3.png: 0.599
+
+yellow_flags:
+  ✅ palazzo7.png: 0.594
+
+
+Query imagen: camisa-celeste-manga-larga.png
+mayor red flag es remera-celeste2.png con 0.549 de similitud
+mayor yellow flag es camisa-rosa-manga-larga.png con 0.736 de similitud
+
+green_flags:
+  ✅ camisa-celeste-blanca-manga-larga.png: 0.746
+
+yellow_flags:
+  ✅ camisa-rosa-manga-larga.png: 0.736
+  ✅ camisa-celeste-manga-corta.png: 0.585
+
+
+Query imagen: campera-cuero-negra.png
+mayor red flag es sweater-rosa2.png con 0.336 de similitud
+mayor yellow flag es campera-jean-negra.png con 0.633 de similitud
+
+green_flags:
+  ✅ campera-cuero-roja.png: 0.637
+
+yellow_flags:
+  ✅ campera-jean-negra.png: 0.633
+  ❌ campera-jean-azul.png: 0.236
+
+
+Query imagen: campera-jean-azul.png
+mayor red flag es remera-azul1.png con 0.352 de similitud
+mayor yellow flag es campera-jean-negra.png con 0.331 de similitud
+
+green_flags:
+  ✅ campera-jean-celeste.png: 0.563
+
+yellow_flags:
+  ❌ campera-jean-negra.png: 0.331
+
+
+Query imagen: remera-celeste1.png
+mayor red flag es remera-rosa1.png con 0.559 de similitud
+mayor yellow flag es remera-azul1.png con 0.608 de similitud
+
+green_flags:
+  ✅ remera-celeste2.png: 0.763
+
+yellow_flags:
+  ❌ remera-celeste-blanca.png: 0.465
+  ✅ remera-azul1.png: 0.608
+
+
+Query imagen: sweater-rosa.png
+mayor red flag es remera-rosa1.png con 0.671 de similitud
+mayor yellow flag es sweater-verde.png con 0.687 de similitud
+
+green_flags:
+  ✅ sweater-rosa2.png: 0.707
+  ❌ sweater-rosa3.png: 0.579
+
+yellow_flags:
+  ✅ sweater-verde.png: 0.687
+
+
+Query imagen: vestido-estampado1.png
+mayor red flag es sweater-rosa2.png con 0.269 de similitud
+mayor yellow flag es vestido-rojo-liso1.png con 0.541 de similitud
+
+green_flags:
+  ✅ vestido-estampado2.png: 0.567
+  ✅ vestido-estampado3.png: 0.620
+  ✅ vestido-rojo-estampado.png: 0.735
+
+yellow_flags:
+  ✅ vestido-rojo-liso1.png: 0.541
+  ✅ vestido-rojo-liso2.png: 0.470
+  ✅ vestido-celeste-liso.png: 0.397
+  ✅ vestido-verde-liso.png: 0.461
+
+
+Query imagen: vestido-rojo-liso1.png
+mayor red flag es vestido-verde-liso.png con 0.493 de similitud
+mayor yellow flag es vestido-estampado1.png con 0.541 de similitud
+
+green_flags:
+  ✅ vestido-rojo-liso2.png: 0.674
+  ✅ vestido-rojo-estampado.png: 0.668
+
+yellow_flags:
+  ✅ vestido-estampado1.png: 0.541
+  ❌ vestido-estampado2.png: 0.379
+
+
