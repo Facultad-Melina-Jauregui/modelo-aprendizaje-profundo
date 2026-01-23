@@ -99,25 +99,37 @@ def find_similarities_image_to_images(model, processor, query_image_path, galler
     
     # Evaluar y mostrar green_flags en el orden de la lista
     print("\ngreen_flags:")
+    correct = 0
+    correct_aprox = 0
+    total = len(green_items)
+    
     for filename, sim in green_items:
         if yellow_items and best_red_name:
             # Hay ambos umbrales
-            if sim > max_yellow_flag and sim > max_red_flag:
-                symbol = '✅'  # Pasa ambos umbrales
-            elif sim > max_red_flag:
+            success = sim > max_yellow_flag and sim > max_red_flag
+            if success:
+                correct += 1
+            if sim > max_red_flag:
                 symbol = '🟡'  # Pasa solo umbral de red
+                correct_aprox += 1
             else:
                 symbol = '❌'  # No pasa ni umbral de red
+            if success:
+                symbol = '✅'  # Pasa ambos umbrales
         elif best_red_name:
             # Solo hay red
-            if sim > max_red_flag:
+            success = sim > max_red_flag
+            if success:
+                correct += 1
                 symbol = '✅'
             else:
                 symbol = '❌'
         else:
             symbol = '✅'
+            correct += 1
         
         print(f"  {symbol} {filename}: {sim:.3f}")
+    
     
     # Evaluar y mostrar yellow_flags en el orden de la lista
     if yellow_items:
@@ -132,7 +144,98 @@ def find_similarities_image_to_images(model, processor, query_image_path, galler
                 symbol = '✅'
             
             print(f"  {symbol} {filename}: {sim:.3f}")
-
+            
+            
+    # Calcular accuracy
+    accuracy = (correct / total) * 100 if total > 0 else 0
+    print(f"\n\n🎯 Porcentaje de acierto: {accuracy:.2f}% ({correct}/{total})")
+    if correct_aprox > correct:
+        accuracy_aprox = (correct_aprox / total) * 100 if total > 0 else 0
+        print(f"🎯 Porcentaje de acierto incluyendo 🟡: {accuracy_aprox:.2f}% ({correct_aprox}/{total})")
+    
+    min_yellow_flag = float('-inf')
+    if yellow_items:
+        min_yellow_flag = min(sim for _, sim in yellow_items)
+        
+    # Calcular Precision y Recall
+    # Definir umbral para clasificar predicción positiva
+    threshold_yellow = min_yellow_flag if yellow_items else float('-inf')
+    threshold_red = max_red_flag if best_red_name else float('-inf')
+    
+    # True positives: todos los green flags (índices)
+    true_positive = set()
+    for filename, _ in green_items:
+        if filename in name_to_index:
+            true_positive.add(name_to_index[filename])
+    
+    true_positive_yellow = set()
+    for filename, _ in yellow_items:
+        if filename in name_to_index:
+            true_positive_yellow.add(name_to_index[filename])
+            
+    print(f"true_positive: {true_positive}")
+    print(f"true_positive_yellow: {true_positive_yellow}")
+    
+    # True negatives: red flags (no green, no yellow, no query)
+    true_negative = set()
+    for i, name in enumerate(image_names):
+        if name != query_name and name not in green_names_set and name not in yellow_names_set:
+            true_negative.add(i)
+    
+    # Predicciones binarias: si similitud > threshold -> pred positive
+    predicted_positive = set()
+    predicted_positive_yellow = set()
+    for i, name in enumerate(image_names):
+        if name != query_name and similarities[i] > threshold_red:
+            predicted_positive.add(i)
+        if name != query_name and similarities[i] > threshold_yellow :
+            predicted_positive_yellow.add(i)
+            
+    print(f"predicted_positive: {predicted_positive}")
+    print(f"predicted_positive_yellow: {predicted_positive_yellow}")
+    
+    # Precision = TP / (TP + FP)
+    TP = len(predicted_positive.intersection(true_positive)) + len(predicted_positive.intersection(true_positive_yellow))
+    FP = len(predicted_positive_yellow.difference(true_positive | true_positive_yellow))
+    print(f"TP: {TP}, FP: {FP}")
+    precision = TP / (TP + FP) if (TP + FP) > 0 else 0
+    
+    # Recall = TP / (TP + FN)
+    FN = len(true_positive.difference(predicted_positive)) + len(true_positive_yellow.difference(predicted_positive))
+    print(f"FN: {FN}")
+    print(f"no green flags que no son predicted: {len(true_positive.difference(predicted_positive))}")
+    print(f"no yellow flags que no son predicted: {len(true_positive_yellow.difference(predicted_positive))}")
+    recall = TP / (TP + FN) if (TP + FN) > 0 else 0
+    
+    print(f"📊 Precision: {precision:.3f}")
+    print(f"📊 Recall: {recall:.3f}")
+    
+    # MRR - buscar el primer ranking con imagen green flag
+    sorted_indices = np.argsort(similarities)[::-1]
+    mrr = 0
+    first_rank = None
+    green_indices_set = {name_to_index[filename] for filename, _ in green_items}
+    
+    for rank, idx in enumerate(sorted_indices, start=1):
+        if idx in green_indices_set:
+            mrr = 1 / rank
+            first_rank = rank
+            break
+    
+    print(f"📊 MRR (Mean Reciprocal Rank): {mrr:.3f}")
+    if first_rank:
+        print(f"📊 Primer green flag aparece en rank: {first_rank}")
+    
+    # --- RESUMEN FINAL ---
+    print("\nRESUMEN FINAL:")
+    accuracy_ratio = correct / total if total > 0 else 0
+    print(f"{'❌' if accuracy_ratio < 0.6 else '✅'} Accuracy vs red/yellow flags (>= 0.6)")
+    print(f"{'❌' if precision < 0.7 else '✅'} Precision (>= 0.7)")
+    print(f"{'❌' if recall < 0.75 else '✅'} Recall (>= 0.75)")
+    print(f"{'❌' if mrr < 0.3 else '✅'} MRR (>= 0.3)")
+    if first_rank:
+        print(f"{'❌' if first_rank > 3 else '✅'} Top-3 check")
+    print("==============================")
 
     return similarities
 

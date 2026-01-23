@@ -274,9 +274,9 @@ def test_text_clasification(probabilities, image_paths, has, clasification_img, 
 
     # --- RESUMEN FINAL ---
     print("RESUMEN FINAL:")
-    print(f"{'❌' if accuracy < 0.8 else '✅'} Accuracy vs red/yellow flags (>= 0.8)")
+    print(f"{'❌' if accuracy < 0.6 else '✅'} Accuracy vs red/yellow flags (>= 0.6)")
     print(f"{'❌' if precision < 0.7 else '✅'} Precision (>= 0.7)")
-    print(f"{'❌' if recall < 0.6 else '✅'} Recall (>= 0.6)")
+    print(f"{'❌' if recall < 0.8 else '✅'} Recall (>= 0.8)")
     print(f"{'❌' if mrr < 0.3 else '✅'} MRR (>= 0.3)")
     if first_rank:
         print(f"{'❌' if first_rank > 3 else '✅'} Top-3 check")
