@@ -2,7 +2,7 @@ fine_tune(csv_path="inference/datasets/unificado/roturas-preferencias-v6.csv", o
               model_name_to_push="melijauregui/cherrypick-best-sigLip", data_aug=False,
               loss_func=contrastive_loss_InfoNCE, batch_size=16, epochs=32, lr=2e-5,
               n_layers=2)
-
+              
 Descripcion: jean liso
    1. images-testing-roturas-nobg/recto3.png → Similitud: 0.530
    2. images-testing-roturas-nobg/recto1.png → Similitud: 0.528
@@ -89,7 +89,7 @@ mayor red flag es recto-rotura4.png con 0.5083667635917664 de probabilidad
 [rotura] palazzo6.png: 0.518 > 0.508? ✅
 [rotura] palazzo7.png: 0.520 > 0.508? ✅
 🎯 Porcentaje de acierto: 91.43% (32/35)
-📊 Precision: 1.000
+📊 Precision: 0.941
 📊 Recall: 0.914
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
@@ -240,13 +240,13 @@ mayor yellow flag es palazzo7.png con 0.5407007932662964 de probabilidad
 [wide] wide-rotura-simetrica-desmechada1.png: 0.528 > 0.525? 🟨
 🎯 Porcentaje de acierto: 12.50% (1/8)
 🎯 Porcentaje de acierto incluyendo 🟨: 100.00% (8/8)
-📊 Precision: 0.533
+📊 Precision: 1.000
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-❌ Accuracy vs red/yellow flags (>= 0.6)
-❌ Precision (>= 0.7)
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
 ✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -312,13 +312,13 @@ mayor red flag es mom-rotura-desmechada2.png con 0.5260679721832275 de probabili
 [skinny] skinny1.png: 0.542 > 0.526? ✅
 [skinny] skinny-rojo.png: 0.540 > 0.526? ✅
 🎯 Porcentaje de acierto: 75.00% (6/8)
-📊 Precision: 1.000
+📊 Precision: 0.400
 📊 Recall: 0.750
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
 ✅ Accuracy vs red/yellow flags (>= 0.6)
-✅ Precision (>= 0.7)
+❌ Precision (>= 0.7)
 ❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -385,13 +385,13 @@ mayor yellow flag es mom-grey1.png con 0.533646821975708 de probabilidad
 [recto] recto-rotura-simetrica1.png: 0.525 > 0.519? 🟨
 🎯 Porcentaje de acierto: 57.14% (4/7)
 🎯 Porcentaje de acierto incluyendo 🟨: 100.00% (7/7)
-📊 Precision: 0.583
+📊 Precision: 1.000
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-❌ Accuracy vs red/yellow flags (>= 0.6)
-❌ Precision (>= 0.7)
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
 ✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -458,13 +458,13 @@ mayor yellow flag es wide2.png con 0.550606369972229 de probabilidad
 [palazzo] palazzo7.png: 0.560 > 0.520? ✅
 🎯 Porcentaje de acierto: 57.14% (4/7)
 🎯 Porcentaje de acierto incluyendo 🟨: 100.00% (7/7)
-📊 Precision: 0.538
+📊 Precision: 1.000
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-❌ Accuracy vs red/yellow flags (>= 0.6)
-❌ Precision (>= 0.7)
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
 ✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -599,7 +599,7 @@ mayor yellow flag es recto-rotura-desmechada1.png con 0.5191919207572937 de prob
 [mom] mom5.png: 0.552 > 0.550? ✅
 [mom] mom4.png: 0.550 > 0.550? ✅
 🎯 Porcentaje de acierto: 71.43% (5/7)
-📊 Precision: 1.000
+📊 Precision: 0.714
 📊 Recall: 0.714
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
@@ -880,13 +880,13 @@ mayor red flag es bohochic-outfit4-pollera.png con 0.5330982804298401 de probabi
 [pantalon bohochic] bohochic-outfit7-pantalon.png: 0.531 > 0.533? ❌
 [pantalon bohochic] bohochic-outfit6-pantalon.png: 0.530 > 0.533? ❌
 🎯 Porcentaje de acierto: 76.92% (10/13)
-📊 Precision: 1.000
+📊 Precision: 0.667
 📊 Recall: 0.769
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
 ✅ Accuracy vs red/yellow flags (>= 0.6)
-✅ Precision (>= 0.7)
+❌ Precision (>= 0.7)
 ❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -977,7 +977,7 @@ mayor red flag es pollera-coquette3.png con 0.5389657616615295 de probabilidad
 [pollera bohochic] bohochic-outfit10-pollera.png: 0.547 > 0.539? ✅
 [pollera bohochic] bohochic-outfit2-pollera.png: 0.538 > 0.539? ❌
 🎯 Porcentaje de acierto: 88.89% (8/9)
-📊 Precision: 1.000
+📊 Precision: 0.889
 📊 Recall: 0.889
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
@@ -1079,13 +1079,13 @@ mayor yellow flag es minimalista-outfit1-pantalon.png con 0.5199867486953735 de 
 [oldmoney] oldmoney-minimalista-pantalon3.png: 0.526 > 0.516? ✅
 🎯 Porcentaje de acierto: 50.00% (6/12)
 🎯 Porcentaje de acierto incluyendo 🟨: 75.00% (9/12)
-📊 Precision: 0.900
+📊 Precision: 0.360
 📊 Recall: 0.750
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-❌ Accuracy vs red/yellow flags (>= 0.6)
-✅ Precision (>= 0.7)
+✅ Accuracy vs red/yellow flags (>= 0.6)
+❌ Precision (>= 0.7)
 ❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -1179,13 +1179,13 @@ mayor yellow flag es minimalista-outfit1-pantalon.png con 0.5389823317527771 de 
 [pantalon oldmoney] oldmoney-minimalista-pantalon3.png: 0.551 > 0.524? ✅
 🎯 Porcentaje de acierto: 50.00% (5/10)
 🎯 Porcentaje de acierto incluyendo 🟨: 80.00% (8/10)
-📊 Precision: 0.889
+📊 Precision: 0.229
 📊 Recall: 0.800
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-❌ Accuracy vs red/yellow flags (>= 0.6)
-✅ Precision (>= 0.7)
+✅ Accuracy vs red/yellow flags (>= 0.6)
+❌ Precision (>= 0.7)
 ✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -1378,7 +1378,7 @@ mayor red flag es bohochic-outfit8-pantalon.png con 0.5214141011238098 de probab
 [pollera] bohochic-outfit10-pollera.png: 0.528 > 0.521? ✅
 [pollera] bohochic-outfit2-pollera.png: 0.521 > 0.521? ❌
 🎯 Porcentaje de acierto: 72.22% (13/18)
-📊 Precision: 1.000
+📊 Precision: 0.722
 📊 Recall: 0.722
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
@@ -1476,7 +1476,7 @@ mayor red flag es night-top2.png con 0.5191895961761475 de probabilidad
 [coquette] coquette-outfit1.png: 0.533 > 0.519? ✅
 [coquette] coquette-outfit4.png: 0.517 > 0.519? ❌
 🎯 Porcentaje de acierto: 80.00% (8/10)
-📊 Precision: 1.000
+📊 Precision: 0.800
 📊 Recall: 0.800
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
@@ -1582,13 +1582,13 @@ mayor yellow flag es oldmoney-outfit1-pantalon.png con 0.5144217610359192 de pro
 [minimalista] oldmoney-minimalista-pantalon3.png: 0.506 > 0.508? ❌
 🎯 Porcentaje de acierto: 18.75% (3/16)
 🎯 Porcentaje de acierto incluyendo 🟨: 56.25% (9/16)
-📊 Precision: 0.750
+📊 Precision: 0.375
 📊 Recall: 0.562
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-❌ Accuracy vs red/yellow flags (>= 0.6)
-✅ Precision (>= 0.7)
+✅ Accuracy vs red/yellow flags (>= 0.6)
+❌ Precision (>= 0.7)
 ❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -1680,13 +1680,13 @@ mayor red flag es night-outfit3.png con 0.5159463286399841 de probabilidad
 [streetwear] jean-negro-streetwear.png: 0.513 > 0.516? ❌
 [streetwear] jean-azul-streetwear.png: 0.507 > 0.516? ❌
 🎯 Porcentaje de acierto: 80.00% (8/10)
-📊 Precision: 1.000
+📊 Precision: 0.286
 📊 Recall: 0.800
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
 ✅ Accuracy vs red/yellow flags (>= 0.6)
-✅ Precision (>= 0.7)
+❌ Precision (>= 0.7)
 ✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -1874,13 +1874,13 @@ mayor yellow flag es camisa-celeste-manga-larga.png con 0.5432358384132385 de pr
 [remera celeste] remera-celeste2.png: 0.561 > 0.545? ✅
 [remera celeste] remera-celeste-blanca.png: 0.544 > 0.545? ❌
 🎯 Porcentaje de acierto: 66.67% (2/3)
-📊 Precision: 1.000
+📊 Precision: 0.667
 📊 Recall: 0.667
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
 ✅ Accuracy vs red/yellow flags (>= 0.6)
-✅ Precision (>= 0.7)
+❌ Precision (>= 0.7)
 ❌ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
@@ -2509,13 +2509,13 @@ mayor yellow flag es remera-celeste1.png con 0.5527207851409912 de probabilidad
 [camisa celeste] camisa-celeste-manga-corta.png: 0.553 > 0.533? 🟨
 🎯 Porcentaje de acierto: 33.33% (1/3)
 🎯 Porcentaje de acierto incluyendo 🟨: 100.00% (3/3)
-📊 Precision: 0.600
+📊 Precision: 1.000
 📊 Recall: 1.000
 📊 MRR (Mean Reciprocal Rank): 1.000
 📊 Primer positivo aparece en rank: 1
 RESUMEN FINAL:
-❌ Accuracy vs red/yellow flags (>= 0.6)
-❌ Precision (>= 0.7)
+✅ Accuracy vs red/yellow flags (>= 0.6)
+✅ Precision (>= 0.7)
 ✅ Recall (>= 0.8)
 ✅ MRR (>= 0.3)
 ✅ Top-3 check
