@@ -40,5 +40,6 @@ python fashionclipFinetuned/testImage.py > resultados-modelo/mejor-modelo/cherry
 
 ## Notas
 
-- Asegúrate de ejecutar primero el fine-tuning antes de correr los tests
+- Asegurarse de ejecutar primero el fine-tuning antes de correr los tests
+- Modificar los archivos de tests para que se ejecuten con el modelo fine-tuneado
 - Los resultados del testing se guardan automáticamente en el archivo de salida especificado
